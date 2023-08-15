@@ -1,0 +1,78 @@
+---
+layout: page
+css-list:
+  - "assets/css/gateways.css"
+---
+<!-- hero section -->
+<section class="hero-section">
+  <div class="content">  
+    <div class="coin">    
+      <img class="digital-coin" src="{{ site.baseurl }}/assets/img/site/p_coin.png" />
+    </div>
+    <div>
+      <h1>Payment Gateways</h1>
+      <strong>Solutions to accept ARRR</strong>
+      <p>
+        Pirate Chain provides options for accepting ARRR across various platforms including WordPress, 
+        HTML, Shopify, and more. Discover all payment solutions here.
+      </p>
+      <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
+    
+    </div>
+  </div>
+  <!-- boxes animation -->
+  <div class="boxes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+</section>
+
+<!-- gateway-explanation section -->
+<section class="gateway-explanation">
+  <div class="content"> 
+    <img class="p" alt="pirate logo" src="{{ site.baseurl }}/assets/img/logo/Pirate_Logo_P_Gold.svg" />   
+    <h2>Boost your business with the Pirate Chain Privacy Coin</h2> 
+    <p>
+        Ready to accept cryptocurrency payments, especially with ARRR? Explore more about our merchant solutions. 
+    </p>    
+
+    <div class="solutions">
+      <div class="left-box">
+        <img alt="payment gateways" src="{{ site.baseurl }}/assets/img/site/gateways.jpg"/>
+      </div>
+      <div class="right-box">
+        <h2>Which Gateways Support ARRR?</h2>
+        <p>
+          The gateways detailed here enable you to accept ARRR payments on your website. 
+          Together with our partners, we provide various options to accept e-commerce transactions, 
+          donations, service fees, and more.
+        </p>
+        <p>
+          In the Pirate Chain network, all transactions remain anonymous. Accept ARRR payments directly, with no 
+          intermediaries or middle-man. You can opt for a free WordPress/WooCommerce solution, or select Shopify, 
+          OpenCart, HTML, or a multi-platform alternative.
+        </p>
+        <p>
+          Should you have any inquiries or require assistance with the individual gateways, feel free to 
+          reach out to us on the community <a title="chat at the community discord" href="https://pirate.black/discord">Discord</a>.
+        </p>
+        </div>
+    </div>
+    </div>
+    <img class="divider" src="{{ site.baseurl }}/assets/img/site/triangle-bottom.svg" />
+  </section>
+
+<!-- gateways-section -->
+<section class="gateway-listings-section">
+  <div class="content"> 
+    {% for gateway in site.data.gateways %}    
+        <a href="{{ gateway.url}}"
+        title="go to {{ gateway.name }}'s website"
+        class="gateway-box" >
+          <div class="gateway-imgbox">
+            <img  src="{{ site.baseurl }}/assets/img/gateways/{{ gateway.img}}" 
+                  alt="{{ gateway.name }}" />
+          </div>
+          <h3>{{ gateway.name }}</h3>
+          <p class="description">{{ gateway.desc | truncate: 300, "..." }}</p>
+        </a>       
+    {% endfor %}
+  </div>
+</section>

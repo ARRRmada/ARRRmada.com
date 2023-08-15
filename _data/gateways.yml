@@ -1,0 +1,37 @@
+- name: Cryptocurrency Checkout
+  desc: >
+    CryptocurrencyCheckout is breaking the barriers of accepting Multiple Cryptocurrencies by offering
+    easy to install Platform Integrations that require little to no coding experience. Decentralized direct
+    P2P transactions, combined with real-time market price conversions.
+  img: ccc.svg
+  url: https://cryptocurrencycheckout.com/
+
+- name: VerusPay
+  desc: >
+    We would like to take this opportunity to thank the VerusCoin team for adding ARRR to their Verus payment
+    plugin for WordPress. VerusPay Gateway is a payment plugin that enables anonymous z-commerce on WordPress.
+  img: veruspay.png
+  url: https://github.com/monkins1010/VerusPay/wiki
+
+- name: PiratePay
+  desc: >
+    PiratePay is an open-source decentralized payment gateway that allows you to accept $ARRR on your websites
+    and stores. PiratePay eliminates the need for a middleman and is built with the highest level of privacy
+    and security in mind.
+  img: piratepay.svg
+  url: https://cryptocurrencycheckout.com/guides/piratepay
+
+- name: Shopify Script
+  desc: >
+    Shopify is one of the best-known and largest e-commerce software vendors. With Shopify, it is easy to create
+    your own shop, no programming skills are required. Thanks to HumanAction.io, we can make ARRR available as
+    a payment method to all Shopify users.
+  img: shopify.svg
+  url: https://medium.com/piratechain/piratechain-raises-anchor-on-the-shopify-plugin-6c5819726f07
+
+- name: OpenCart
+  desc: >
+    Thanks to Pirate LordTricky for the OpenCart solution to accept ARRR. On Steemit, we have a complete guide
+    to use OpenCart. Click here to access the guide on Steemit.
+  img: opencart.svg
+  url: https://steemit.com/cryptocurrency/@lordtricky/a-complete-guide-for-how-to-set-up-your-own-self-sovereign-crypto-currency-accepting-internet-store-with-zero-cost

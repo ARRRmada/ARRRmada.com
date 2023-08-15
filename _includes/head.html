@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <title>{{ site.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="{{ site.keywords }}" />
+    <meta name="description" content="{{ site.description }}" />  
+    <meta name="author" content="Pirate Chain" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151326" />
+    <meta name="robots" content="index, follow" />
+
+    <!--Open Graph Tags-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="{{ site.baseurl }}" />
+    <meta property="og:site_name" content="ARRRmada" />
+    <meta property="og:image" content="{{ site.baseurl }}/assets/img/site/arrrmada.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!--Twitter Card Tags-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@PirateARRRmada" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:image" content="{{ site.baseurl }}assets/img/site/arrrmada.jpg" />
+
+    <!--Link Tags-->
+    <link rel="canonical" href="https://arrrmada.com/" />
+    <link rel="icon" href="{{ site.baseurl }}/assets/img/site/Pirate_Logo_Ship_Gold.svg" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/global.css" />
+    {% include links.html %}
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/global.js"></script>
+    <script>window.siteBaseurl = '{{ site.baseurl }}';window.url = '{{ site.url }}';</script>    
+  </head>

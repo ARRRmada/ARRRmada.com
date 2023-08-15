@@ -1,0 +1,102 @@
+---
+layout: page
+css-list:
+  - "assets/css/merchant.css"
+javascript-list:
+  - "assets/js/merchant.js"
+---
+<!-- hero section -->
+<section class="hero-section">
+  <div class="content">     
+    <img class="logo" src="{{ site.baseurl }}/assets/img/logo/arrrmada-emblem-light.png"/>
+    <h1>Listing Decoder</h1>
+    <strong>ARRRmada merchant listing tool</strong>
+    <p>Use this form to decode the custom listing codes</p>
+    <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
+  </div>
+</section>
+
+<!-- decoder section -->
+<section class="decoder-section">
+  <div class="content">  
+    <h2>Paste Listing Code Here</h2>
+    <textarea id="codeInput"></textarea>
+    <button onclick="decodeListingCode()" class="btn" id="decode_btn">Decode</button>   
+    <div id="decodeMsg"></div>
+    <input type="hidden" id="merchantIds" value='{{ site.data.merchants | map: "id" | jsonify }}'>
+    <input type="hidden" id="tagData" value='{{ site.data.tags | jsonify }}'>
+
+    <div id="result_container">
+      <div id="result">
+        <h2>Review Merchant Listing</h2>
+        <p>
+          <strong>STEP 1:</strong> Review the details of the merchant submission to ensure it meets the current 
+          <a href="{{ site.baseurl }}/listing_guidelines" target="_blank" rel="noopener noreferrer">Listing Guidelines</a>
+        </p>
+
+        <label for="merchantIDDInput" >Merchant ID:</label>
+        <input type="text" id="merchantIDInput" />
+
+        <label for="merchantNameInput">Merchant Name <span id="nameCharCount">0/35</span></label>
+        <input type="text" id="merchantNameInput" maxlength="35" oninput="updateCharacterCount('merchantNameInput', 'nameCharCount')" />
+
+        <label for="merchantDescInput">Description  <span id="descCharCount">0/160</span></label>
+        <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')"></textarea>
+
+        <label for="merchantURLInput" >Listing Link URL:</label>
+        <input type="text" id="merchantURLInput" />
+
+        <label for="merchantIMGInput" >Listing Image Filename:</label>
+        <input type="text" id="merchantIMGInput" />
+
+        <label for="tagSelectionCount">Tags <span id="tagSelectionCount">0/6</span></h3>  
+        <div id="tagsInput" class="grid-container">
+          {% assign sortedTags = site.data.tags | sort: 'name' %}
+          {% for tag in sortedTags %}
+            <div class="grid-item">
+              <input type="checkbox" id="tag-{{tag.id}}" data-id="{{tag.id}}" data-name="{{tag.name}}" onchange="updateTagSelection()" />
+              <label class="tag_name" for="tag-{{tag.id}}">{{tag.name}}</label>
+            </div>
+          {% endfor %}
+        </div>
+        <p style="margin-top: 60px;">Make Changes? Update before continuing.</p>
+        <button class="btn" onclick="updateMerchantListing()">Update Listing</button>
+        <div id="errorMessage"></div>
+      </div>
+
+      <div id="inspection-links">
+        <h2>Inspect Merchant URL</h2>
+        <p><strong>STEP 2:</strong> Use these tools to inspect the submitted links</p>
+        <ol id="links">   
+        </ol>
+      </div>
+
+      <div class="submit-listing">
+        <h2>Commit Listing</h2>
+        <p><strong>STEP 3:</strong> Upload the merchant image, and save the YAML to github to complete the listing.</p>
+        <div id="codeOutputContainer">
+          <div id="codeOutput"></div>
+          <button id="copyButton" title="copy code" onclick="copyToClipboard()">
+            &#x1F4CB;
+          </button>
+          <div id="copiedText" class="hidden">Code Copied!</div>
+          <p style="margin-top: 10px;">Merchant Listing YAML</p>
+        </div>
+        
+        <ol class="github-instructions">
+          <li>
+            Upload the merchant image here: <a href="{{ site.repo }}/upload/main/assets/img/merchants">Upload Image</a><br />
+            Commit message:<br /><span class="commit_msg"  id="upload_commit_message"></span>  
+          </li>
+          <li>
+            Copy the above YAML to the BOTTOM of the list here: <a href="{{ site.repo }}/edit/main/_data/merchants.yml">Merchants.yml</a><br />
+            Commit message:<br /><span class="commit_msg" id="merchant_commit_message"></span>          
+          </li>
+        </ol>
+
+        <h2>Thats it!</h2>
+        <p>Make a post on <a href="https://pirate.blck/discord">DISCORD</a> letting the community know and inform the merchant!</p>
+      </div>
+    </div>
+  </div>
+</section>
