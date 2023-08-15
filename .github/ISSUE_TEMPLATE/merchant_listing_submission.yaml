@@ -1,0 +1,38 @@
+name: Merchant Listing Submission
+description: Submit a merchant listing to ARRRmada.com
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to submit your merchant listing to ARRRmada.com! Please fill in the necessary fields below."
+  - type: dropdown
+    id: submission_type
+    attributes:
+      label: Submission Type
+      description: "Please select if this is a new listing or an update to an existing listing."
+      options:
+        - New listing
+        - Update existing listing
+    validations:
+      required: true
+  - type: textarea
+    id: listing_code
+    attributes:
+      label: Merchant Listing Code
+      description: "Please enter your Merchant Listing Code which you got from https://ARRRmada.com/listing_tool."
+    validations:
+      required: true
+  - type: textarea
+    id: merchant_listing_image
+    attributes:
+      label: Merchant Listing Image
+      description: "Please provide an image for your merchant listing. You can attach an image by dragging and dropping, selecting it on your computer, or pasting it into this field."
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments for listing reviewer (optional)
+      description: "If you have any comments or special instructions for the listing reviewer, please enter them here."
+    validations:
+      required: false
+
