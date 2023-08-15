@@ -16,7 +16,7 @@ This is a **demo of a potential open source design for ARRRmada.com**. This conc
 * Portable and lightweight
 * Jekyll for templating and automation (pure HTML in `_site` directory)
 
-> ## Access the demo website here: [https://scott-ftf.github.io/ARRRmada/](https://scott-ftf.github.io/ARRRmada/).
+> ## Access the demo website here: [https://arrrmada-com.pages.dev/](https://arrrmada-com.pages.dev/).
 
 ---
 
