@@ -1,4 +1,4 @@
-![ARRRmada.com Screenshot](https://i.imgur.com/yBtur0s.png)
+![ARRRmada.com](https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png)
 
 # ARRRmada.com
 This is a **demo of a potential open source design for ARRRmada.com**. This concept makes the website static, facilitating hosting on Github, enhancing transparency, and shifting control of this crucial Pirate Chain asset to the community.
