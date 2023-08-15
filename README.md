@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png" style="width: 100%; max-width: 300px;margin:40px auto 60px;display:block;" />
+<img src="https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png" style="width: 300px;margin:40px auto 60px;display:block;" />
 
 # ARRRmada.com
 This is a **demo of a potential open source design for ARRRmada.com**. This concept makes the website static, facilitating hosting on Github, enhancing transparency, and shifting control of this crucial Pirate Chain asset to the community.
