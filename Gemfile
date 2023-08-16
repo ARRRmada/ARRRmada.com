@@ -1,6 +1,11 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'github-pages'
-gem 'sass', '~> 3.7.4'
-gem 'sass-listen', '~> 4.0.0'
+source "https://rubygems.org"
+
+git_source(:github) { |repo_name| "https://github.com/ARRRmada/ARRRmada.com" }
+
+# gem "rails"
+gem "github-pages", "228", group: :jekyll_plugins
+gem "webrick"
+
 
