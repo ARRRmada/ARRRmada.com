@@ -250,6 +250,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 228)
+  listen (~> 3.0)
 
 BUNDLED WITH
    2.3.5
