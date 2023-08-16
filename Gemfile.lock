@@ -249,8 +249,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-pages (~> 228)
-  listen (~> 3.0)
+  github-pages
 
 BUNDLED WITH
-   2.3.5
+   2.4.18
