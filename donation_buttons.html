@@ -9,7 +9,7 @@ javascript-list:
 <section class="hero-section donation-hero"
   style="background-image: url('{{ site.baseurl }}/assets/img/site/donation_bg.png');">
   <div class="content">      
-    <img class="logo" src="{{ site.baseurl }}/button/pirateacceptedhere.png"  style="max-width: 250px;margin-bottom: 20px;" />
+    <img alt="Pirate Accepted Here" class="logo" src="{{ site.baseurl }}/button/pirateacceptedhere.png"  style="max-width: 250px;margin-bottom: 20px;" />
     <div>
       <h1>Donation Buttons</h1>
       <strong>Add a donation button to your website</strong>
@@ -48,7 +48,7 @@ javascript-list:
   </div>
       <script defer src="{{ site.baseurl }}/button/donate_arrr.js"></script>
   </div>
-  <img class="divider" src="{{ site.baseurl }}/assets/img/site/triangle-bottom.svg" />
+  <img class="divider" alt="divider graphic" src="{{ site.baseurl }}/assets/img/site/triangle-bottom.svg" />
 </section>
 
 <!-- Button Builder Section -->
@@ -58,7 +58,7 @@ javascript-list:
     <div id="imageContainer">
       {% for button in site.data.buttons %}
         <div class="img-wrapper" onclick="selectButton(this, '{{ button }}');">
-          <img src="{{ site.baseurl }}/button/{{ button }}" />
+          <img alt="{{ button }} button image" src="{{ site.baseurl }}/button/{{ button }}" />
         </div>
       {% endfor %}
     </div>
@@ -79,5 +79,5 @@ javascript-list:
 
 <!-- Bottom Divider Art -->
 <div class="donation-divider">
-  <img class="logo" src="{{ site.baseurl }}/assets/img/site/divider-seafloor.svg" />
+  <img alt="sea floor" class="logo" src="{{ site.baseurl }}/assets/img/site/divider-seafloor.svg" />
 </div>
