@@ -28,3 +28,8 @@ baseurl: "/"
 url: "https://arrrmada-com.pages.dev/" #https://arrrmada.com 
 repo: https://github.com/ARRRmada/ARRRmada.com
 readme: https://github.com/ARRRmada/ARRRmada.com
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
