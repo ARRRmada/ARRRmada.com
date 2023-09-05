@@ -113,7 +113,7 @@ javascript-list:
          data-tags='{{ merchant.tags | join: "," }}'
          id="{{ merchant.id }}" 
          title="go to {{ merchant.name }}'s website" >        
-      <a href="{{ merchant.url }}">
+      <a href="{{ merchant.url }}" target="_blank">
         <div class="merchant-imgbox">
           <img class="merchant-img lazy"
                data-src="{{ site.baseurl }}/assets/img/merchants/{{ merchant.image }}" 
