@@ -37,7 +37,7 @@ Link to Github Issue form:
 
   *note: Submission via Github is prefered so that the submitter can be contacted should there be any issue with the listing*  
 
-* **DECODE LISTING CODE** - Once the listing code and listing image are received, use the listing decoder tool to make the code human-readable. [https://ARRRmada.com/listing_decoder](https://RRRmada.com/listing_decoder)
+* **DECODE LISTING CODE** - Once the listing code and listing image are received, use the listing decoder tool to make the code human-readable. [https://ARRRmada.com/listing_decoder](https://ARRRmada.com/listing_decoder)
 
 * **APPEND MERCHANTS LIST** Verify the provided information is correct, and the listing meets any approval requirements. Once listing is approved, a user with commit access may append the listing to the end of: 
 [https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/merchants.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/merchants.yml)
