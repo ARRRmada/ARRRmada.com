@@ -28,7 +28,7 @@ This is a **open source version of ARRRmada.com**. This concept makes the websit
 ## Add new Merchant Listing
 To create a listing, appending the listing details to `merchants.yml` and uploading the listing image is all that's required. The rest is automated once Jekyll builds. This process relies on a listing code, which the merchant generates and submits for approval. The process is decribed below. 
 
-* **DESIGN A LISTING** - Merchants will create their own listing using the listing tool located at [https://ARRRmada.com/merchant_listing](https://ARRRmada.com/merchant_listing)
+* **DESIGN A LISTING** - Merchants will create their own listing using the listing tool located at [https://ARRRmada.com/listing_tool](https://ARRRmada.com/listing_tool)
 
 * **SUBMIT LISTING CODE** - After designing a listing, the merchants will generate a listing code. This code will be submitted for review via a GitHub issue form. This process also allows anonymous submissions. If a valid listing code is recieved, regardless of platform, the listing can be added. For example, the code could even be sent in a sapling transaction memo. The listing code is meant to be portable and submitted in any method. 
 
