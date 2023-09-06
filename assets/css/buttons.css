@@ -10,7 +10,7 @@
     bottom: -10px;
 }
 .donation-hero {
-    background-size: cover; 
+    background-size: auto; 
     background-position: center;
     background-color: #020202;
 }
