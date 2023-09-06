@@ -19,7 +19,7 @@ This is a **open source version of ARRRmada.com**. This concept makes the websit
 * Portable and lightweight
 * Jekyll for templating and automation (pure HTML in `_site` directory)
 
-> ## Access the website here: [https://arrrmada.github.io/ARRRmada.com/](https://arrrmada.github.io/ARRRmada.com/).
+> ## Access the website here: [https://ARRRmada.com/](https://ARRRmada.com/).
 
 ---
 
