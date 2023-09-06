@@ -10,13 +10,13 @@
     bottom: -10px;
 }
 .donation-hero {
-    background-size: auto; 
+    background-size: cover; 
     background-position: center;
     background-color: #020202;
 }
 @media screen and (min-width:1200px) {
     .donation-hero {
-        background-size: contain;background-position: right;background-color: #020202;
+        background-size: contain;background-size: auto;background-color: #020202;
     }   
 }
 .button-description .description {
