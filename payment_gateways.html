@@ -64,6 +64,7 @@ css-list:
   <div class="content"> 
     {% for gateway in site.data.gateways %}    
         <a href="{{ gateway.url}}" target="_blank" 
+        rel="noopener noreferrer"
         title="go to {{ gateway.name }}'s website"
         class="gateway-box" >
           <div class="gateway-imgbox">
