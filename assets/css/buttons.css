@@ -14,7 +14,7 @@
     background-position: center;
     background-color: #020202;
 }
-@media screen and (min-width:1200px) {
+@media screen and (max-width:1257px) {
     .donation-hero {
         background-size: contain;background-size: auto;background-color: #020202;
     }   
