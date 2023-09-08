@@ -43,7 +43,7 @@ function generateButton(address) {
     `    &lt;a <span class="key">id</span>=<span class="value">"donation-link"</span>\n` +
     `       <span class="key">title</span>=<span class="value">"click to donate ARRR"</span>\n` +
     `       <span class="key">href</span>=<span class="value">"pirate:${address}"</span>&gt;\n` +
-    `        &lt;img <span class="key">id</span>=<span class="value">"donation-image"</span>\n` +
+    `        &lt;img <span class="key">class</span>=<span class="value">"donation-image"</span>\n` +
     `             <span class="key">alt</span>=<span class="value">"ARRR donation button"</span>\n` +
     `             <span class="key">src</span>=<span class="value">"${window.url}/button/${selectedImage}"</span>\n` +
     `             <span class="key">width</span>=<span class="value">"200px"</span> <span class="key">height</span>=<span class="value">"auto"</span> /&gt;\n` +
