@@ -205,3 +205,49 @@
 #tag-buttons #current_tag {
     color: #fff;
 }
+
+/* ----- mobile width adjustments ----- */
+@media screen and (max-width:500px) {
+    .hero-section  {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .merchant-box {
+	display: block;
+	margin: 24px auto;
+        height: fit-content;
+        min-height: 600px;
+	}
+    .btn {
+        width: 100%;
+        min-width: 100px;
+        padding: 10px 5px;
+        margin: 8px auto;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-section strong {
+        font-size: 20px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .description-section {
+        padding-top: 80px;
+    }
+    .description-section .description {
+        padding: 10px;
+    }
+    .description-section .description h3 {
+        font-size: 22px;
+    }
+    .merchants-section h2 {
+        font-size: 26px;
+    }
+}
+.pah {
+    width: 100%;
+    max-width: 250px;
+}
+

@@ -208,3 +208,39 @@
     min-width: 1100px;
     z-index: 0;
 }
+
+/* ----- mobile width adjustments ----- */
+@media screen and (max-width:500px) {
+    .hero-section  {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-section strong {
+        font-size: 20px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .btn, .button-builder .btn {
+        width: 100%;
+        min-width: 100px;
+        padding: 10px 5px;
+        margin: 8px auto;
+    }
+    .button-description h2 {
+        font-size: 26px;
+    }
+    .button-builder #imageContainer img {
+        margin-inline: auto;
+    }
+    .button-description .donation-container .donation-image {
+        width: 100%;
+        max-width: 250px;
+    }
+    .button-builder .img-wrapper {
+        margin-inline: auto;
+    }
+}

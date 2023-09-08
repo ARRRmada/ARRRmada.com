@@ -280,3 +280,42 @@ input[type=file]::file-selector-button {
 .github-instructions li {
     margin-top: 60px;
 }
+
+/* ----- mobile width adjustments ----- */
+@media screen and (max-width:500px) {
+    .hero-section  {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .hero-section .logo {
+        max-width: 14px;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-section strong {
+        font-size: 20px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .btn {
+        width: 100%;
+        min-width: 100px;
+        padding: 10px 5px;
+        margin: 8px auto;
+        max-width: 200px;
+    }
+    .content {
+        padding: 0px;
+    }
+    .merchant-box {
+        display: block;
+        margin: 24px auto;
+        height: fit-content;
+        min-height: 600px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
