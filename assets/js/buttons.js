@@ -48,7 +48,7 @@ function generateButton(address) {
     `             <span class="key">src</span>=<span class="value">"${window.url}/button/${selectedImage}"</span>\n` +
     `             <span class="key">width</span>=<span class="value">"200px"</span> <span class="key">height</span>=<span class="value">"auto"</span> /&gt;\n` +
     `    &lt;/a&gt;\n` +
-    `    &lt;div <span class="key">id</span>=<span class="value">"qrcode-popup"</span>&gt;&lt;/div&gt;\n` +
+    `    &lt;div <span class="key">class</span>=<span class="value">"qrcode-popup"</span>&gt;&lt;/div&gt;\n` +
     `&lt;/div&gt;\n` +
     `&lt;script <span class="key">defer src</span>=<span class="value">"${window.url}/button/donate_arrr.js"</span>&gt;&lt;/script&gt;`;
 
