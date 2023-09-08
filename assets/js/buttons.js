@@ -40,7 +40,7 @@ function generateButton(address) {
 
   // Generate syntax-highlighted code
   var code = `&lt;div <span class="key">class</span>=<span class="value">"donation-container"</span>>\n` +
-    `    &lt;a <span class="key">id</span>=<span class="value">"donation-link"</span>\n` +
+    `    &lt;a <span class="key">class</span>=<span class="value">"donation-link"</span>\n` +
     `       <span class="key">title</span>=<span class="value">"click to donate ARRR"</span>\n` +
     `       <span class="key">href</span>=<span class="value">"pirate:${address}"</span>&gt;\n` +
     `        &lt;img <span class="key">class</span>=<span class="value">"donation-image"</span>\n` +
