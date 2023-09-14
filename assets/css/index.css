@@ -90,8 +90,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    max-width: 426px;
+    width: 100%; 
     padding: 1rem;
     background-color: #3437475c;
     margin: 18px 12px;
@@ -114,7 +113,6 @@
     color: var(--pirate-doubloon);
     line-height: 1.15em;
     height: 2.4em;
-    
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
