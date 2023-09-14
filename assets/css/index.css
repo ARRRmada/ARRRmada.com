@@ -113,8 +113,8 @@
     font-size: 1.15rem;
     color: var(--pirate-doubloon);
     line-height: 1.15em;
-    min-height: 2.6em;
-    max-height: 2.6em;
+    height: 2.4em;
+    
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -256,9 +256,6 @@
     }
     .description-section .description h3 {
         font-size: 22px;
-    }
-    .merchants-section h2 {
-        font-size: 26px;
     }
 }
 .pah {
