@@ -108,8 +108,9 @@ javascript-list:
       <button class="showall" onclick="showAll()"> Show All </button>
     </div>
   </div>
-
+  <div class="content-wide">
     {% for merchant in site.data.merchants %}
+    
     <div class="merchant-box" 
          data-tags='{{ merchant.tags | join: "," }}'
          id="{{ merchant.id }}" 
@@ -136,6 +137,9 @@ javascript-list:
             </a>
         {% endfor %}
       </div>
-    </div>
+      </div>
+    
+  
     {% endfor %}
+  </div>
 </section>

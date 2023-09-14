@@ -90,19 +90,21 @@
     display: inline-block;
     width: 100%;
     max-width: 426px;
-    background-color: var(--darkest);
+    background-color: #3437475c;
     min-height: 560px;
     vertical-align: top;
     margin: 18px 12px;
     border: 1px solid transparent;
     border-radius: 7px;
-    box-shadow: -8px -8px 16px #2c334659,8px 8px 16px #1c233091;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 5%), 8px 8px 16px rgb(0 0 0 / 14%);
     transition: all 0.3s ease-in-out;
     position: relative;
 }
 .merchant-box:hover {
-    border: 1px solid var(--pirate-neon);
+    border: 1px solid #fb9700;
+    box-shadow: 0 0 10px #ffb61857;
 }
+
 .merchant-box h2 {
     width: 100%;
     text-align: center;
@@ -116,15 +118,16 @@
     width: 90%;
     height: 240px;
     border-radius: 7px;
-    background-color: transparent;
-    padding: 0;
-    margin: 30px auto 0px;
+    background-color: #1d1e23;
+    padding: 1rem clamp(1rem, 2vw, 2rem);
+    margin: 1rem auto 0px;
     display: block;
 }
 .merchant-img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 8px;
 }
 .merchant-description {
     color: var(--text-main);
@@ -135,13 +138,13 @@
     word-wrap:break-word;
 }
 .tag-btn {
-    padding: 0px 6px;
-    background-color: rgb(36, 36, 36);
-    border-radius: 4px;
-    font-size: 13px;
+    padding: 0px 7px;
+    background-color: #66677529;
+    border-radius: 9px;
+    font-size: 12px;
     cursor: pointer;
     border: 1px solid transparent;
-    color: #d4d4d4;
+    color: rgb(203 206 215 / 61%);
     display: inline-block;
     margin: 2px;
 }
@@ -157,39 +160,45 @@
 #tag-buttons button:hover {
     background-color: var(--pirate-neon);
     color: var(--pirate-leviathan);
+    border: 1px solid #ffbd30;
 }
 #tag-buttons button {
     padding: 6px 18px;
-    background-color: rgb(56, 56, 56);
+    background-color: #292c36;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    border: 1px solid #444444;
+    border: 1px solid #1c1c1c;
     z-index: 999;
-    color: #eeeeee;
+    color: #aeaeb3;
     display: inline-block;
     margin: 4px 3px;
     width: 160px;
     height: 60px;
     vertical-align: top;
-      position: relative;
+    position: relative;
+    overflow: hidden;
 }
 #tag-buttons button.selected {
   border: 2px solid var(--pirate-neon);
 }
 #tag-buttons .count {
-  font-size: 12px;
-  color: var(--text-main);
-  background-color: var(--dark);
-  padding: 4px 8px;
-  border-radius: 50%;
-  font-weight: bold;
-  position: absolute;
-  top: 2px;
-  right: 2px;
+    font-size: 11px;
+    color: var(--text-main);
+    background-color: #333643;
+    padding: 6px 0px;
+    padding-top: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: -8px;
+    right: -30px;
+    transform: rotate(45deg);
+    width: 73px;
+    text-align: center;
 }
 #tag-buttons .showall {
-    background-color: rgba(255, 0, 0, 0.534);
+    background-color: #4a68cf;
+    color: #fff;
 }
 #tag-buttons {
     margin-top: 80px;
