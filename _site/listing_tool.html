@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>ARRRmada Directory - ARRR (Pirate Chain) accepted here</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="cryptocurrency, privacy, pirate chain, arrr, fungible" />
+    <meta name="description" content="The ARRRmada is a link directory for all stores, service providers and companies  that accept ARRR as a payment." />  
+    <meta name="author" content="Pirate Chain" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151326" />
+    <meta name="robots" content="index, follow" />
+
+    <!--Open Graph Tags-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ARRRmada Directory - ARRR (Pirate Chain) accepted here">
+    <meta property="og:description" content="The ARRRmada is a link directory for all stores, service providers and companies  that accept ARRR as a payment." />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="ARRRmada" />
+    <meta property="og:image" content="/assets/img/site/arrrmada.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!--Twitter Card Tags-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@PirateARRRmada" />
+    <meta name="twitter:description" content="The ARRRmada is a link directory for all stores, service providers and companies  that accept ARRR as a payment." />
+    <meta name="twitter:title" content="ARRRmada Directory - ARRR (Pirate Chain) accepted here" />
+    <meta name="twitter:image" content="/assets/img/site/arrrmada.jpg" />
+
+    <!--Link Tags-->
+    <link rel="canonical" href="https://arrrmada.com/" />
+    <link rel="icon" href="/assets/img/site/Pirate_Logo_Ship_Gold.svg" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/global.css" />
+    <link href="/assets/css/index.css" rel="stylesheet" /><link href="/assets/css/merchant.css" rel="stylesheet" />
+    <script defer src="/assets/js/merchant.js"></script>
+
+    <script type="text/javascript" src="/assets/js/global.js"></script>
+    <script>window.siteBaseurl = '';window.url = 'http://0.0.0.0:4000';</script>    
+  </head>
+
+  <body>
+  <!-- hero section -->
+<section class="hero-section">
+  <div class="content">      
+    <img class="logo" alt="Pirate Accepted Here" src="/button/button6.png" style="max-width: 300px;margin: 40px auto;"/>
+    <div>
+      <h1>Merchant Listing Tool</h1>
+      <strong>Begin accepting ARRR today!</strong>
+      <p>
+        Use this form to create and submit a listing for your store on ARRRmada.com
+      </p>
+      <a class="btn" href="/" title="View Pirate Chain merchants">◄ HOME</a>
+    </div>
+  </div>
+</section>
+
+<!-- Merchant listing builder -->
+<section class="merchant-listingBuilder">
+  <div class="content">
+
+    <h2>Build Your Listing</h2>
+    <p style="max-width: 550px; margin: auto;">
+      Design your custom listing, then generate a code for submital to the ARRRmada.com directory.
+    </p>
+    <p>
+      <label for="merchantNameInput">Merchant Name <span id="nameCharCount">0/35</span></label>
+      <input type="text" id="merchantNameInput" maxlength="35" oninput="updateCharacterCount('merchantNameInput', 'nameCharCount')" />
+
+      <label for="merchantDescInput">Description  <span id="descCharCount">0/160</span></label>
+      <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')"></textarea>
+
+      <label for="merchantURLInput" >Listing Link URL:</label>
+      <input type="text" id="merchantURLInput" />
+      <button id="merchantURLButton" onclick="updateMerchantURL()">Add Link URL</button>
+      <p id="urlMessage"></p>
+    </p>
+
+    <!-- Listing Preview -->
+    <label for="listing_preview">Listing Preview:</label>
+    <div class="merchant-box" id="listing_preview">
+      <div class="merchant-imgbox">
+        <img alt="Default Merchant Image" class="merchant-img" src="/assets/img/site/default_merchant.png" id="merchant_img" />
+      </div>
+      <h2 id="merchant_name"></h2>
+      <p class="merchant-description" id="merchant_description"></p>
+      <div class="tag-box" id="merchant_tags"></div>
+    </div>
+    <p>
+      <a href="" id="merchant_url" target="_blank" rel="noopener noreferrer"></a>
+    </p>
+
+    <label for="merchantImageInput" >Upload Listing Image:</label>
+    <input type="file" id="merchantImageInput" accept="image/*" onchange="updateMerchantImage()" />
+    <input type="hidden" id="merchant_image_filename" />
+    <p id="uploadMessage"></p>
+
+    <label for="tagSelectionCount">Select Tags <span id="tagSelectionCount">0/6</span></h3>  
+    <div id="tagsInput" class="grid-container">
+      
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-1" data-id="1" data-name="3d Printing & Modeling" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-1">3d Printing & Modeling</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-3" data-id="3" data-name="Activisim" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-3">Activisim</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-4" data-id="4" data-name="Artwork" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-4">Artwork</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-5" data-id="5" data-name="Auto Parts & Marine" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-5">Auto Parts & Marine</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-7" data-id="7" data-name="Blogs & Podcasts" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-7">Blogs & Podcasts</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-8" data-id="8" data-name="Books" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-8">Books</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-9" data-id="9" data-name="Clothing & Accessories" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-9">Clothing & Accessories</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-10" data-id="10" data-name="Collectibles" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-10">Collectibles</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-57" data-id="57" data-name="Consulting & Professional" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-57">Consulting & Professional</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-56" data-id="56" data-name="Content Creator" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-56">Content Creator</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-12" data-id="12" data-name="Crypto" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-12">Crypto</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-16" data-id="16" data-name="Education" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-16">Education</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-20" data-id="20" data-name="Food & Beverages" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-20">Food & Beverages</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-24" data-id="24" data-name="Gardening" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-24">Gardening</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-26" data-id="26" data-name="Graphic Design" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-26">Graphic Design</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-27" data-id="27" data-name="Health and Wellness" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-27">Health and Wellness</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-28" data-id="28" data-name="Home Decor & Furniture" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-28">Home Decor & Furniture</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-52" data-id="52" data-name="Investment" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-52">Investment</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-32" data-id="32" data-name="Medical/Fitness" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-32">Medical/Fitness</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-31" data-id="31" data-name="Misc." onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-31">Misc.</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-33" data-id="33" data-name="Music" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-33">Music</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-35" data-id="35" data-name="Personal Care" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-35">Personal Care</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-39" data-id="39" data-name="Privacy & OINST" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-39">Privacy & OINST</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-42" data-id="42" data-name="Real Estate" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-42">Real Estate</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-43" data-id="43" data-name="SEO & Marketing" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-43">SEO & Marketing</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-44" data-id="44" data-name="Security/OPSEC" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-44">Security/OPSEC</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-45" data-id="45" data-name="Services" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-45">Services</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-46" data-id="46" data-name="Smoking & Vape" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-46">Smoking & Vape</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-47" data-id="47" data-name="Software & Hardware" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-47">Software & Hardware</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-50" data-id="50" data-name="Travel & Adventure" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-50">Travel & Adventure</label>
+        </div>
+      
+        <div class="grid-item">
+          <input type="checkbox" id="tag-51" data-id="51" data-name="Web Design" onchange="updateTagSelection()" />
+          <label class="tag_name" for="tag-51">Web Design</label>
+        </div>
+      
+    </div>
+
+    <p class="generate_desc">
+      Satisfied with your listing design?
+    </p>
+    <button class="btn generate_code" onclick="generateCode()">Generate Listing Code</button>
+    <div id="errorMessage"></div>
+    <div id="codeOutputContainer">
+      <div id="codeOutput">This is the text to be copied</div>
+      <button id="copyButton" title="copy code" onclick="copyToClipboard()">
+        &#x1F4CB;
+      </button>
+      <div id="copiedText" class="hidden">Code Copied!</div>
+    </div>
+    
+    <div id="submitListing">
+      <h2>SUBMIT YOUR LISTING</h2>
+      <p>You have two options to submit the code and thus your listing. One is via Github, for which you need an account on Github. And secondly, with the help of a Sapling transaction.
+      <p>
+        <b>SAVE YOUR CODE</b> - The code you've generated represents your unique listing. Be sure to save it before leaving this page.
+      </p>
+      <p>
+         Please copy the entire code, including the <b>"---BEGIN CODE---"</b> and <b>"---END CODE---"</b> parts.
+      </p>
+      <p>
+        To submit your listing for review in the ARRRmada directory, please initiate a GitHub form below where you will paste your code and upload the chosen image.
+      </p>
+      <p>
+        <a class="btn" href="https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml" target="_blank" rel="noopener noreferrer">SUBMIT LISTING</a>
+      </p>
+      <p>
+       You also have the second <strong>option to submit your entry with a Sapling transaction</strong>. You can simply copy the complete code and send it as a memo within the transaction to the following address:</p>
+      <p>
+        zs1uud9mr4mth03cnk96d2ssjhjzg28ugq8zk5vvezqam9h9em3sr9d7582ststcrrcqecujrcx9w9
+      </p>
+      <p>Please note that if you register your listing in a Sapling transaction, you must also send the path to an image with the generated listing code if an image is to be displayed in 
+        addition to the link and description. </p>
+      <p>Please be patient, both options may cause delays as the entries are checked manually. 
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- footer -->
+<footer>
+  <div>
+    <img class="arrrmada" src="/assets/img/logo/arrrmada.png" />
+    <p>
+      ARRRmada.com is open source and maintained by the
+      community. Help improve this site on <a href="https://github.com/ARRRmada/ARRRmada.com" target="_blank" rel="noopener noreferrer">Github</a>!
+    </p>
+  </div>
+  <div>
+    <img class="discord" src="/assets/img/site/discord-pirate.png" />
+    <p>For all inquiries, questions, and discussions, chat with us in the community <a href="https://pirate.black/discord" target="_blank" rel="noopener noreferrer">DISCORD</a></p>
+  </div>
+</footer>
+<a href="#" id="return-to-top" title="Go to top"></a>
+
+  </body>
+</html>

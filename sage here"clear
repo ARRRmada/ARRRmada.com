@@ -1,0 +1,451 @@
+[33mcommit 1b66c068650b51ce8c22f72459f014d777115522[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Sep 12 23:30:07 2023 -0600
+
+    Add .gitignore for _config.yaml
+
+[33mcommit 66e449cf0efc58c6e787d6437d1bc5a95408b355[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 12 18:31:12 2023 +0200
+
+    Delete assets/img/merchants/ll.webp
+    
+    removed because deadlink icomcrypto.com
+
+[33mcommit 3c0b048165b88759403d6b3bfe16218369e5800d[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 12 18:28:26 2023 +0200
+
+    Update merchants.yml
+    
+    removed icomcrypto.com dead link
+
+[33mcommit a738495d67837cc2d0b735b183ffc861bb2c3b3a[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Sep 12 09:09:22 2023 -0600
+
+    Remove merchant: The Crows Nest Signals - dead link
+
+[33mcommit 12b484e5a743310f36f519d532875b3696cf47ca[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Sep 12 00:34:47 2023 -0600
+
+    add button style to submission link
+
+[33mcommit 8b733bd295b890656aee3e73fa2b070782e1c538[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Fri Sep 8 10:46:28 2023 -0600
+
+    correct button generation
+
+[33mcommit 0bc7215f59aacf78765ac3d6db33427a0f9fe1a2[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Fri Sep 8 10:43:26 2023 -0600
+
+    correct button generation
+
+[33mcommit 8363ca7dc6c8750c33d260a5560cd4b00b585dce[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Fri Sep 8 10:38:06 2023 -0600
+
+    correct button generation
+
+[33mcommit 2d49a578a88ca80dd7061eb7f24020275ca56668[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Thu Sep 7 19:37:47 2023 -0600
+
+    mobile styling
+
+[33mcommit 4ef9c60a65cbf25cb12e6f286ec04c8d40625060[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 21:52:48 2023 +0200
+
+    Update buttons.css
+
+[33mcommit 5d295680b4cccd0269b2d1f0f106b62274072b6a[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 21:48:44 2023 +0200
+
+    Update buttons.css
+
+[33mcommit cc37193383ca760a3e27abbd6292508aa8420162[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 21:47:01 2023 +0200
+
+    Update buttons.css
+
+[33mcommit f1f318ab5f558fc5e45aed146a2d78f0477d320c[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 20:56:13 2023 +0200
+
+    Create CNAME
+
+[33mcommit 7474b71423f24568c4d2656cafc681bf454cd863[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 16:59:08 2023 +0200
+
+    Update index.html
+
+[33mcommit c0277c09a87eaea90fdb8f75161fe4f672f2f7aa[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 16:57:29 2023 +0200
+
+    Update index.html
+
+[33mcommit 26a548060f297793e9d422848fd742bbabbdf6d1[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 16:52:53 2023 +0200
+
+    Update index.html
+    
+    background image added
+
+[33mcommit 258704860e9c57189c05cee1356e6027f60d5a9a[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 13:55:37 2023 +0200
+
+    Update README.md
+    
+    changed url
+
+[33mcommit e5944251d428976787001d5f2b74b14ade527e3a[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:52:45 2023 +0200
+
+    Update listing_tool.html
+    
+    added text
+
+[33mcommit 93e25e252760f589b591c5420e70d4b809684c22[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:49:39 2023 +0200
+
+    Update listing_tool.html
+    
+    added info text
+
+[33mcommit f1a4901d4b0352e7949b2efd068275ec52bf9b91[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:40:55 2023 +0200
+
+    Update donation_buttons.html
+    
+    changed donation dummy address
+
+[33mcommit 180320644c087071900d7fdbbfa258464e3a663c[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:39:26 2023 +0200
+
+    Update listing_tool.html
+    
+    Infotext for registration via Sapling TX and Memo added
+
+[33mcommit a2440c45af370ad6e90f570eadb44b0edfbd024c[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:23:04 2023 +0200
+
+    Update index.html
+    
+    rel="noopener noreferrer" added
+
+[33mcommit 602192740e35c2eeb90e3aee8cb4ab1ff31d9ab4[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:22:20 2023 +0200
+
+    Update payment_gateways.html
+    
+    rel="noopener noreferrer" added
+
+[33mcommit 2557761ce7cd627185fe648d67d988aea432a6a3[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 09:20:36 2023 +0200
+
+    Update footer.html
+    
+    rel="noopener noreferrer" added
+
+[33mcommit 5107a87add74804eaa177de36af5b4280c03ebf5[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 01:05:29 2023 +0200
+
+    Update README.md
+
+[33mcommit f207e55679aab6521dda8476423205900b14f6ee[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 00:57:35 2023 +0200
+
+    Update links.html
+
+[33mcommit e8c46ca75f9c8bd164f850e5dac89db7eace29d9[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 00:14:47 2023 +0200
+
+    Update footer.html
+
+[33mcommit 879338b10f87416bf227486246e495f7ba6dde1d[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 00:14:03 2023 +0200
+
+    Update _config.yml
+
+[33mcommit cd438e6836a6b07d3b8a8f10423ca3135e556172[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Sep 6 00:07:33 2023 +0200
+
+    Update README.md
+
+[33mcommit 99cc14e944fbfd556b1436ef28ec31a7fb2f545f[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 20:23:02 2023 +0200
+
+    Update footer.html
+    
+    Add pirate.black link
+
+[33mcommit e7eaeb80397f6580a9a4056e0da99e74b94c2493[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 20:16:19 2023 +0200
+
+    Add files via upload
+
+[33mcommit fdc800e686f6449362d8318179f933b9365b6647[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 20:06:45 2023 +0200
+
+    Update _config.yml
+    
+    changed url
+
+[33mcommit d591bf9a6a0ff2aa5abcea3d8eb59668b2565d60[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 18:28:50 2023 +0200
+
+    Delete CNAME
+
+[33mcommit 2f7e7e68fb0a764cf81e4f105758cd02ced9abab[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 18:27:43 2023 +0200
+
+    Create CNAME
+
+[33mcommit 8d8fbea369e058e5cfa1f9c1e57efd84734bfbd8[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 18:11:22 2023 +0200
+
+    Update payment_gateways.html
+    
+    target="_blank" Links open in new window.
+    changed ARRR in $ARRR
+
+[33mcommit 251dbef0006725181800e27bc47f37207165acf1[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 17:53:18 2023 +0200
+
+    Update footer.html
+    
+    target="_blank"
+    links open in a new window.
+
+[33mcommit e41eb0754fce124289702589cb6a5ff3d48916d6[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 17:50:46 2023 +0200
+
+    Update index.html
+    
+    target="_blank"
+    
+    Merchants' links open in a new window
+
+[33mcommit 5f6ad063e7fb82e2c4f491562b760f2c8befb887[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 17:42:07 2023 +0200
+
+    Update links.html
+    
+    target="_blank"
+    Links open in a new window.
+
+[33mcommit a6ed51881fbeaae8f4e8e62724eb7d27a331b7ac[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 17:36:06 2023 +0200
+
+    Update index.html
+    
+    changed ARRR in $ARRR
+
+[33mcommit eef46952b4858180ecc8c446a5b8c9492b50cbda[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Sep 5 17:30:07 2023 +0200
+
+    Update README.md
+    
+    URL changed
+
+[33mcommit cf74061078fb9a4e0b4dad40800fef57047f2eae[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 17:28:19 2023 -0600
+
+    correct twitter card link
+
+[33mcommit 5d3ce8ea14c9ec0e2bfb08a185ebafc19b994c3c[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 17:27:57 2023 -0600
+
+    correct twitter card link
+
+[33mcommit d3f91257521b1fa3957cb1d0a720cea716fa0443[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 17:05:10 2023 -0600
+
+    untest
+
+[33mcommit 405e4b64e1535fb9892d7ad2352fbde2ea194928[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 17:04:01 2023 -0600
+
+    test
+
+[33mcommit a81f4565a009585fcbcf02dbc4b4fbcc6826ed87[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 16:47:06 2023 -0600
+
+    dep: gem update
+
+[33mcommit 16a40d53e1f35fdd7eb37aab1f354190ad563e63[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 16:43:38 2023 -0600
+
+    dep: gem update
+
+[33mcommit 8e7a3ef7ad4429b023fa8c2aa1cb871056c94cb0[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 16:34:35 2023 -0600
+
+    dep: gem update
+
+[33mcommit f92840875550438a770956e093a67868ff2def1d[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 16:20:41 2023 -0600
+
+    dep: gem update
+
+[33mcommit 731730a8cdc38c7a8b482f77956ea2ad3785cff7[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 16:01:29 2023 -0600
+
+    dep: gem update
+
+[33mcommit ca5dcaa709cedb1df6a995fae8dea1f83d3e8e4e[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 15:55:06 2023 -0600
+
+    dep: gem update
+
+[33mcommit 6e95ccf978312bd1d957b4b8a41c4bb09935594a[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 15:41:12 2023 -0600
+
+    gem update
+
+[33mcommit 57c8793cdae14171077e87fed701caa85ad0901a[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 15:03:53 2023 -0600
+
+    gem update
+
+[33mcommit c7a1c5c5d59e543eb09a8ceddca65d0bf8b407e8[m
+Merge: 25e02e2 f654cb6
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 14:46:42 2023 -0600
+
+    Merge branch 'main' of github.com:ARRRmada/ARRRmada.com
+
+[33mcommit 25e02e2bb92e409874329a56a6c82ab055037fdf[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 14:43:38 2023 -0600
+
+    optimize merchant images
+
+[33mcommit f654cb659422b548b655f0151794a246eac18b12[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Wed Aug 16 22:32:33 2023 +0200
+
+    Update 404.html
+
+[33mcommit 2a930930bbb0e0bb4dc6317b35a4327cfe861363[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 14:27:26 2023 -0600
+
+    SEO: img alts
+
+[33mcommit fc8d779a94379c300bd9d531c5bcbebb0f6305f9[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 11:09:49 2023 -0600
+
+    add image to readme
+
+[33mcommit f22b004971dd6ea249a49ca1f6273765d274b5df[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 11:07:34 2023 -0600
+
+    readme wording: remove demo references
+
+[33mcommit 31a8beb9992dba308f55d1f0bb2e885e7a8b5675[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Wed Aug 16 10:59:08 2023 -0600
+
+    optimize merchant images
+
+[33mcommit f5ace15c8735a2c3df6344e89a86703104945a37[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 20:44:21 2023 -0600
+
+    deps: added Gemfiles
+
+[33mcommit cfefe6731b054c94243b922aee021f25e5d99b0d[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:36:59 2023 -0600
+
+    update readme
+
+[33mcommit b2393e1b71a0cba27ddc98a81fc9d1426f3a649d[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:35:53 2023 -0600
+
+    update readme
+
+[33mcommit 10f2d08b6f22625119e3a9330a9c56c842521cd8[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:34:06 2023 -0600
+
+    update readme
+
+[33mcommit 745225cf23e6c4aeda8b1da45d7c33a49337bf0e[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:18:07 2023 -0600
+
+    add github issue form
+
+[33mcommit 70837cedd3652a734d889604e871d542453d67ce[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:10:49 2023 -0600
+
+    remove test merchant
+
+[33mcommit 8b46a643c877b4b06feb984576a508ebcbb023ae[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:07:21 2023 -0600
+
+    init
+
+[33mcommit 1eb5e92017c46befb21042a428aca051e6c68f0a[m
+Author: scott_ftf <scott_fromthefuture@pm.me>
+Date:   Tue Aug 15 16:06:20 2023 -0600
+
+    init
+
+[33mcommit 33d21ad2c1c99e67689f3108b6e1aa6e29436be4[m
+Author: ARRRmada <142297261+ARRRmada@users.noreply.github.com>
+Date:   Tue Aug 15 22:46:28 2023 +0200
+
+    Initial commit
