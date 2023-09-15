@@ -26,11 +26,14 @@
     --pirate-calmseas: #3f52b7;
     --pirate-deepblue: #171621;
     --pirate-navyblue: #202036;
-    --pirate-royalblue: #201633;  
+    --pirate-royalblue: #201633;
+    --pirate-smoke-blue: #292c36;  
     
     --pirate-darkseas: #071642;
     --pirate-crest: #082db2;
+    --pirate-gale: #2f3341;
     --pirate-storm: #2f3466ff;
+    --pirate-smoke:#b1afb7;
     --pirate-fog: #d4d4d4;
     --pirate-cloud: #ffffff;  
 
@@ -51,9 +54,43 @@
 
     --button-hover: var(--pirate-goldensands);
     --button-color: var(--pirate-neon); 
-    --nav-hover: #3A3B3C;   
+    --nav-hover: #3A3B3C;
+    
+    --page-width-normal: 1200px;
+    --page-width-wide: 1500px;
+    --page-width-wider: 1800px;
 }
+[data-theme="light"] {
+    --pirate-doubloon: #BB9645;
+    --pirate-neon: #ffbd30;
+    --pirate-goldensands: #f2de99;
+    --pirate-leviathan: #141414;
 
+    --pirate-calmseas: #3f52b7;
+    --pirate-deepblue: #171621;
+    --pirate-navyblue: #202036;
+    --pirate-royalblue: #201633;  
+    
+    --pirate-darkseas: #071642;
+    --pirate-crest: #082db2;
+    --pirate-storm: #2f3466ff;
+    --pirate-fog: #d4d4d4;
+    --pirate-cloud: #ffffff;  
+
+    --lighter-grey: #4b5056 ;
+    --darker-grey: #33373a;
+
+    --dark: #23252d; /* #242526; */
+    --darkest: rgb(29, 29, 29);
+    --text-main: #a2a6ad;
+    --discord-color: #5865ed;
+    --red-highlight: #ff1b54;
+    --pancake-blue: #24cad6;
+
+    --button-hover: var(--pirate-goldensands);
+    --button-color: var(--pirate-neon); 
+    --nav-hover: #3A3B3C;  
+  }
 /* ----- main ----- */
 *{
     margin: 0;
@@ -98,25 +135,25 @@ h3 {
     color: var(--pirate-cloud);
     font-family: var(--pirate-font-secondary);
 }
-.content {
-    max-width: 1400px;
+.content{
+    max-width: var(--page-width-wide);
     margin: auto;    
     height: auto;
-    padding: 0px 15px;
 }
 .content-wide {
-    max-width: 1800px;
+    max-width: var(--page-width-wider);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(clamp(12rem, 45vw, 18rem), 1fr));
     grid-gap: 1.5rem;
     justify-items: center;
     margin: auto;
-    padding: 0 clamp(1rem, 2vw, 2rem);
+    /* padding: 0 clamp(1rem, 2vw, 2rem); */
     overflow: hidden;
 }
+
 .btn {
     padding: 10px 18px;
-    border: 1px solid var(--pirate-doubloon);
+    /* border: 1px solid var(--pirate-doubloon); */
     display: inline-block;
     width: 240px;
     margin: 8px 6px;
@@ -125,13 +162,14 @@ h3 {
     text-align: center;
     background-color: var(--darker-grey);
     color: var(--pirate-neon);
+    border-radius: 6px;
   }
   .btn:hover {
-    border: 1px solid var(--pirate-doubloon);
+    /* border: 1px solid var(--pirate-doubloon); */
     color: var(--pirate-leviathan);
     background-color: var(--pirate-neon);
-    outline:2px solid var(--button-color);
-    outline-offset:6px; 
+    /* outline:2px solid var(--button-color);
+    outline-offset:6px; */
     font-weight: bold;
 }
 .red-font {
@@ -281,21 +319,49 @@ h3 {
 
 /* ----- footer ----- */
 footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--darkest);
+    background-color: var(--pirate-smoke-blue);
     width: 100%;
     overflow: hidden;
-    text-align: center;
-    padding-bottom: 140px;
-    padding-top: 60px;
 }
-footer div {
+.main-footer-wrap, .sub-footer-wrap {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    max-width: 240px;
-    font-size: 12px;
-    text-align: left;
-    margin: 40px 6% 0px;
-    display: inline-block;
-    vertical-align: top;
+}
+.main-footer, .sub-footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: var(--page-width-wide);    
+}
+
+.main-footer {
+    padding: 2.4rem 0 3.2rem;
+    font-size: .8rem;
+    justify-content: space-between;
+    gap:1rem;
+    min-width: 200px;;
+}
+.footer-columns {
+    max-width: 400px;
+}
+.sub-footer-wrap {
+    background-color: #1f1e20;
+}
+.sub-footer {
+    padding: 0.5rem 0;
+    font-size: .8rem;
+    justify-content: flex-start;
+   }
+.sub-footer span {
+    padding-right: .65rem;
+}
+.sub-footer span:last-child {
+    padding-right: 0;
 }
 footer .arrrmada {
     width: 100%;
@@ -310,7 +376,17 @@ footer .discord {
     margin-top: 5px;
     margin-bottom: 20px ;
 }
-
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    background: #414251;
+    display: inline-flex;
+    padding: 0.3rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.7rem;
+    color:var(--pirate-smoke);
+}
 /* ----- Water Effect ----- */
 .editorial {
     display: block;
@@ -446,5 +522,15 @@ footer .discord {
 @media screen and (max-width:640px) {
     .boxes {
        display: none;           
+    }
+}
+
+.content, .content-wide, .main-footer, .sub-footer {
+    @media (max-width: 1700px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
     }
 }
