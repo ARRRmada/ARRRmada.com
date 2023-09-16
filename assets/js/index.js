@@ -3,7 +3,7 @@
 
 // The below lazy load is removed in favour of native browser lazy loading.
 // Native lazy loading has performance benefits and is faster, so the end user will not notice it.
-// Less JS is means it's easier to maintain by the community.
+// Less JS means it's easier to maintain by the community.
 
 /*
 document.addEventListener("DOMContentLoaded", function() {

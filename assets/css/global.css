@@ -101,7 +101,9 @@
   .brighten .description-section .description .btn {
     background-color: #cf9926;
   }
-
+  .brighten .tag-btn:hover, .brighten #tag-buttons button:hover {
+    background-color: #db9b11;
+  }
 /* ----- main ----- */
 *{
     margin: 0;

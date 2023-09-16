@@ -114,7 +114,7 @@ javascript-list:
     <div class="merchant-box" 
          data-tags='{{ merchant.tags | join: "," }}'
          id="{{ merchant.id }}" 
-         title="go to {{ merchant.name }}'s website" >        
+         title="Go to {{ merchant.name }}'s website" >        
       <a class="merchant-link-area" href="{{ merchant.url }}" target="_blank" rel="noopener noreferrer">
         <div class="merchant-imgbox">
           <img loading="lazy" class="merchant-img"
@@ -131,7 +131,7 @@ javascript-list:
             <a href="{{ site.baseurl }}/#merchants-section" 
                class="tag-btn" 
                onclick="filterByTag('{{ tag.id }}', '{{ tag.name }}')" 
-               title="show merchants with the {{ tag.name }} tag" 
+               title="Show merchants with the {{ tag.name }} tag" 
                data-tag-id="{{ tag.id }}">
               {{ tag.name }}
             </a>
