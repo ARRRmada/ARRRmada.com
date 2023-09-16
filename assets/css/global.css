@@ -60,7 +60,7 @@
     --page-width-wide: 1500px;
     --page-width-wider: 1800px;
 
-    --lighten-filter: brightness(1.2) saturate(1.5) hue-rotate(357deg) contrast(0.8);
+    --lighten-filter: brightness(1.15) saturate(1.5) hue-rotate(357deg) contrast(.9);;
 }
 [data-theme="light"] {
     
