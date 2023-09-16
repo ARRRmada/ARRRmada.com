@@ -53,7 +53,14 @@ document.addEventListener("click", e => {
 // Mockup alert untill buttons are working.
 
 window.onload = function() {
-  setTimeout(function() {
-    alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favourof native lazy load, which is faster and means there's less JS, making it easier for the community to manage");
-  }, 1000); 
+  const lastAlertTime = localStorage.getItem("lastAlertTime");
+  const currentTime = new Date().getTime();
+  const timeInterval = 60 * 60 * 1000; 
+
+  if (lastAlertTime === null || currentTime - lastAlertTime >= timeInterval) {
+    setTimeout(function() {
+      alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favour of native lazy load, which is faster and means there's less JS, making it easier for the community to manage");
+      localStorage.setItem("lastAlertTime", currentTime);
+    }, 1000);
+  }
 };

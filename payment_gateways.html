@@ -4,7 +4,7 @@ css-list:
   - "assets/css/gateways.css"
 ---
 <!-- hero section -->
-<section class="hero-section">
+<section class="hero-section waves" id="gateways">
   <div class="content">  
     <div class="coin">    
       <img class="digital-coin" alt="Pirate Digital Coin" src="{{ site.baseurl }}/assets/img/site/p_coin.png" />
@@ -16,12 +16,31 @@ css-list:
         Pirate Chain provides options for accepting $ARRR across various platforms including WordPress, 
         HTML, Shopify, and more. Discover all payment solutions here.
       </p>
-      <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
+      <a class="btn-alt" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">HOME</a>
     
     </div>
   </div>
   <!-- boxes animation -->
   <div class="boxes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+    <!-- waves effect -->
+    <svg class="editorial" style="z-index: 20000;"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 "
+    preserveAspectRatio="none">
+  <defs>
+    <path id="gentle-wave"
+    d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax4" style="z-index:999999;">
+    <use xlink:href="#gentle-wave" x="50" y="6" fill="rgba(35,37,45,1)"/>  
+  </g>
+</svg>
 </section>
 
 <!-- gateway-explanation section -->
@@ -56,7 +75,7 @@ css-list:
         </div>
     </div>
     </div>
-    <img class="divider" alt="page divider" src="{{ site.baseurl }}/assets/img/site/triangle-bottom.svg" />
+  
   </section>
 
 <!-- gateways-section -->

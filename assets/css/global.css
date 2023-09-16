@@ -32,9 +32,11 @@
     --pirate-darkseas: #071642;
     --pirate-crest: #082db2;
     --pirate-gale: #2f3341;
+    --pirate-purple-haze: #3e4459;
     --pirate-storm: #2f3466ff;
     --pirate-smoke:#b1afb7;
     --pirate-fog: #d4d4d4;
+    --pirate-mist: #c3c3c9; 
     --pirate-cloud: #ffffff;  
 
     --pirate-font-primary: 'Bai Jamjuree';
@@ -64,35 +66,8 @@
 }
 [data-theme="light"] {
     
-    --pirate-doubloon: #BB9645;
-    --pirate-neon: #ffbd30;
-    --pirate-goldensands: #f2de99;
-    --pirate-leviathan: #141414;
-
-    --pirate-calmseas: #3f52b7;
-    --pirate-deepblue: #171621;
-    --pirate-navyblue: #202036;
-    --pirate-royalblue: #201633;  
-    
-    --pirate-darkseas: #071642;
-    --pirate-crest: #082db2;
-    --pirate-storm: #2f3466ff;
-    --pirate-fog: #d4d4d4;
-    --pirate-cloud: #ffffff;  
-
-    --lighter-grey: #4b5056 ;
-    --darker-grey: #33373a;
-
-    --dark: #23252d; /* #242526; */
-    --darkest: rgb(29, 29, 29);
-    --text-main: #a2a6ad;
-    --discord-color: #5865ed;
-    --red-highlight: #ff1b54;
-    --pancake-blue: #24cad6;
-
-    --button-hover: var(--pirate-goldensands);
-    --button-color: var(--pirate-neon); 
-    --nav-hover: #3A3B3C;  
+    /* Light Theme - Comming Soon */
+ 
   }
 
   .brighten {
@@ -165,7 +140,7 @@ h3 {
     overflow: hidden;
 }
 
-.btn {
+.btn, .btn-alt {
     padding: 10px 18px;
     /* border: 1px solid var(--pirate-doubloon); */
     display: inline-block;
@@ -174,17 +149,23 @@ h3 {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-align: center;
-    background-color: var(--darker-grey);
-    color: var(--pirate-neon);
-    border-radius: 6px;
+    color: var(--pirate-mist);
+    border-radius: 4px;
   }
   .btn:hover {
-    /* border: 1px solid var(--pirate-doubloon); */
     color: var(--pirate-leviathan);
     background-color: var(--pirate-neon);
-    /* outline:2px solid var(--button-color);
-    outline-offset:6px; */
     font-weight: bold;
+}
+.btn {
+    background-color: var(--pirate-gale);
+}
+.btn-alt {
+    background-color: var(--pirate-purple-haze);
+    &:hover {
+        background:var(--pirate-doubloon);
+        color:var(--pirate-gale)
+    }
 }
 .red-font {
     color: var(--red-highlight);
@@ -200,6 +181,7 @@ h3 {
     background-position: center;
     background-size: cover;
     text-align: center;
+    background: var(--pirate-gale);
 }
 .hero-section .logo {
     width: 100%;
@@ -228,7 +210,9 @@ h3 {
     width: 100%;
     max-width: 800px;
 } 
-
+.waves {
+    padding: 100px 0px 60px;
+}
 /* ----- backtotop button ----- */
 #return-to-top {
     opacity: 0;
@@ -362,6 +346,8 @@ footer {
 }
 .footer-columns {
     max-width: 400px;
+    @media (max-width: 1400px) {max-width: 300px;}
+    @media (max-width: 970px) {max-width: 100%;}
 }
 .sub-footer-wrap {
     background-color: #1f1e20;
@@ -400,6 +386,15 @@ footer .discord {
     border-radius: 6px;
     margin-bottom: 1.7rem;
     color:var(--pirate-smoke);
+}
+.content, .content-wide, .main-footer, .sub-footer {
+    @media (max-width: 1700px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
 }
 /* ----- Water Effect ----- */
 .editorial {
@@ -539,12 +534,4 @@ footer .discord {
     }
 }
 
-.content, .content-wide, .main-footer, .sub-footer {
-    @media (max-width: 1700px) {
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: center;
-    }
-}
+

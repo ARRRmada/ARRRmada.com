@@ -28,8 +28,8 @@
     }
 }
 .gateway-explanation {
-    padding: 180px 0px 0px;
-    background-color: var(--darkest);
+    padding: 12rem 0 7rem;
+    background-color: var(--dark);
     color: var(--text-main);
     text-align: center;
 }
@@ -37,6 +37,9 @@
     width: 100%;
     max-width: 200px;
     margin-bottom: 40px;
+}
+#gateways .content {
+    padding-bottom: 170px;
 }
 .divider {
     width: 100%;
@@ -98,8 +101,9 @@
 
 /* ----- gateways section ----- */
 .gateway-listings-section {
-    background:linear-gradient(to bottom,var(--lighter-grey) 0%, var(--darker-grey) 100%);
-    padding: 0px 0px 180px;
+    background: var(--pirate-smoke-blue);
+    background: linear-gradient(180deg, var(--pirate-smoke-blue) 0%,var(--dark) 100%);
+    padding: 160px 160px;
     color: var(--pirate-leviathan);
     text-align: center;
 }
@@ -112,29 +116,27 @@
 .gateway-listings-section .gateway-box {
     width: 100%;
     max-width: 400px;
-    color: var(--pirate-leviathan);
+    color: var(--pirate-mist);
     border: 1px solid var(--dark);
     transition: all 0.3s ease-in-out;
     display: inline-block;
     vertical-align: top;
     height: 420px;
-    background-color: var(--pirate-cloud);
+    background-color: var(--pirate-smoke-blue);
     margin: 20px 14px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px 0 rgb(0 0 0 / 30%), 2px 2px 6px 0 rgb(0 0 0 / 5%);
 }
 .gateway-listings-section .gateway-box:hover {
-    color: var(--pirate-leviathan);
-    -moz-transform: translate(-3px, -3px);
-    -ms-transform: translate(-3px, -3px);
-    -o-transform: translate(-3px, -3px);
-    -webkit-transform: translate(-3px, -3px);
-    transform: translate(-3px, -3px)
+   
+    transform: translatey(-3px)
 }
 .gateway-listings-section .gateway-box p {
     padding: 0px 20px;
     text-align: left;
     font-size: 14px;
+    text-align: center;
 }
 
 .gateway-listings-section .gateway-box h3 {
@@ -150,7 +152,7 @@
     max-width: 400px;
     height: 150px;
     background-color: var(--darkest);
-    padding: 0;
+    padding: 1rem;
     margin: 0;
 }
 .gateway-listings-section .gateway-imgbox img {
