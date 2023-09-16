@@ -59,8 +59,11 @@
     --page-width-normal: 1200px;
     --page-width-wide: 1500px;
     --page-width-wider: 1800px;
+
+    --lighten-filter: brightness(1.2) saturate(1.5) hue-rotate(357deg) contrast(0.8);
 }
 [data-theme="light"] {
+    
     --pirate-doubloon: #BB9645;
     --pirate-neon: #ffbd30;
     --pirate-goldensands: #f2de99;
@@ -91,6 +94,14 @@
     --button-color: var(--pirate-neon); 
     --nav-hover: #3A3B3C;  
   }
+
+  .brighten {
+    filter:var(--lighten-filter)
+  }
+  .brighten .description-section .description .btn {
+    background-color: #cf9926;
+  }
+
 /* ----- main ----- */
 *{
     margin: 0;
@@ -381,7 +392,7 @@ footer .discord {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1.4rem;
-    background: #414251;
+    background: rgb(65 66 81 / 21%);
     display: inline-flex;
     padding: 0.3rem 1.5rem;
     border-radius: 6px;

@@ -35,3 +35,25 @@ function isImageFileName(filename) {
   }  
   return false;
 }; 
+
+// Makes the site brighter for darker displays or bright rooms.
+
+function toggleStyle() {
+  document.body.classList.toggle('brighten');
+}
+
+document.addEventListener("keydown", e => { if (e.shiftKey && e.code === 'KeyL') toggleStyle(); });
+document.addEventListener("click", e => { 
+  if (e.target.closest('.light-mode')) { 
+    toggleStyle(); 
+    document.querySelectorAll('.light-mode').forEach(el => el.classList.toggle('lights-on'));
+  }
+});
+
+// Mockup alert untill buttons are working.
+
+window.onload = function() {
+  setTimeout(function() {
+    alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favourof native lazy load, which is faster and means there's less JS, making it easier for the community to manage");
+  }, 1000); 
+};

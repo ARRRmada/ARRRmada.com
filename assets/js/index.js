@@ -1,5 +1,11 @@
 // Lazy load merchant images to save bandwidth and speed up page load
 // listings first laod a default image, then load the real image only when scrolled into viewport
+
+// The below lazy load is removed in favour of native browser lazy loading.
+// Native lazy loading has performance benefits and is faster, so the end user will not notice it.
+// Less JS is means it's easier to maintain by the community.
+
+/*
 document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
@@ -27,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-
+*/
 let currentTag = null;
 
 // highlight the selected tag
