@@ -103,7 +103,7 @@
 .gateway-listings-section {
     background: var(--pirate-smoke-blue);
     background: linear-gradient(180deg, var(--pirate-smoke-blue) 0%,var(--dark) 100%);
-    padding: 160px 160px;
+    padding: 160px 0;
     color: var(--pirate-leviathan);
     text-align: center;
 }

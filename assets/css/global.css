@@ -64,12 +64,12 @@
 
     --lighten-filter: brightness(1.15) saturate(1.5) hue-rotate(357deg) contrast(.9);;
 }
+/*
 [data-theme="light"] {
-    
-    /* Light Theme - Comming Soon */
+
  
   }
-
+*/
   .brighten {
     filter:var(--lighten-filter)
   }
