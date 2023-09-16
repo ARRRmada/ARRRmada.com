@@ -59,7 +59,7 @@ window.onload = function() {
 
   if (lastAlertTime === null || currentTime - lastAlertTime >= timeInterval) {
     setTimeout(function() {
-      alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favour of native lazy load, which is faster and means there's less JS, making it easier for the community to manage");
+      alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favour of native lazy load, which is faster and means there's less JS, making it easier for the community to manage\n\nCaution\n\nSome pages are in transition and as such, aren't full responsive atm.");
       localStorage.setItem("lastAlertTime", currentTime);
     }, 1000);
   }
