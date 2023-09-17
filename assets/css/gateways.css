@@ -112,8 +112,8 @@
     box-shadow: 5px 5px 25px 0 rgb(0 0 0 / 30%), 2px 2px 6px 0 rgb(0 0 0 / 5%);
 }
 .gateway-listings-section .gateway-box:hover {
-   
-    transform: translatey(-3px)
+    transform: translatey(-3px);
+    background: var(--pirate-gale);
 }
 .gateway-listings-section .gateway-box p {
     padding: 0px 20px;
