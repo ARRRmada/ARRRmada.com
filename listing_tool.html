@@ -9,14 +9,14 @@ javascript-list:
 <!-- hero section -->
 <section class="hero-section">
   <div class="content">      
-    <img class="logo" alt="Pirate Accepted Here" src="{{ site.baseurl }}/button/button6.png" style="max-width: 300px;margin: 40px auto;"/>
+    <img class="logo" alt="Pirate Accepted Here" src="{{ site.baseurl }}/button/button0.png" style="max-width: 300px;margin: 40px auto;"/>
     <div>
       <h1>Merchant Listing Tool</h1>
       <strong>Begin accepting ARRR today!</strong>
       <p>
         Use this form to create and submit a listing for your store on ARRRmada.com
       </p>
-      <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
+      <a class="btn-alt" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">HOME</a>
     </div>
   </div>
 </section>
@@ -24,7 +24,7 @@ javascript-list:
 <!-- Merchant listing builder -->
 <section class="merchant-listingBuilder">
   <div class="content">
-
+    <div class="listing-box">
     <h2>Build Your Listing</h2>
     <p style="max-width: 550px; margin: auto;">
       Design your custom listing, then generate a code for submital to the ARRRmada.com directory.
@@ -41,12 +41,12 @@ javascript-list:
       <button id="merchantURLButton" onclick="updateMerchantURL()">Add Link URL</button>
       <p id="urlMessage"></p>
     </p>
-
+  </div>
     <!-- Listing Preview -->
     <label for="listing_preview">Listing Preview:</label>
     <div class="merchant-box" id="listing_preview">
       <div class="merchant-imgbox">
-        <img alt="Default Merchant Image" class="merchant-img" src="{{ site.baseurl }}/assets/img/site/default_merchant.png" id="merchant_img" />
+        <img alt="Default Merchant Image" class="merchant-img" src="{{ site.baseurl }}/assets/img/logo/Pirate_Logo_P_Gold.svg" id="merchant_img" />
       </div>
       <h2 id="merchant_name"></h2>
       <p class="merchant-description" id="merchant_description"></p>

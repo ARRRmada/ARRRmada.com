@@ -130,7 +130,7 @@
     height: 240px;
     border-radius: 7px;
     background-color: var(--dark);
-    padding: 1rem clamp(1rem, 2vw, 2rem);
+    padding: 2rem clamp(1rem, 2vw, 2rem);
 }
 .merchant-link-area {
     display: grid;
