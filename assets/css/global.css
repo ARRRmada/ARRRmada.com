@@ -355,7 +355,7 @@ h3 {
     background: var(--pirate-doubloon);
 }
 .menu {
-    display: flex;
+    display: none;
     width: 100%;
     background: var(--dark);
     flex-direction: column;
