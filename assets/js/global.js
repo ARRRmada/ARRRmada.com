@@ -52,6 +52,17 @@ document.addEventListener("click", e => {
 
 // Mockup alert untill buttons are working.
 
+// Hide/show menu
+
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('open-close__btn')) {
+      document.querySelectorAll('.menu').forEach(menu => {
+          menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
+      });
+  }
+});
+
+
 window.onload = function() {
   const lastAlertTime = localStorage.getItem("lastAlertTime");
   const currentTime = new Date().getTime();

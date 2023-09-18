@@ -314,6 +314,53 @@ h3 {
 .container-404 .btn {
     margin-top: 60px;
 }
+/* ----- Header ----- */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 300;
+    box-shadow: 3px 3px 7px #00000040;
+    border-radius: 0 0 11px 0;
+    overflow: hidden;
+    min-width: 205px;
+}
+.header .open-close__btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1/1;
+    padding: 0.2rem;
+    margin: 0.5rem 1rem;
+    background: var(--dark);
+    color: var(--pirate-fog);
+    border-radius: 50%;
+    font-size: .9rem;
+    font-weight: 900;
+    cursor: pointer;
+    &:hover {background: var(--pirate-gale); color:var(--pirate-doubloon)}
+}
+.menu-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    color: var(--dark);
+    font-size: 1.3rem;
+    font-weight: 900;
+    background: var(--pirate-doubloon);
+}
+.menu {
+    display: flex;
+    width: 100%;
+    background: var(--dark);
+    flex-direction: column;
+    padding: 1rem;
+}
 
 /* ----- footer ----- */
 footer {
@@ -346,6 +393,11 @@ footer {
 }
 .footer-columns {
     max-width: 400px;
+    max-width: 400px;
+    background: #3739477d;
+    /* background: var(--pirate-gale); */
+    padding: 1rem 1.6rem;
+    border-radius: 10px;
     @media (max-width: 1400px) {max-width: 300px;}
     @media (max-width: 970px) {max-width: 100%;}
 }
