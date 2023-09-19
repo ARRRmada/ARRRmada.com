@@ -1,3 +1,4 @@
+# Coming Soon
 ## * This is a community fork of ARRRmada, offering a different theme and some extras.
 ---
 <img src="https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png" style="width: 300px;margin:40px auto 60px;display:block;" />
