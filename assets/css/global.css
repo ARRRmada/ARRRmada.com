@@ -314,6 +314,7 @@ h3 {
 .container-404 .btn {
     margin-top: 60px;
 }
+
 /* ----- Header ----- */
 
 .header {
@@ -390,6 +391,7 @@ h3 {
 }
 
 /* ----- footer ----- */
+
 footer {
     display:flex;
     flex-direction: column;
