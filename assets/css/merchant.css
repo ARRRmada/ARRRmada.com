@@ -12,23 +12,31 @@
     align-items: stretch;
     flex-direction: column;
     padding: 2rem;
+    padding-top:3.3rem;
     background: var(--pirate-smoke-blue);
     border-radius: 12px;
 }
 #listing_preview {
     display: inline-flex;
-    margin-top: 60px;
 }
 #listing_preview, .listing-box {
     width: 650px;
+}
+#listing_preview .merchant-imgbox {
+    width:100%;
+    height: auto;
 }
 label {
     display: block;
     text-align: center;
     margin: auto;
-    font-size: 18px;
-    margin-top: 40px;
+    font-size: 1.1rem;
+    margin-top: 2rem;
     color: var(--pirate-cloud);
+    margin-bottom: 0.2rem;
+}
+.listing-box label {
+    color: var(--pirate-doubloon);
 }
 input {
     width: 100%;
@@ -58,7 +66,10 @@ input {
     background: var(--pirate-gale);
     border: 1px solid var(--lighter-grey);
     border-radius: 4px;
-    color: var(--pirate-cloud);
+    color: var(--pirate-mist);
+    font-family: inherit;
+    font-size: .85rem;
+    font-weight: 200;
 }
 #merchantURLButton {
     margin: 0px;
@@ -83,16 +94,21 @@ label[for="listing_preview"] {
     margin-top: 60px;
 }
 input[type=file]::file-selector-button {
-    border: 1px solid var(--pirate-neon);
-    background-color: var(--pirate-leviathan);
-    color: var(--pirate-neon);
+    border: 1px solid var(--pirate-smoke-blue);
+    background-color: var(--pirate-gale);
+    font-size: 1.2rem;
+    color: var(--pirate-doubloon);
     height: auto;
     text-align: center;
-    padding-inline: 20px;
+    padding-inline: 1rem;
+    padding:.3rem 1rem;
     cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;    
+    margin-top: .6rem;
+    margin-right: .6rem;
+    margin-bottom: 20px;
+    border-radius: .3rem;
 }
+
 #uploadMessage {
     height: 30px;
     color: var(--red-highlight);
@@ -118,8 +134,8 @@ input[type=file]::file-selector-button {
 .grid-container label {
     display: inline-block;
     color: var(--text-main);
-    margin-top: 0px;
-    font-size: 16px;
+    margin-top: 0;
+    font-size: 1rem;
     cursor: default;
     cursor: pointer;
 }

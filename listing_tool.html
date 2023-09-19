@@ -26,7 +26,7 @@ javascript-list:
   <div class="content">
     <div class="listing-box">
     <h2>Build Your Listing</h2>
-    <p style="max-width: 550px; margin: auto;">
+    <p style="max-width: 550px; margin: auto; margin-bottom: 1rem;">
       Design your custom listing, then generate a code for submital to the ARRRmada.com directory.
     </p>
     <p>
@@ -39,14 +39,16 @@ javascript-list:
       <label for="merchantURLInput" >Listing Link URL:</label>
       <input type="text" id="merchantURLInput" />
       <button id="merchantURLButton" onclick="updateMerchantURL()">Add Link URL</button>
+
       <p id="urlMessage"></p>
+      
     </p>
   </div>
     <!-- Listing Preview -->
     <label for="listing_preview">Listing Preview:</label>
     <div class="merchant-box" id="listing_preview">
       <div class="merchant-imgbox">
-        <img alt="Default Merchant Image" class="merchant-img" src="{{ site.baseurl }}/assets/img/logo/Pirate_Logo_P_Gold.svg" id="merchant_img" />
+        <img alt="Default Merchant Image" class="merchant-img" src="{{ site.baseurl }}/assets/img/site/listing-preview.webp" id="merchant_img" />
       </div>
       <h2 id="merchant_name"></h2>
       <p class="merchant-description" id="merchant_description"></p>

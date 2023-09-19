@@ -451,6 +451,13 @@ footer .discord {
         text-align: center;
     }
 }
+input:hover:not([type=checkbox]):not([type=file]),
+textarea:hover,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 1px solid #bb9645;
+}
+
 /* ----- Water Effect ----- */
 .editorial {
     display: block;
