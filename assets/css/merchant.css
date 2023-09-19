@@ -20,7 +20,7 @@
     display: inline-flex;
 }
 #listing_preview, .listing-box {
-    width: 650px;
+    max-width: 650px;
 }
 #listing_preview .merchant-imgbox {
     width:100%;
