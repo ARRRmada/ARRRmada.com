@@ -341,7 +341,8 @@ h3 {
     font-size: .9rem;
     font-weight: 900;
     cursor: pointer;
-    &:hover {background: var(--pirate-smoke-blue); color:var(--pirate-doubloon)}
+    transition-duration: .5s;
+    &:hover {background: var(--pirate-smoke-blue); color:var(--pirate-doubloon); transform:rotate(359deg) transition-duration: .5s;}
 }
 .menu-top {
     display: flex;
