@@ -53,7 +53,7 @@ document.addEventListener("click", e => {
 // Hide/show menu
 
 document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('open-close__btn')) {
+  if (event.target.id === 'openCloseBtn') {
     document.querySelectorAll('.menu').forEach(menu => {
       menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
     });
