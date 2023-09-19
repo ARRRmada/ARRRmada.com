@@ -334,7 +334,7 @@ h3 {
     height: 1.8rem;
     aspect-ratio: 1/1;
     padding: 0.2rem;
-    margin: 0.3rem 1rem;
+    margin: 0.3rem 0.6rem;
     background: var(--dark);
     color: var(--pirate-doubloon);
     border-radius: 50%;
@@ -354,6 +354,7 @@ h3 {
     font-weight: 900;
     user-select: none;
     background: #383c4b;
+    border-radius: 0 0.3rem 0.3rem 0;
     z-index: 99;
 }
 .menu {
