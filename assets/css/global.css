@@ -318,13 +318,10 @@ h3 {
 
 .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: fixed;
-    top:0;
+    top: 1.3rem;
     z-index: 300;
-    box-shadow: 3px 3px 7px #00000040;
-    border-radius: 0 0 .3rem 0;
-    overflow: hidden;
     min-width: 205px;
 }
 .header .open-close__btn {
@@ -349,13 +346,14 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    height: 100%;
     color: var(--pirate-doubloon);
     font-size: 1.2rem;
     font-family: 'Roboto';
     font-weight: 900;
     user-select: none;
-    background: var(--pirate-gale);
+    background: #383c4b;
+    z-index: 99;
 }
 .menu {
     display: none;
@@ -363,6 +361,10 @@ h3 {
     background: var(--dark);
     flex-direction: column;
     padding: 1rem;
+    box-shadow: 3px 3px 20px rgb(0 0 0 / 25%);
+    border-radius: 0 0.4rem 0.4rem 0.4rem ;
+    border: 1px solid var(--darker-grey);
+    margin-left: -1px;
 }
 
 /* ----- footer ----- */
