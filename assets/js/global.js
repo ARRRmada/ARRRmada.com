@@ -55,11 +55,10 @@ document.addEventListener("click", e => {
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('open-close__btn')) {
     document.querySelectorAll('.menu').forEach(menu => {
-      menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
     });
-    document.querySelectorAll('.menu-top').forEach(menuTop => {
-      menuTop.style.borderRadius = menuTop.style.borderRadius === '0 0.3rem 0.3rem 0' ? '0' : '0 0.3rem 0.3rem 0';
-    });
+    let menuTop = document.querySelector('.menu-top');
+    menuTop.style.borderRadius = (menuTop.style.borderRadius === '0 0.3rem 0.3rem 0' || menuTop.style.borderRadius === '') ? '0' : '0 0.3rem 0.3rem 0';
   }
 });
 
