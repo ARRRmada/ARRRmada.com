@@ -366,7 +366,7 @@ h3 {
     border: 1px solid var(--darker-grey);
     margin-left: -1px;
 }
-h2 {
+.menu h2 {
     font-size: 29px;
     font-weight: 200;
     color: var(--pirate-doubloon);
