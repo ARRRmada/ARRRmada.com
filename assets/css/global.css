@@ -374,10 +374,11 @@ h3 {
     background: var(--pirate-smoke-blue);
     font-size: 1.1rem;
     padding: 0.2rem 0.8rem;
-    margin-bottom: 0.5rem;
-}
-.menu h2:last-of-type {
     margin: 0.5rem 0;
+}
+.menu h2:first-of-type {
+    margin-top:0;
+    margin-bottom: 0.5rem;
 }
 .menu a {
     color: var(--pirate-mist);
