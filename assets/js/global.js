@@ -52,15 +52,24 @@ document.addEventListener("click", e => {
 
 // Hide/show menu
 
+let isMenuTopRounded = true;
+
 document.addEventListener('click', function(event) {
   if (event.target.id === 'openCloseBtn') {
     document.querySelectorAll('.menu').forEach(menu => {
       menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
     });
+    
     let menuTop = document.querySelector('.menu-top');
-    menuTop.style.borderRadius = (menuTop.style.borderRadius === '0 0.3rem 0.3rem 0' || menuTop.style.borderRadius === '') ? '0' : '0 0.3rem 0.3rem 0';
+    if (isMenuTopRounded) {
+      menuTop.style.borderRadius = '0';
+    } else {
+      menuTop.style.borderRadius = '0 0.3rem 0.3rem 0';
+    }
+    isMenuTopRounded = !isMenuTopRounded;
   }
 });
+
 
 // Mockup alert untill buttons are working.
 
