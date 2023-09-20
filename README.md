@@ -1,6 +1,7 @@
 # Coming Soon
 ## * This is a community fork of ARRRmada, offering a different theme and some extras.
----
+
+
 <img src="https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png" style="width: 300px;margin:40px auto 60px;display:block;" />
 
 ---
@@ -21,11 +22,11 @@ This is a **open source version of ARRRmada.com**. This concept makes the websit
 * Portable and lightweight
 * Jekyll for templating and automation (pure HTML in `_site` directory)
 
-> ## Access the website here: [https://quirkyrobots.github.io/arrrmada)](https://quirkyrobots.github.io/arrrmada).
+### Access the website here: [https://quirkyrobots.github.io/arrrmada)](https://quirkyrobots.github.io/arrrmada).
 
 ---
 
-# Maintenance
+# User Guide
 
 ## Add new Merchant Listing
 To create a listing, appending the listing details to `merchants.yml` and uploading the listing image is all that's required. The rest is automated once Jekyll builds. This process relies on a listing code, which the merchant generates and submits for approval. The process is decribed below. 
@@ -34,10 +35,13 @@ To create a listing, appending the listing details to `merchants.yml` and upload
 
 * **SUBMIT LISTING CODE** - After designing a listing, the merchants will generate a listing code. This code will be submitted for review via a GitHub issue form. This process also allows anonymous submissions. If a valid listing code is recieved, regardless of platform, the listing can be added. For example, the code could even be sent in a sapling transaction memo. The listing code is meant to be portable and submitted in any method. 
 
-Link to Github Issue form:
-[https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml](https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml)
+Link to Github [Issue form](https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml)
 
-  *note: Submission via Github is prefered so that the submitter can be contacted should there be any issue with the listing*  
+  * Note: Submission via Github is prefered so that the submitter can be contacted should there be any issue with the listing*  
+
+---
+
+#  Maintainers Guide
 
 * **DECODE LISTING CODE** - Once the listing code and listing image are received, use the listing decoder tool to make the code human-readable. [https://ARRRmada.com/listing_decoder](https://ARRRmada.com/listing_decoder)
 
@@ -48,19 +52,6 @@ Link to Github Issue form:
 [https://github.com/ARRRmada/ARRRmada.com/upload/main/assets/img/merchants](https://github.com/ARRRmada/ARRRmada.com/upload/main/assets/img/merchants)
 
 Instructions are clearly provided at each step on the website. Once the commits are made, jekyll will automatically build which can take a few minutes before the listing will appear on the live website.
-
----
-
-## Add Donation Buttons
-Donation Button can be added by appending the filename to the buttons list and uploading the image
-
-* **ADD TO LIST** - Add the filename to the YAML list in `_data/buttons.yml`
-[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/buttons.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/buttons.yml)
-
-* **UPLOAD IMAGE** - Upload an image to the `/button` directory: 
-[https://github.com/ARRRmada/ARRRmada.com/upload/main/button](https://github.com/ARRRmada/ARRRmada.com/upload/main/button)
-
----
 
 ## Add a Payment Gateway
 A Payment gateway can be added by appending the gateway listing to the gateways list, and uploading the gateway listing image.
@@ -110,3 +101,18 @@ Example:
 ## Change an Existing Tag
 Tag names can be altered as long as the ID remains the same. **DO NOT CHANGE** an existing ID. Doing so will create a new tag and break existing listings.
 [https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/tags.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/tags.yml)
+
+---
+
+## Add Donation Buttons
+Donation Button can be added by appending the filename to the buttons list and uploading the image
+
+* **ADD TO LIST** - Add the filename to the YAML list in `_data/buttons.yml`
+[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/buttons.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/buttons.yml)
+
+* **UPLOAD IMAGE** - Upload an image to the `/button` directory: 
+[https://github.com/ARRRmada/ARRRmada.com/upload/main/button](https://github.com/ARRRmada/ARRRmada.com/upload/main/button)
+
+---
+
+
