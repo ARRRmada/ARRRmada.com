@@ -416,9 +416,10 @@ h3 {
     margin-bottom: 0.5rem;
 }
 .menu a {
-    color: var(--pirate-mist);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     font-size: .85rem;
-    font-weight: 300;
+    color: var(--pirate-mist);
     line-height: 1.5rem;
     padding-left: 0.5rem;
     &:hover{color:var(--pirate-doubloon);}
