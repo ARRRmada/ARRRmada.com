@@ -7,7 +7,7 @@ javascript-list:
 ---
 <!-- hero section -->
 <section class="hero-section donation-hero"
-  style="background-image: url('{{ site.baseurl }}/assets/img/site/donation_bg.png');">
+
   <div class="content">      
     <img alt="Pirate Accepted Here" class="logo" src="{{ site.baseurl }}/button/pirateacceptedhere.png"  style="max-width: 250px;margin-bottom: 20px;" />
     <div>
@@ -17,7 +17,7 @@ javascript-list:
         Accept anonymous contributions and provide 
         your visitors the opportunity to donate privately!
       </p>
-      <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
+      <a class="btn-alt" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">HOME</a>
     </div>
   </div>
 </section>
@@ -48,7 +48,7 @@ javascript-list:
   </div>
       <script defer src="{{ site.baseurl }}/button/donate_arrr.js"></script>
   </div>
-  <img class="divider" alt="divider graphic" src="{{ site.baseurl }}/assets/img/site/triangle-bottom.svg" />
+ 
 </section>
 
 <!-- Button Builder Section -->
@@ -62,6 +62,7 @@ javascript-list:
         </div>
       {% endfor %}
     </div>
+    <div class="button-builder-gen">
     <h3>STEP 2: Enter your Pirate Chain address</h3>
     <label for="address">Donation Address (zs1...):</label>
     <input type="text" id="address" name="address">
@@ -75,6 +76,7 @@ javascript-list:
       <pre id="codeBlock"></pre>
     </div>
   </div>
+</div>
 </section>
 
 <!-- Bottom Divider Art -->
