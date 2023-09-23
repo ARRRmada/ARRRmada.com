@@ -27,8 +27,8 @@ description: >-
 
   
 # Codespaces - Run with: $ bundle exec jekyll serve --host 0.0.0.0
-baseurl: "/" 
-url: "https://arrrmada.com" #https://arrrmada.com 
+baseurl: ""
+url: "http://localhost:4000"
 repo: https://github.com/ARRRmada/ARRRmada.com
 readme: https://github.com/ARRRmada/ARRRmada.com
 
