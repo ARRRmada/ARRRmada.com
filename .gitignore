@@ -1,1 +1,4 @@
 _config.yaml
+_site
+_static/*
+!_static/arrrrmada.zip
