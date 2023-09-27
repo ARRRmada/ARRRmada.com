@@ -33,9 +33,9 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/ARRRmada/ARRRmada.com.git
+        git remote set-url origin https://${{ secrets.WORKFLOW_TOKEN }}@github.com/ARRRmada/ARRRmada.com.git
         git add _static/arrrrmada.zip
         git commit -m "Update _static/arrrrmada.zip" || echo "No changes to commit"
         git push origin main
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
