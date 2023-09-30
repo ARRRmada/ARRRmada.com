@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#151326" />
     <!--Help protect pages being classed as duplicate content-->
-    <meta name="robots" content="index, {{ site.url == 'https://arrrmada.com' | ternary: 'follow', 'nofollow' }}" />
+    {% if site.url == "https://arrrmada.com" %}
+    <meta name="robots" content="index, follow" />
+    {% else %}
+    <meta name="robots" content="index, nofollow" />
+    {% endif %}
 
     <!--Open Graph Tags-->
     <meta property="og:locale" content="en_US" />
