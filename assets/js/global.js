@@ -72,23 +72,28 @@ document.addEventListener('click', function(event) {
 
 // Add no follow tag if the site is not arrrmada.com, to stop it being counted as duplicate content.
 
-document.addEventListener("DOMContentLoaded", function() {
-    var currentDomain = window.location.hostname;
+(function() {
     var allowedDomain = 'arrrmada.com';
 
-    if (!currentDomain.endsWith(allowedDomain)) {
-        var metaTag = document.querySelector('meta[name="robots"]');
-        
-        if (metaTag) {
-            metaTag.setAttribute('content', 'noindex, nofollow');
-        } else {
-            metaTag = document.createElement('meta');
-            metaTag.name = "robots";
-            metaTag.content = "noindex, nofollow";
-            document.head.appendChild(metaTag);
+    function checkAndUpdateMeta() {
+        var currentDomain = window.location.hostname;
+        if (!currentDomain.endsWith(allowedDomain)) {
+            var metaTag = document.querySelector('meta[name="robots"]');
+            if (metaTag) {
+                metaTag.setAttribute('content', 'noindex, nofollow');
+            } else {
+                metaTag = document.createElement('meta');
+                metaTag.name = "robots";
+                metaTag.content = "noindex, nofollow";
+                document.head.appendChild(metaTag);
+            }
         }
     }
-});
+    checkAndUpdateMeta();
+    var observer = new MutationObserver(checkAndUpdateMeta);
+    observer.observe(document.head, { childList: true });
+})();
+
 
 // Mockup alert untill buttons are working.
 
