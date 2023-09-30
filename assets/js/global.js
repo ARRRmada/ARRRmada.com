@@ -70,6 +70,19 @@ document.addEventListener('click', function(event) {
   }
 });
 
+// Add no follow tag if the site is not arrrmada.com, to stop it being counted as duplicate content.
+
+document.addEventListener("DOMContentLoaded", function() {
+    var currentDomain = window.location.hostname;
+    var allowedDomain = 'arrrmada.com';
+
+    if (!currentDomain.endsWith(allowedDomain)) {
+        var metaTag = document.createElement('meta');
+        metaTag.name = "robots";
+        metaTag.content = "noindex, nofollow";
+        document.head.appendChild(metaTag);
+    }
+});
 
 // Mockup alert untill buttons are working.
 
