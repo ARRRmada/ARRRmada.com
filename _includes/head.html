@@ -29,7 +29,12 @@
     <meta name="twitter:image" content="{{ site.baseurl }}/assets/img/site/arrrmada.jpg" />
 
     <!--Link Tags-->
-    <link rel="canonical" href="https://arrrmada.com{{ page.url }}" />
+    {% if page.permalink %}
+      <link rel="canonical" href="https://arrrmada.com{{ page.permalink }}" />
+    {% else %}
+      <link rel="canonical" href="https://arrrmada.com{{ page.url }}" />
+    {% endif %}
+
     <link rel="icon" href="{{ site.baseurl }}/assets/img/site/Pirate_Logo_Ship_Gold.svg" sizes="any" type="image/svg+xml" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/global.css" />
     {% include links.html %}
