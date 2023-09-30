@@ -77,10 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var allowedDomain = 'arrrmada.com';
 
     if (!currentDomain.endsWith(allowedDomain)) {
-        var metaTag = document.createElement('meta');
-        metaTag.name = "robots";
-        metaTag.content = "noindex, nofollow";
-        document.head.appendChild(metaTag);
+        var metaTag = document.querySelector('meta[name="robots"]');
+        
+        if (metaTag) {
+            metaTag.setAttribute('content', 'noindex, nofollow');
+        } else {
+            metaTag = document.createElement('meta');
+            metaTag.name = "robots";
+            metaTag.content = "noindex, nofollow";
+            document.head.appendChild(metaTag);
+        }
     }
 });
 
