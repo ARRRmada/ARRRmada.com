@@ -1,5 +1,6 @@
 #faq {
-  margin:6rem 0;
+  margin:6rem auto;
+  max-width: 1200px;
 #faq h1 {
   margin-bottom:4rem;
 }
