@@ -1,8 +1,11 @@
+#faq {
+  margin:6rem 0;
 #faq h1 {
   margin-bottom:4rem;
 }
 #faq .faq-item h2 {
   margin-bottom:1rem;
+  color: var(--pirate-doubloon);
 }
 #faq .faq-item p {
 margin-bottom:2rem;
