@@ -1,9 +1,12 @@
+.hero-section .section-wrapper {
+  max-width: 1200px;
+}
+.hero-section .section-wrapper h1 {
+  text-align:left;
+}
 #faq {
   margin:6rem auto;
   max-width: 1200px;
-}
-#faq h1 {
-  margin-bottom:4rem;
 }
 #faq .faq-item h2 {
   margin-bottom:1rem;
