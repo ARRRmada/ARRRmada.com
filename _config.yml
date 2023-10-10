@@ -26,7 +26,7 @@ description: >-
   The ARRRmada is a link directory for all stores, service providers and companies 
   that accept ARRR as a payment.
 baseurl: "/" 
-url: "https://arrrmada.com" #https://arrrmada.com 
+url: "https://quirkyrobots.github.io/arrrmada"
 repo: https://github.com/ARRRmada/ARRRmada.com
 readme: https://github.com/ARRRmada/ARRRmada.com
 
