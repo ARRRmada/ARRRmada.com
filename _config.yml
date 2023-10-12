@@ -25,8 +25,11 @@ email: ARRRmada@pirate.black
 description: >- 
   The ARRRmada is a link directory for all stores, service providers and companies 
   that accept ARRR as a payment.
-baseurl: "/" 
-url: "https://arrrmada.com" #https://arrrmada.com 
+
+  
+# Codespaces - Run with: $ bundle exec jekyll serve --host 0.0.0.0
+baseurl: "/"
+url: "https://quirkyrobots.github.io/arrrmada"
 repo: https://github.com/ARRRmada/ARRRmada.com
 readme: https://github.com/ARRRmada/ARRRmada.com
 

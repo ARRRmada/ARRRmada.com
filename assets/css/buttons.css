@@ -1,6 +1,6 @@
 /* ----- button-description  section ----- */
 .button-description {
-    background: linear-gradient(0deg, var(--dark) 20%, #070302 100%) no-repeat;
+    background: var(--pirate-purple-haze);
     padding: 40px 0px 0px;
     text-align: center;
 }
@@ -12,7 +12,7 @@
 .donation-hero {
     background-size: cover; 
     background-position: center;
-    background-color: #020202;
+    background-color: var(--pirate-gale);
 }
 @media screen and (max-width:1257px) {
     .donation-hero {
@@ -20,12 +20,13 @@
     }   
 }
 .button-description .description {
-    background: linear-gradient(180deg, #23252d96 20%, transparent 100%) no-repeat;
+    background: linear-gradient(180deg, rgb(35 37 45 / 19%) 20%, transparent 100%) no-repeat;
     border-radius: 20px 20px 0px 0px;
     padding: 80px 5%;
     width: 100%;
     max-width: 700px;
     margin: auto;
+    margin-top: 2rem;
     display: block;
     text-align: left;    
     color:var(--text-main);
@@ -46,6 +47,7 @@
     max-width: 800px;
     text-align: center;
     vertical-align: top;
+    margin-bottom: 4rem;
 }
 .button-description .donation-container .donation-image {
     -webkit-filter: drop-shadow(5px 5px 5px #22222281);
@@ -59,7 +61,7 @@
 
 /* ----- button-builder section ----- */
 .button-builder {
-    background:linear-gradient(to bottom,var(--lighter-grey) 0%, var(--darker-grey) 100%);
+    background: var(--pirate-gale);
     padding: 10px 0px 20px;
 }
 .button-builder h2 {
@@ -81,10 +83,12 @@
 .button-builder h3 {
     margin: 80px 0px 20px;
     color: var(--pirate-cloud);
+    text-align: center;
 }
 .button-builder #imageContainer {
     width: 100%;
     text-align: center;
+    margin: 3rem 0;
 }
 .button-builder #imageContainer img {
     width: 100%;
@@ -101,7 +105,7 @@
     position: relative;
     width: 100%;
     max-width: 190px;
-    margin: 20px 30px;
+    margin: 0 30px;
     transition: all 0.5s ease;
 }  
 .button-builder .img-wrapper img {
@@ -169,6 +173,20 @@
     overflow: hidden;
     transition: all 1.2s ease-in-out;
 }
+
+.button-builder-gen {
+    display: flex;
+    padding: 1rem;
+    background: var(--pirate-purple-haze);
+    border-radius: 1rem;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem
+rem
+;
+}
 .button-builder #codeBlock {
     background-color: #2b2b2b;
     padding: 30px 40px;
@@ -187,7 +205,7 @@
 }
 
 .donation-divider {
-    background-color: var(--darker-grey);
+    background-color: var(--pirate-gale);
     padding: 0px;
     margin: 0px;
     position: relative;

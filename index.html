@@ -6,7 +6,7 @@ javascript-list:
   - "assets/js/index.js"
 ---
 <!-- hero section -->
-<section class="hero-section"
+<section class="hero-section" id="mainPage"
   style="background-image: url('{{ site.baseurl }}/assets/img/site/arrrmada_bg.jpg');">
   <div class="content">      
     <img class="logo" alt="arrrmada logo" src="{{ site.baseurl }}/assets/img/logo/arrrmada-emblem-light.png"/>
@@ -18,8 +18,8 @@ javascript-list:
         and online commerce tools
       </p>
       <a class="btn" href="{{ site.baseurl }}#merchants-section" title="View Pirate Chain merchants">Merchant List</a>
-      <a class="btn" href="{{ site.baseurl }}/payment_gateways" title="Gateways for acceptng payments">Payment Gateways</a>
-      <a class="btn" href="{{ site.baseurl }}/donation_buttons" title="Add a donation button to your website">Donation Buttons</a>
+      <a class="btn" href="{{ site.baseurl }}/payment-gateways" title="Gateways for acceptng payments">Payment Gateways</a>
+      <a class="btn" href="{{ site.baseurl }}/donation-buttons" title="Add a donation button to your website">Donation Buttons</a>
     </div>
   </div>
 </section>
@@ -40,15 +40,15 @@ javascript-list:
         Our incredible merchants are at the heart of growing a strong commerce based community. If you are a online merchant
          that values privacy and financial sovereignty, consider joining the ARRRmada and begin accepting $ARRR today!
 
-        <a class="btn" href="{{ site.baseurl }}/listing_tool" title="Add your store to the directory">List Your Store +</a>
+        <a class="btn" href="{{ site.baseurl }}/listing-tool" title="Add your store to the directory">List Your Store +</a>
       </p>
     </div>
     <div class="merchants">
-      <p>
+      
         <img src="{{ site.baseurl }}/assets/img/icons/anchor.svg" alt="just an anchor" />
         <span id="merchantCount" class="count">{{ site.data.merchants.size }}</span>
         MERCHANTS
-      </p>
+      
     </div>    
   </div>
 
@@ -67,15 +67,6 @@ javascript-list:
       58 18 88 18
       v44h-352z" />
     </defs>
-    <g class="parallax1">
-      <use xlink:href="#gentle-wave" x="50" y="3" fill="rgba(32,32,54,.4)"/>
-    </g>
-    <g class="parallax2">
-      <use xlink:href="#gentle-wave" x="50" y="0" fill="rgba(21,19,38,0.7)"/>
-    </g>
-    <g class="parallax3">
-      <use xlink:href="#gentle-wave" x="50" y="9" fill="rgba(32,32,54,.8)"/>
-    </g>
     <g class="parallax4" style="z-index:999999;">
       <use xlink:href="#gentle-wave" x="50" y="6" fill="rgba(35,37,45,1)"/>  
     </g>
@@ -108,17 +99,18 @@ javascript-list:
       <button class="showall" onclick="showAll()"> Show All </button>
     </div>
   </div>
-
+  <div class="content-wide">
     {% for merchant in site.data.merchants %}
+    
     <div class="merchant-box" 
          data-tags='{{ merchant.tags | join: "," }}'
          id="{{ merchant.id }}" 
-         title="go to {{ merchant.name }}'s website" >        
-      <a href="{{ merchant.url }}" target="_blank" rel="noopener noreferrer">
+         title="Go to {{ merchant.name }}'s website" >        
+      <a class="merchant-link-area" href="{{ merchant.url }}" target="_blank" rel="noopener noreferrer">
         <div class="merchant-imgbox">
           <img loading="lazy" class="merchant-img"
                data-src="{{ site.baseurl }}/assets/img/merchants/{{ merchant.image }}" 
-               src="{{ site.baseurl }}/assets/img/site/default_merchant.png"
+               src="{{ site.baseurl }}/assets/img/merchants/{{ merchant.image }}"
                alt="{{ merchant.name }}">
         </div>
         <h2>{{ merchant.name }}</h2>
@@ -130,12 +122,15 @@ javascript-list:
             <a href="{{ site.baseurl }}/#merchants-section" 
                class="tag-btn" 
                onclick="filterByTag('{{ tag.id }}', '{{ tag.name }}')" 
-               title="show merchants with the {{ tag.name }} tag" 
+               title="Show merchants with the {{ tag.name }} tag" 
                data-tag-id="{{ tag.id }}">
               {{ tag.name }}
             </a>
         {% endfor %}
       </div>
-    </div>
+      </div>
+    
+  
     {% endfor %}
+  </div>
 </section>

@@ -3,6 +3,10 @@
 .guidelines {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    width: var(--page-width-wide);
+    width: var(--page-width-normal);
+    margin: auto;
+    padding: 8rem 0;
 }
 .guidelines img {
     display: block;
@@ -14,13 +18,16 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    background: var(--pirate-smoke-blue);
+    padding:3rem 2rem;
+    border-radius: 1rem;
 }
 .guidelines h2 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 3rem;
 }
 .guidelines p {
     font-size: 16px;

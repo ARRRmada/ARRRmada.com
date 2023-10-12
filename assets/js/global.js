@@ -35,3 +35,52 @@ function isImageFileName(filename) {
   }  
   return false;
 }; 
+
+// Makes the site brighter for darker displays or bright rooms.
+
+function toggleStyle() {
+  document.body.classList.toggle('brighten');
+}
+
+document.addEventListener("keydown", e => { if (e.shiftKey && e.code === 'KeyL') toggleStyle(); });
+document.addEventListener("click", e => { 
+  if (e.target.closest('.light-mode')) { 
+    toggleStyle(); 
+    document.querySelectorAll('.light-mode').forEach(el => el.classList.toggle('lights-on'));
+  }
+});
+
+// Hide/show menu
+
+let isMenuTopRounded = true;
+
+document.addEventListener('click', function(event) {
+  if (event.target.id === 'openCloseBtn') {
+    document.querySelectorAll('.menu').forEach(menu => {
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
+    });
+    
+    let menuTop = document.querySelector('.menu-top');
+    if (isMenuTopRounded) {
+      menuTop.style.borderRadius = '0';
+    } else {
+      menuTop.style.borderRadius = '0 0.3rem 0.3rem 0';
+    }
+    isMenuTopRounded = !isMenuTopRounded;
+  }
+});
+
+// Mockup alert untill buttons are working.
+
+window.onload = function() {
+  const lastAlertTime = localStorage.getItem("lastAlertTime");
+  const currentTime = new Date().getTime();
+  const timeInterval = 60 * 60 * 1000; 
+
+  if (lastAlertTime === null || currentTime - lastAlertTime >= timeInterval) {
+    setTimeout(function() {
+      alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favour of native lazy load, which is faster and means there's no JS, making it easier for the community to manage\n\nCaution: Some pages are in transition and as such, aren't fully responsive atm.");
+      localStorage.setItem("lastAlertTime", currentTime);
+    }, 1000);
+  }
+};

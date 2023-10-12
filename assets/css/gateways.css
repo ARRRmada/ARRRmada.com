@@ -28,15 +28,28 @@
     }
 }
 .gateway-explanation {
-    padding: 180px 0px 0px;
-    background-color: var(--darkest);
+    padding: 12rem 0 60px;
+    background-color: var(--dark);
     color: var(--text-main);
-    text-align: center;
 }
-.gateway-explanation .p {
+.gateway-explanation .p-logo {
     width: 100%;
-    max-width: 200px;
+    max-width: 170px;
+}
+.gateway-explanation .p-logo-box {
+    display: flex;
+    justify-content: center;
     margin-bottom: 40px;
+    background: var(--darkest);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1/1;
+    /* Hiden for now */
+    display: none;    
+}
+#gateways .content {
+    padding-bottom: 170px;
 }
 .divider {
     width: 100%;
@@ -45,61 +58,35 @@
     margin-top: 100px;
     margin-bottom: 0px;
 }
-.gateway-explanation h2 {
-    color: var(--pirate-doubloon);
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
+.gateway-info {
+    padding-bottom: 10rem;
+    font-size:1.1rem;
 }
-.gateway-explanation .solutions {
-    margin-top: 200px;
-    text-align: center;
-    height: 400px;
-}
-.gateway-explanation .solutions .left-box {
-   float: left;
-   width: 48%;
-   text-align: center;
-}
-.gateway-explanation .solutions img {
-    width: 100%;
-    max-width: 600px;
+.gateway-textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: var(--page-width-normal);
     margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media (max-width:1000px){align-items: center;}
 }
-.gateway-explanation .solutions .right-box {
-    width: 48%;
-    float: right;
-    vertical-align: top;
+.gateway-textbox:last-child {
+    margin-top: 2rem;
+}
+.gateway-textbox  h2 {
+    color: var(--pirate-doubloon);
+    font-size: 2rem;
+}
+.gateway-textbox h2, .gateway-textbox p {
+    margin-bottom: 1rem;
     text-align: left;
+    @media (max-width:1000px){text-align: center;}
 }
-.gateway-explanation .solutions .right-box h2 {
-    text-align: left;
-}
-.gateway-explanation .solutions .right-box p {
-    margin: 18px 0px;
-}
-@media screen and (max-width:1130px) {
-    .gateway-explanation .solutions .right-box,
-    .gateway-explanation .solutions .left-box {
-        float: none;
-        display: block;
-        margin: auto;
-        width: 100%;
-        max-width: 600px;
-    }
-    .gateway-explanation .solutions .right-box {
-        margin-top: 40px;
-    }
-    .gateway-explanation .solutions {
-        height: auto;
-    }
-  }
-
 /* ----- gateways section ----- */
 .gateway-listings-section {
-    background:linear-gradient(to bottom,var(--lighter-grey) 0%, var(--darker-grey) 100%);
-    padding: 0px 0px 180px;
+    background: var(--pirate-smoke-blue);
+    background: linear-gradient(180deg, var(--pirate-smoke-blue) 0%,var(--dark) 100%);
+    padding: 160px 0;
     color: var(--pirate-leviathan);
     text-align: center;
 }
@@ -112,29 +99,27 @@
 .gateway-listings-section .gateway-box {
     width: 100%;
     max-width: 400px;
-    color: var(--pirate-leviathan);
+    color: var(--pirate-mist);
     border: 1px solid var(--dark);
     transition: all 0.3s ease-in-out;
     display: inline-block;
     vertical-align: top;
     height: 420px;
-    background-color: var(--pirate-cloud);
+    background-color: var(--pirate-smoke-blue);
     margin: 20px 14px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px 0 rgb(0 0 0 / 30%), 2px 2px 6px 0 rgb(0 0 0 / 5%);
 }
 .gateway-listings-section .gateway-box:hover {
-    color: var(--pirate-leviathan);
-    -moz-transform: translate(-3px, -3px);
-    -ms-transform: translate(-3px, -3px);
-    -o-transform: translate(-3px, -3px);
-    -webkit-transform: translate(-3px, -3px);
-    transform: translate(-3px, -3px)
+    transform: translatey(-3px);
+    background: var(--pirate-gale);
 }
 .gateway-listings-section .gateway-box p {
     padding: 0px 20px;
     text-align: left;
     font-size: 14px;
+    text-align: center;
 }
 
 .gateway-listings-section .gateway-box h3 {
@@ -150,7 +135,7 @@
     max-width: 400px;
     height: 150px;
     background-color: var(--darkest);
-    padding: 0;
+    padding: 1rem;
     margin: 0;
 }
 .gateway-listings-section .gateway-imgbox img {
