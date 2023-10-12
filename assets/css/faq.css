@@ -1,0 +1,18 @@
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-wrapper h1 {
+  text-align: left;
+}
+#faq {
+  margin: 6rem auto;
+  max-width: 1200px;
+}
+.faq-item h2 {
+  margin-bottom: 1rem;
+  color: var(--pirate-doubloon);
+}
+.faq-item p {
+margin-bottom: 2rem;
+}
