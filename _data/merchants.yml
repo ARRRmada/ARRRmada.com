@@ -1,3 +1,19 @@
+- id: tOy6KKPn
+  name: "Kemah Slingshot Rentals"
+  description: >
+    We rent starting by the hour & offer half day, full day as well as multi day options. We are a locally family owned and operated business.
+  image: "kemahslingshotrentals.webp"
+  url: "https://kemahslingshotrentals.com/"
+  tags: [7, 32, 35, 46, 51]  
+
+- id: gJWuqNPE
+  name: "DataSafeInternational"
+  description: >
+    Privacy-based Cloud Backup of your data, servers, DBs & VMs. Datacenters in 19 countries. Encrypted, compressed, & private. No Contracts- Pay Privately, monthly.
+  image: "datasafe.webp"
+  url: "https://www.datasafeinternational.com"
+  tags: [44, 45, 47, 57]  
+
 - id: 2MqaBNZQ
   name: "Physical Crypto Coins"
   description: >
