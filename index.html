@@ -116,7 +116,7 @@ javascript-list:
          title="go to {{ merchant.name }}'s website" >        
       <a href="{{ merchant.url }}" target="_blank" rel="noopener noreferrer">
         <div class="merchant-imgbox">
-          <img class="merchant-img lazy"
+          <img loading="lazy" class="merchant-img"
                data-src="{{ site.baseurl }}/assets/img/merchants/{{ merchant.image }}" 
                src="{{ site.baseurl }}/assets/img/site/default_merchant.png"
                alt="{{ merchant.name }}">
