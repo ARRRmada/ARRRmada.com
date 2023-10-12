@@ -1,3 +1,6 @@
+
+let currentTag = null;
+
 // highlight the selected tag
 function updateCurrent(tagId, tagName) {
   // Remove 'selected' class from previous tag button, if any
