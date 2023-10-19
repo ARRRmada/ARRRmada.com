@@ -479,6 +479,14 @@ footer {
 .sub-footer span:last-child {
     padding-right: 0;
 }
+.sub-footer .pirate-social-icons {
+    display: inline-flex;
+    align-items: center;    
+}
+.sub-footer .pirate-social-icons img {
+    height: auto;
+    width: 24px;
+}
 footer .arrrmada {
     width: 100%;
     max-width: 150px;
