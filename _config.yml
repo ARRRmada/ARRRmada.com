@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+encoding: utf-8
 permalink: /:path/:basename
 title: ARRRmada Directory - ARRR (Pirate Chain) accepted here
 keywords: cryptocurrency, privacy, pirate chain, arrr, fungible
