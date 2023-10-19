@@ -12,9 +12,10 @@ css-list:
 <section id="faq">
   <div class="content">
     {% for faq in site.data.faq.faqs %}
+    {% assign replaced_answer = faq.answer | replace: "{{ site.baseurl }}", site.baseurl %}
     <div class="faq-item">
         <h2>{{ faq.question }}</h2>
-        <p>{{ faq.answer | replace: "{{ site.baseurl }}", site.baseurl | markdownify }}</p>
+        <p>{{ replaced_answer | markdownify }}</p>
     </div>
     {% endfor %}
   </div>
