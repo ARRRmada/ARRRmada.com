@@ -14,7 +14,7 @@ css-list:
     {% for faq in site.data.faq.faqs %}
       <div class="faq-item">
           <h2>{{ faq.question }}</h2>
-          <p>{{ faq.answer | replace: "{{baseurl}}", site.baseurl | markdownify }}</p>
+          <p>{{ faq.answer | replace: "{{baseurl}}", "{{ site.baseurl }}" | markdownify }}</p>
       </div>
     {% endfor %}
   </div>
