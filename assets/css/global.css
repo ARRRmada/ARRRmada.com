@@ -461,7 +461,7 @@ footer {
     background: #3739477d;
     /* background: var(--pirate-gale); */
     padding: 1rem 1.6rem;
-    border-radius: 10px;
+    border-radius: .3rem;
     @media (max-width: 1400px) {max-width: 300px;}
     @media (max-width: 970px) {max-width: 100%;}
 }
