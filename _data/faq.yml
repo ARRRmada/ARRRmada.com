@@ -9,13 +9,13 @@ faqs:
     answer: "To be listed on ARRRmada, merchants must accept Pirate Chain as a mode of payment, adhere to the community guidelines, and submit a listing request through the ARRRmada website for review and approval."
     
   - question: "What payment service providers are available that support ARRR?"
-    answer: 'Various payment service providers support ARRR. You can find a list of supported payment Gateways [here]({{baseurl}}/payment_gateways) or the Pirate Chain official website.'
+    answer: 'Various payment service providers support ARRR. You can find a list of supported payment Gateways [here]({{ site.baseurl }}/payment_gateways) or the Pirate Chain official website.'
 
   - question: "Why should I accept ARRR as a payment for my service and goods?"
     answer: "Accepting ARRR as payment allows merchants to tap into a privacy-focused community, ensuring secure transactions and expanding their customer base to those who prioritize privacy in their online transactions."
     
   - question: "I am a Merchant and would like to register here, how do I do that?"
-    answer: 'Merchants interested in listing their businesses on ARRRmada can submit a listing request [here]({{baseurl}}/listing_tool), providing necessary details for review and approval.'
+    answer: 'Merchants interested in listing their businesses on ARRRmada can submit a listing request [here]({{ site.baseurl }}/listing_tool), providing necessary details for review and approval.'
 
   - question: "What is Github?"
     answer: "GitHub is a platform for version control and collaborative code development, allowing developers to work together on projects from anywhere in the world. It is also a useful place for the community to partispate with ideas and feedback, or in this case, submit a listing."
