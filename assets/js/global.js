@@ -69,18 +69,3 @@ document.addEventListener('click', function(event) {
     isMenuTopRounded = !isMenuTopRounded;
   }
 });
-
-// Mockup alert untill buttons are working.
-
-window.onload = function() {
-  const lastAlertTime = localStorage.getItem("lastAlertTime");
-  const currentTime = new Date().getTime();
-  const timeInterval = 60 * 60 * 1000; 
-
-  if (lastAlertTime === null || currentTime - lastAlertTime >= timeInterval) {
-    setTimeout(function() {
-      alert("NEW FEATURES\n\nPress Shift + L to lighten the theme\n\nJS lazy load removed in favour of native lazy load, which is faster and means there's no JS, making it easier for the community to manage\n\nCaution: Some pages are in transition and as such, aren't fully responsive atm.");
-      localStorage.setItem("lastAlertTime", currentTime);
-    }, 1000);
-  }
-};
