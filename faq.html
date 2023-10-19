@@ -7,79 +7,15 @@ css-list:
 <section class="hero-section">
   <div class="section-wrapper">
    <h1>Frequently Asked Questions</h1>
-  <div>
+  </div>
 </section>
 <section id="faq">
-  <div class="content">  
-    
+  <div class="content">
+    {% for faq in site.data.faq.faqs %}
     <div class="faq-item">
-        <h2>What and who is the ARRRmada?</h2>
-        <p>The ARRRmada is a community-driven initiative that focuses on promoting and supporting the utilization of Pirate Chain (ARRR) among various merchants. It's a platform that lists businesses accepting ARRR, fostering a robust ecosystem around this privacy-focused cryptocurrency.</p>
+        <h2>{{ faq.question }}</h2>
+        <p>{{ faq.answer | markdownify }}</p>
     </div>
-    
-    <div class="faq-item">
-        <h2>Who or what is Pirate Chain?</h2>
-        <p>Pirate Chain (ARRR) is a privacy-centric cryptocurrency that utilizes zk-SNARKs technology to ensure the privacy of its users. It's built with the aim of providing a highly secure and private medium of exchange.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>What requirements must be met to be listed on ARRRmada?</h2>
-        <p>To be listed on ARRRmada, merchants must accept Pirate Chain as a mode of payment, adhere to the community guidelines, and submit a listing request through the ARRRmada website for review and approval.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>What payment service providers are available that support ARRR?</h2>
-        <p>Various payment service providers support ARRR. You can find a list of supported payment Gateways <a href="{{ site.baseurl }}/payment-gateways">here</a> or the Pirate Chain official website.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>Why should I accept ARRR as a payment for my service and goods?</h2>
-        <p>Accepting ARRR as payment allows merchants to tap into a privacy-focused community, ensuring secure transactions and expanding their customer base to those who prioritize privacy in their online transactions.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>I am a Merchant and would like to register here, how do I do that?</h2>
-        <p>Merchants interested in listing their businesses on ARRRmada can submit a listing request <a href="{{ site.baseurl }}/listing-tool">here</a>, providing necessary details for review and approval.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>What is Github?</h2>
-        <p>GitHub is a platform for version control and collaborative code development, allowing developers to work together on projects from anywhere in the world. It is also a useful place for the community to partispate with ideas and feedback, or in this case, submit a listing</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>What are my obligations as a merchant to be listed here?</h2>
-        <p>Merchants listed on ARRRmada are expected to maintain a standard of service, adhere to community guidelines, and continue accepting Pirate Chain as a payment method to remain listed on the platform.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>How long will the listing take to be approved after submitting?</h2>
-        <p>The approval process for listing requests on ARRRmada may vary, but merchants can expect a response within a reasonable timeframe after submitting their request. Currently we have set a maximum period of 2 weekdays, but typically it's done the same day</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>Does the listing have any fees?</h2>
-        <p>No. Listings are 100% free with no hidden charges.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>What wallet support is available for Pirate Chain?</h2>
-        <p>There are various wallets available that support Pirate Chain. You can find a list of supported wallets on the Pirate Chain official website <a href="https://pirate.black/exchanges" target="_blank" rel="noopener noreferrer">here</a></p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>I would like to receive ARRR donations on my website/blog. Can I also be listed here?</h2>
-        <p>Yes, websites and blogs that accept ARRR donations can also be listed on ARRRmada.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>How can I contact the ARRRmada?</h2>
-        <p>You can contact ARRRmada via the official Pirate Chain community Discord server <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">here</a>.</p>
-    </div>
-    
-    <div class="faq-item">
-        <h2>I want to be an active contributor, what do I have to do?</h2>
-        <p>To become an active contributor, you can get in touch with the ARRRmada team by joining the community discussions on GitHub and/or via the official Pirate Chain community Discord server <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">here</a>.</p>
-    </div>
+    {% endfor %}
   </div>
 </section>
