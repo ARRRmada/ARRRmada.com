@@ -10,15 +10,17 @@ css-list:
   <div class="content">      
     <img alt="FAQ ARRRmada" class="logo" src="{{ site.baseurl }}/assets/img/site/piratefaq.webp"  style="max-width: 250px;margin-bottom: 20px;" />
     <div>
-  <div class="section-wrapper">
+  <div>
    <h1>Frequently Asked Questions</h1>
+      <p>
+        The FAQ will help you as a potential merchant to find your way around the ARRRmada directory. 
+      </p>
     <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
   </div>
   </div>
 </section>
 <section id="faq">
   <div class="content">
-     <h1>Frequently Asked Questions</h1>
     {% for faq in site.data.faq.faqs %}
     {% assign replaced_answer = faq.answer | replace: "{{ site.baseurl }}", site.baseurl %}
     <div class="faq-item">
