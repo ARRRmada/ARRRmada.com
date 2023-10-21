@@ -22,7 +22,7 @@ css-list:
 </section>
 
 <!-- FAQ Description Section -->
-<section class="faq-description">
+<section id="faq">
   <div class="content">
     {% for faq in site.data.faq.faqs %}
     {% assign replaced_answer = faq.answer | replace: "{{ site.baseurl }}", site.baseurl %}
