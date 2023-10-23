@@ -7,7 +7,7 @@
 }
 #faq {
   margin: 6rem auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 .faq-item h2 {
   margin-bottom: 1rem;
@@ -15,4 +15,75 @@
 }
 .faq-item p {
 margin-bottom: 2rem;
+}
+
+/* ----- faq-description  section ----- */
+.faq-description {
+    background: linear-gradient(0deg, var(--dark) 20%, #070302 100%) no-repeat;
+    padding: 40px 0px 0px;
+    text-align: center;
+}
+.faq-description .divider {
+    margin: 0px;
+    position: relative;
+    bottom: -10px;
+}
+.faq-hero {
+    background-size: cover; 
+    background-position: center;
+    background-color: #020202;
+}
+@media screen and (max-width:1257px) {
+    .faq-hero {
+        background-size: contain;background-size: auto;background-color: #020202;
+    }   
+}
+.faq-description .description {
+    background: linear-gradient(180deg, #23252d96 20%, transparent 100%) no-repeat;
+    border-radius: 20px 20px 0px 0px;
+    padding: 80px 5%;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+    text-align: left;    
+    color:var(--text-main);
+}
+.faq-description h2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.774); 
+    margin: 0px auto 40px;
+    color: var(--pirate-doubloon);
+    text-align: center;
+}
+.faq-description .description p {
+    margin-top: 20px;
+}
+
+/* ----- mobile width adjustments ----- */
+@media screen and (max-width:500px) {
+    .hero-section  {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-section strong {
+        font-size: 20px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .btn, .button-builder .btn {
+        width: 100%;
+        min-width: 100px;
+        padding: 10px 5px;
+        margin: 8px auto;
+    }
+    .faq-description h2 {
+        font-size: 26px;
+    }
+    .faq-builder .img-wrapper {
+        margin-inline: auto;
+    }
 }

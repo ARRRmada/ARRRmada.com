@@ -4,11 +4,24 @@ title: FAQ - ARRRmada
 css-list: 
   - "assets/css/faq.css"
 ---
-<section class="hero-section">
-  <div class="section-wrapper">
+<!-- FAQ hero section -->
+<section class="hero-section faq-hero"
+  style="background-image: url('{{ site.baseurl }}/assets/img/site/Pirate_BG_pattern_grey.jpg');">
+  <div class="content">      
+    <img alt="FAQ ARRRmada" class="logo" src="{{ site.baseurl }}/assets/img/site/arrrmadafaq.png"  style="max-width: 250px;margin-bottom: 20px;" />
+    <div>
+  <div>
    <h1>Frequently Asked Questions</h1>
+    <strong>Help and Support</strong>
+      <p>
+        The FAQ will help you as a potential merchant to find your way around the ARRRmada directory. 
+      </p>
+    <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
+  </div>
   </div>
 </section>
+
+<!-- FAQ Description Section -->
 <section id="faq">
   <div class="content">
     {% for faq in site.data.faq.faqs %}
