@@ -35,8 +35,7 @@ function generateID() {
       msg.innerText = 'Please enter a full, valid URL (e.g., https://www.pirate.black)';
       msg.style.color = 'red';
     }
-  }
-  
+  }  
   
   function updateMerchantImage() {
     var input = document.getElementById("merchantImageInput");
@@ -168,8 +167,6 @@ function generateID() {
     var merchantImageInput = document.getElementById('merchantImageInput');
     if (merchantImageInput) {
       merchantImageInput.addEventListener('change', function(e) {
-        // Same code as in your updateMerchantImage() function
-        // ...
       });
     }
   
@@ -177,7 +174,7 @@ function generateID() {
     if (tagInputs.length > 0) {
       tagInputs.forEach(function(input) {
         input.addEventListener('change', function(e) {
-          updateTagSelection(); // Same code as in your updateTagSelection() function
+          updateTagSelection(); 
         });
       });
     }
@@ -204,6 +201,7 @@ function generateID() {
     
     return url.protocol === "http:" || url.protocol === "https:";
   }
+
   function validateFields(name, description, url, filename, tags) {
     let errorMessages = [];
     
@@ -238,9 +236,21 @@ function generateID() {
     }
   
     return errorMessages;
+  }  
+  
+  function updateSubmitButton(encodedData, name) {
+    var submitListing = document.getElementById('submit_listing');
+    var href = submitListing.getAttribute('href');
+    var url = new URL(href, window.location.origin); 
+  
+    // Update or add 'title' and 'listing_code' parameters
+    url.searchParams.set('title', name);
+    url.searchParams.set('listing_code', encodedData);
+  
+    // Update the href of the submit_listing element
+    submitListing.setAttribute('href', url.toString());
   }
-  
-  
+
   function generateCode() {
     var name = document.getElementById('merchant_name').innerText;
     var description = document.getElementById('merchant_description').innerText;
@@ -267,6 +277,10 @@ function generateID() {
     var encodedData = encodeData(data);
     var outputDiv = document.getElementById('codeOutput');
     outputDiv.innerText = encodedData;
+
+    // Update the href GET feilds in the form submission button
+    updateSubmitButton(encodedData, name);
+
     document.getElementById('codeOutputContainer').style.display = 'block';
     document.getElementById('submitListing').style.display = 'block';
   }
@@ -321,8 +335,7 @@ function generateID() {
     document.getElementById('codeOutputContainer').style.display = 'block';
   }
   
-  function checkTagSelection(tagIds) {
-  
+  function checkTagSelection(tagIds) {  
   
     // Iterate over the checkboxes
     var checkboxes = document.querySelectorAll('#tagsInput input[type="checkbox"]');
@@ -416,9 +429,7 @@ function generateID() {
       let errorsList = errorMessages.map(message => `<li>${message}</li>`).join('');
       errorDiv.innerHTML = `${errorStatement}<ul>${errorsList}</ul>`;
       return;
-    } else {
-  
-  
+    } else {  
       errorDiv.innerHTML = '';
       document.getElementById('merchantIDInput').value = dataObject.id;
       document.getElementById('merchantNameInput').value = decodeHTML(dataObject.name);
@@ -468,12 +479,8 @@ function generateID() {
     var inputDiv = document.getElementById('codeInput');
     inputDiv.value = encodedData;
   
-    decodeListingCode()
-  
-    
-  
-  }
-  
+    decodeListingCode()  
+  }  
   
   function extractCodeContent(data) {
     var codeHeaderIndex = data.indexOf("BEGIN CODE");
@@ -492,17 +499,13 @@ function generateID() {
     if (merchantIds.includes(dataObject.id)) {
       errorMessages.push(`The merchant ID ${dataObject.id} already exists.`);
     }
-  }
-  
-  
+  }  
   
   function decodeHTML(html) {
     var txt = document.createElement("textarea");
     txt.innerHTML = html;
     return txt.value;
-  }
-  
-  
+  }  
   
   function validateDecodedFields(data) {
     let errorMessages = [];
@@ -537,10 +540,9 @@ function generateID() {
     let strippedData = data.replace('---BEGIN CODE---', '').replace('---END CODE---', '').trim();
     let base64Data = strippedData.replace(/[\r\n]+/g, '');
     let decodedData = atob(base64Data);
-    let jsonData = decodeURIComponent(decodedData);
-  
-  
+    let jsonData = decodeURIComponent(decodedData);  
     let dataArray;
+
     try {
       dataArray = JSON.parse(jsonData);
     } catch (error) {
@@ -575,4 +577,3 @@ function generateID() {
     // Return the array of active tag IDs
     return activeTagIds;
 }
-

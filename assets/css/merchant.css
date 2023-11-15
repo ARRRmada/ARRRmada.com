@@ -163,6 +163,9 @@ input[type=file]::file-selector-button {
 #submitListing p {
     margin-top: 20px;
 }
+#submitListing .btn {
+    margin-top: 40px;
+}
 
 /* ----- listing decoder section ----- */
 .decoder-section {
