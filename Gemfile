@@ -1,5 +1,8 @@
-# frozen_string_literal: true
 source "https://rubygems.org"
 
-gem 'github-pages', group: :jekyll_plugins
-gem 'webrick'  # Add this line
+gem "jekyll"
+gem "webrick"
+gem "rake"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
