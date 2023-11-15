@@ -163,6 +163,13 @@ input[type=file]::file-selector-button {
 #submitListing p {
     margin-top: 20px;
 }
+#submitListing .btn {
+    margin-top: 40px;
+}
+#submitListing .alt_options {
+    margin-top:40px;
+    display: block;
+}
 
 /* ----- listing decoder section ----- */
 .decoder-section {
