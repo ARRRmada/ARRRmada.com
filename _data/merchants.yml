@@ -1,3 +1,11 @@
+- id: SEzVDtaB
+  name: "PirateChain.com"
+  description: >
+    The official website of the Pirate Chain network!
+  image: "piratechain.webp"
+  url: "https://piratechain.com"
+  tags: [12, 47]
+
 - id: QqOSmv29
   name: "Unicorn Horn PMA"
   description: >
