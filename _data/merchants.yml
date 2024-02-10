@@ -1,3 +1,11 @@
+- id: P9u4C43i
+  name: "Private Street"
+  description: >
+    A premiere destination for privacy-themed fashion.
+  image: "privatestreet.webp"
+  url: "https://privatestreet.shop/"
+  tags: [9]
+
 - id: SEzVDtaB
   name: "PirateChain.com"
   description: >
