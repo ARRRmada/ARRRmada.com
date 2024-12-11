@@ -713,15 +713,6 @@
   url: "https://www.instagram.com/gingeramigurumi/"
   tags: [4]
 
-- id: H3PQxCBU
-  name: "William Maderas Fine Art"
-  description: >
-    Wild animals, wild places, wild people… it seems I need at least two
-    out of three to thrive.
-  image: "williammaderas.webp"
-  url: "http://www.williammaderas.com/"
-  tags: [4]
-
 - id: Wx1StEaf
   name: "AI Art Mats Sjodin"
   description: >
@@ -1464,3 +1455,12 @@
   image: "KayakAtSunset8319.jpg"
   url: "https://www.williammaderas.com/Purchase-Digital-Art"
   tags: [4]
+
+- id: AkSlGDmC
+  name: "Teebs"
+  description: >
+    Producer, Video Editor, and Graphic Designer
+  image: "Teebs Pic 2.webp"
+  url: "https://teebs.myportfolio.com/"
+  tags: [56, 26, 45]
+
