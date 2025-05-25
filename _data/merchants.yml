@@ -1,3 +1,13 @@
+- id: csh3kQED
+  name: "HANDYMAN"
+  description: >
+    I have a team of highly skilled Electricians, carpenters, plumbers,
+    painters etc. We are based in Stockholm and open for all kind of
+    renovations.
+  image: "elektrikernistockholm.webp"
+  url: "Https://www.elektrikernistockholm.nu"
+  tags: [42, 45]
+
 - id: vRB5UxFy
   name: "Plattelandsbewoner"
   description: >
