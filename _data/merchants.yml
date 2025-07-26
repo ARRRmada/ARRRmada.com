@@ -1,3 +1,13 @@
+- id: qN89OmuM
+  name: "Meile dVPN"
+  description: >
+    A decentralized VPN powered by the Sentinel blockchain. 2500+
+    community run nodes. Gladly accepting ARRR for unlimited bandwidth
+    monthly subscription plans.
+  image: "meile.webp"
+  url: "https://meile.app"
+  tags: [39]
+
 - id: csh3kQED
   name: "HANDYMAN"
   description: >
