@@ -38,8 +38,15 @@ function showAll() {
   allMerchants.forEach(function(merchantDiv) {
       merchantDiv.style.display = 'inline-block';
   });
-  document.getElementById(currentTag).classList.remove('selected');
+  if (currentTag) {
+    document.getElementById(currentTag).classList.remove('selected');
+  }
+  currentTag = null;
   document.getElementById('current_tag').innerText = "All";
+  
+  // Clear search
+  document.getElementById('merchant-search').value = '';
+  updateSearchInfo(allMerchants.length, allMerchants.length, '');
 }
 
 // Define the end count number
@@ -87,3 +94,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// Search functionality
+function searchMerchants() {
+  const searchInput = document.getElementById('merchant-search').value.toLowerCase();
+  const allMerchants = document.querySelectorAll('div[data-tags]');
+  let visibleCount = 0;
+  let totalCount = allMerchants.length;
+
+  allMerchants.forEach(function(merchantDiv) {
+    // Get merchant name and description
+    const merchantName = merchantDiv.querySelector('h2').textContent.toLowerCase();
+    const merchantDesc = merchantDiv.querySelector('.merchant-description').textContent.toLowerCase();
+    
+    // Check if search matches name or description
+    const matchesSearch = merchantName.includes(searchInput) || merchantDesc.includes(searchInput);
+    
+    // Check if matches current tag filter (if any)
+    let matchesTag = true;
+    if (currentTag) {
+      const tags = merchantDiv.getAttribute('data-tags').split(',');
+      matchesTag = tags.includes(currentTag);
+    }
+    
+    // Show only if both conditions are met
+    if (matchesSearch && matchesTag) {
+      merchantDiv.style.display = 'inline-block';
+      visibleCount++;
+    } else {
+      merchantDiv.style.display = 'none';
+    }
+  });
+
+  // Update search results info
+  updateSearchInfo(visibleCount, totalCount, searchInput);
+}
+
+// Update search results counter
+function updateSearchInfo(visible, total, searchTerm) {
+  const infoDiv = document.getElementById('search-results-info');
+  
+  if (searchTerm === '') {
+    infoDiv.innerHTML = '';
+  } else if (visible === 0) {
+    infoDiv.innerHTML = '❌ No merchants found for "' + searchTerm + '"';
+    infoDiv.style.color = '#ff6b35';
+  } else if (visible === total) {
+    infoDiv.innerHTML = '✅ Showing all ' + visible + ' merchants';
+    infoDiv.style.color = '#4ade80';
+  } else {
+    infoDiv.innerHTML = '📋 Showing ' + visible + ' of ' + total + ' merchants';
+    infoDiv.style.color = '#4ade80';
+  }
+}

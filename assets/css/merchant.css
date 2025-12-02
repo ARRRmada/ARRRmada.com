@@ -326,3 +326,171 @@ input[type=file]::file-selector-button {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
 }
+/* ========================================
+   IMPROVED SIDE-BY-SIDE LAYOUT
+   ======================================== */
+
+/* Top Grid: Form + Preview Side-by-Side */
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+@media (min-width: 1024px) {
+  .top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+  }
+  
+  /* Form inputs alignment */
+  .form-inputs p {
+    margin: 0;
+  }
+  
+  .form-inputs label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-inputs input,
+  .form-inputs textarea {
+    margin-bottom: 20px;
+  }
+  
+  /* Preview box alignment */
+  .preview-box {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+  }
+  
+  .preview-box > label {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #ff6b35;
+  }
+  
+  .preview-box .merchant-box {
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.3);
+  }
+}
+
+/* Tags Section: Full Width - Cleaner */
+.tags-section {
+  margin: 40px 0;
+  padding: 30px;
+  background: rgba(255, 107, 53, 0.05);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 107, 53, 0.2);
+}
+
+.tags-section > label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ff6b35;
+}
+
+/* Tags Grid - Clean and Aligned */
+.tags-section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.tags-section .grid-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tags-section .grid-item input[type="checkbox"] {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.tags-section .grid-item label {
+  margin: 0;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1;
+}
+
+/* Actions Section: Full Width */
+.actions-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* Mobile: Stack everything */
+@media (max-width: 1023px) {
+  .top-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .preview-box {
+    position: relative;
+  }
+}
+
+.actions-section .generate_desc {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.actions-section #errorMessage {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.actions-section #errorMessage h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.actions-section #errorMessage ul {
+  text-align: left;
+  display: inline-block;
+  margin: 10px auto;
+  list-style-position: inside;
+}
+
+.actions-section #codeOutputContainer {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.actions-section #submitListing {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.actions-section #submitListing h2 {
+  text-align: center;
+}
+
+.actions-section #submitListing p {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.actions-section #submitListing .btn {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.actions-section .alt_options {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
