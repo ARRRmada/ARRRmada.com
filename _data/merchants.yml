@@ -6,6 +6,23 @@
   image: "medellin-tours.webp"
   url: "https://instagram.com/Medellin.Tours"
   tags: [50]
+- id: XuDF0EMP
+  name: "Jorge Mesa's Bass Player University"
+  description: >
+    Professional Bass Guitarist and teaching since the 20th Century!
+    Available for lessons or recordings. Music Theory, Guitar and
+    Ukulele and also lesson options.
+  image: "jorgemesa.webp"
+  url: "https://jorgemesamusic.com/"
+  tags: [7, 56, 16, 33, 45]
+
+- id: ZncUurfD
+  name: "Callie's-Plant Kingdom Foods"
+  description: >
+    Organic Vegan restaurant Tomball, Texas
+  image: "callies.webp"
+  url: "https://callieskitchen.com/"
+  tags: [20]
 
 - id: qN89OmuM
   name: "Meile dVPN"
