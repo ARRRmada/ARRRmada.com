@@ -87,7 +87,14 @@ javascript-list:
   <div class="content">
     <img class="pah" src="{{ site.baseurl }}/button/button0.png" alt="Pirate Chain (ARRR) Accepted here button" />
     <h2>Merchant Directory</h2>
-    
+    <!-- Search Bar -->
+<div class="search-container">
+ <input type="text" 
+       id="merchant-search" 
+       placeholder="Search the fleet... (name, description, services)" 
+       onkeyup="searchMerchants()">
+  <div id="search-results-info"></div>
+</div>
     <div id="tag-buttons">
       <h2>Viewing: <span id="current_tag">All</span></h2>
       {% assign sortedTags = site.data.tags | sort: 'name' %}

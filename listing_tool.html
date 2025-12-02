@@ -37,8 +37,8 @@ javascript-list:
       <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')"></textarea>
 
       <label for="merchantURLInput" >Listing Link URL:</label>
-      <input type="text" id="merchantURLInput" />
-      <button id="merchantURLButton" onclick="updateMerchantURL()">Add Link URL</button>
+      <input type="text" id="merchantURLInput" oninput="liveUpdateURL()" />
+
       <p id="urlMessage"></p>
 
       <label for="tagSelectionCount">Select Tags <span id="tagSelectionCount">0/6</span></h3>  

@@ -22,20 +22,35 @@ function generateID() {
     return result;
   }
   
-  function updateMerchantURL() {
-    var msg = document.getElementById('urlMessage')
-    var url = document.getElementById("merchantURLInput").value;
-    try {
-      new URL(url);
-      document.getElementById('merchant_url').href = url;
-      document.getElementById("merchant_url").innerText = url; 
-      msg.innerHTML = 'URL added!';
-      msg.style.color = 'lime';
-    } catch (e) {    
-      msg.innerText = 'Please enter a full, valid URL (e.g., https://www.pirate.black)';
-      msg.style.color = 'red';
-    }
-  }  
+function updateMerchantURL() {
+  var msg = document.getElementById('urlMessage');
+  var url = document.getElementById("merchantURLInput").value;
+  var linkElement = document.getElementById('merchant_url');
+  
+  if (url.trim() === '') {
+    // Wenn leer, zeige Platzhalter
+    linkElement.href = '#';
+    linkElement.innerText = 'URL will appear here...';
+    linkElement.style.color = '#888';
+    msg.innerHTML = '';
+    return;
+  }
+  
+  try {
+    new URL(url);
+    linkElement.href = url;
+    linkElement.innerText = url;
+    linkElement.style.color = '#ff6b35';
+    msg.innerHTML = '✅ Valid URL';
+    msg.style.color = 'lime';
+  } catch (e) {    
+    linkElement.href = '#';
+    linkElement.innerText = url + ' (invalid URL)';
+    linkElement.style.color = 'red';
+    msg.innerText = 'Please enter a full, valid URL (e.g., https://www.pirate.black)';
+    msg.style.color = 'red';
+  }
+}
   
   function updateMerchantImage() {
     var input = document.getElementById("merchantImageInput");
@@ -574,6 +589,11 @@ function generateID() {
             activeTagIds.push(checkboxes[i].getAttribute('data-id'));
         }
     }
-    // Return the array of active tag IDs
+        // Return the array of active tag IDs
     return activeTagIds;
+}
+
+// Live URL update without button click
+function liveUpdateURL() {
+  updateMerchantURL();
 }

@@ -251,3 +251,77 @@
     max-width: 250px;
 }
 
+/* Search Bar Styling - Pirate Theme */
+.search-container {
+  margin: 20px auto 30px;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+}
+
+#merchant-search {
+  width: 100%;
+  padding: 18px 25px 18px 55px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 3px solid #ff6b35;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #23252e 100%);
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+}
+
+#merchant-search:focus {
+  border-color: #ffa500;
+  box-shadow: 0 6px 25px rgba(255, 165, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+#merchant-search::placeholder {
+  color: #8888aa;
+  font-weight: 400;
+}
+
+/* Search Icon - Pirate Style */
+.search-container::before {
+  content: "🔍";
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  font-size: 24px;
+  pointer-events: none;
+  z-index: 1;
+  line-height: 1;
+}
+
+#search-results-info {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffa500;
+  font-style: normal;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.no-results-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #merchant-search {
+    font-size: 16px;
+    padding: 16px 20px 16px 50px;
+  }
+  
+  .search-container::before {
+    left: 15px;
+    font-size: 20px;
+  }
+}
