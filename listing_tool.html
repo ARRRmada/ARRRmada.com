@@ -29,70 +29,87 @@ javascript-list:
     <p style="max-width: 550px; margin: auto;">
       Design your custom listing, then generate a code for submission to the ARRRmada.com directory.
     </p>
-    <p>
-      <label for="merchantNameInput">Merchant Name <span id="nameCharCount">0/35</span></label>
-      <input type="text" id="merchantNameInput" maxlength="35" oninput="updateCharacterCount('merchantNameInput', 'nameCharCount')" />
 
-      <label for="merchantDescInput">Description  <span id="descCharCount">0/160</span></label>
-      <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')"></textarea>
+    <!-- Top Section: Form + Preview Side-by-Side -->
+    <div class="top-grid">
+      
+      <!-- Left: Form Inputs -->
+      <div class="form-inputs">
+        <p>
+          <label for="merchantNameInput">Merchant Name <span id="nameCharCount">0/35</span></label>
+          <input type="text" id="merchantNameInput" maxlength="35" oninput="updateCharacterCount('merchantNameInput', 'nameCharCount')" />
 
-      <label for="merchantURLInput" >Listing Link URL:</label>
-      <input type="text" id="merchantURLInput" oninput="liveUpdateURL()" />
+          <label for="merchantDescInput">Description  <span id="descCharCount">0/160</span></label>
+          <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')"></textarea>
 
-      <p id="urlMessage"></p>
+          <label for="merchantURLInput">Listing Link URL:</label>
+          <input type="text" id="merchantURLInput" oninput="liveUpdateURL()" />
+          <p id="urlMessage"></p>
 
-      <label for="tagSelectionCount">Select Tags <span id="tagSelectionCount">0/6</span></h3>  
-        <div id="tagsInput" class="grid-container">
-          {% assign sortedTags = site.data.tags | sort: 'name' %}
-          {% for tag in sortedTags %}
-            <div class="grid-item">
-              <input type="checkbox" id="tag-{{tag.id}}" data-id="{{tag.id}}" data-name="{{tag.name}}" onchange="updateTagSelection()" />
-              <label class="tag_name" for="tag-{{tag.id}}">{{tag.name}}</label>
-            </div>
-          {% endfor %}
-        </div>
-    </p>
-
-    <!-- Listing Preview -->
-    <label for="listing_preview">Listing Preview:</label>
-    <div class="merchant-box" id="listing_preview">
-      <div class="merchant-imgbox">
-        <img alt="Default Merchant Image" class="merchant-img" src="{{ site.baseurl }}/assets/img/site/default_merchant.png" id="merchant_img" />
+          <label for="merchantImageInput">Upload Image to Preview Listing:</label>
+          <input type="file" id="merchantImageInput" accept="image/*" onchange="updateMerchantImage()" />
+          <input type="hidden" id="merchant_image_filename" />
+          <p id="uploadMessage"></p>
+        </p>
       </div>
-      <h2 id="merchant_name"></h2>
-      <p class="merchant-description" id="merchant_description"></p>
-      <div class="tag-box" id="merchant_tags"></div>
-    </div>
-    <p>
-      <a href="" id="merchant_url" target="_blank" rel="noopener noreferrer"></a>
-    </p>
 
-    <label for="merchantImageInput" >Upload Image to Preview Listing:</label>
-    <input type="file" id="merchantImageInput" accept="image/*" onchange="updateMerchantImage()" />
-    <input type="hidden" id="merchant_image_filename" />
-    <p id="uploadMessage"></p>
+      <!-- Right: Preview -->
+      <div class="preview-box">
+        <label for="listing_preview">Listing Preview:</label>
+        <div class="merchant-box" id="listing_preview">
+          <div class="merchant-imgbox">
+            <img alt="Default Merchant Image" class="merchant-img" src="{{ site.baseurl }}/assets/img/site/default_merchant.png" id="merchant_img" />
+          </div>
+          <h2 id="merchant_name"></h2>
+          <p class="merchant-description" id="merchant_description"></p>
+          <div class="tag-box" id="merchant_tags"></div>
+        </div>
+        <p>
+          <a href="" id="merchant_url" target="_blank" rel="noopener noreferrer"></a>
+        </p>
+      </div>
 
-    <p class="generate_desc">
-      Satisfied with your listing design?
-    </p>
-    <button class="btn generate_code" onclick="generateCode()">Generate Listing Code</button>
-    <div id="errorMessage"></div>
-    <div id="codeOutputContainer">
-      <div id="codeOutput">This is the text to be copied</div>
-      <button id="copyButton" title="copy code" onclick="copyToClipboard()">
-        &#x1F4CB;
-      </button>
-      <div id="copiedText" class="hidden">Code Copied!</div>
-    </div>
-    
-    <div id="submitListing">
-      <h2>SUBMIT YOUR LISTING</h2>
-      <p>
-        Submit your listing application by pasting the above code into our GitHub form, and uploading the image.     
+    </div><!-- End top-grid -->
+
+    <!-- Middle Section: Tags Full Width -->
+    <div class="tags-section">
+      <label for="tagSelectionCount">Select Tags <span id="tagSelectionCount">0/6</span></label>  
+      <div id="tagsInput" class="grid-container">
+        {% assign sortedTags = site.data.tags | sort: 'name' %}
+        {% for tag in sortedTags %}
+          <div class="grid-item">
+            <input type="checkbox" id="tag-{{tag.id}}" data-id="{{tag.id}}" data-name="{{tag.name}}" onchange="updateTagSelection()" />
+            <label class="tag_name" for="tag-{{tag.id}}">{{tag.name}}</label>
+          </div>
+        {% endfor %}
+      </div>
+    </div><!-- End tags-section -->
+
+    <!-- Bottom Section: Generate + Submit -->
+    <div class="actions-section">
+      <p class="generate_desc">
+        Satisfied with your listing design?
       </p>
-      <a class="btn" id="submit_listing" href="{{ site.repo }}/issues/new?template=merchant_listing_submission.yaml&title=&listing_code=" target="_blank" rel="noopener noreferrer">SUBMIT LISTING</a>
+      <button class="btn generate_code" onclick="generateCode()">Generate Listing Code</button>
+      <div id="errorMessage"></div>
+      <div id="codeOutputContainer">
+        <div id="codeOutput">This is the text to be copied</div>
+        <button id="copyButton" title="copy code" onclick="copyToClipboard()">
+          &#x1F4CB;
+        </button>
+        <div id="copiedText" class="hidden">Code Copied!</div>
+      </div>
+      
+      <div id="submitListing">
+        <h2>SUBMIT YOUR LISTING</h2>
+        <p>
+          Submit your listing application by pasting the above code into our GitHub form, and uploading the image.     
+        </p>
+        <a class="btn" id="submit_listing" href="{{ site.repo }}/issues/new?template=merchant_listing_submission.yaml&title=&listing_code=" target="_blank" rel="noopener noreferrer">SUBMIT LISTING</a>
 
-      <a class="alt_options" href="{{ site.baseurl }}/submission_options" target="_blank" rel="noopener noreferrer">Alternate and Anonymous Submission Options</a>
-    </div>
+        <a class="alt_options" href="{{ site.baseurl }}/submission_options" target="_blank" rel="noopener noreferrer">Alternate and Anonymous Submission Options</a>
+      </div>
+    </div><!-- End actions-section -->
+
   </div>
 </section>
