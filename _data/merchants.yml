@@ -132,7 +132,7 @@
   - 56
   - 26
   - 45
-  url_status: active
+  url_status: warning
   url_last_checked: '2025-12-03'
 - id: FgWHleis
   name: Essential Oil Wizardry
@@ -147,7 +147,7 @@
   - 32
   - 35
   - 46
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: peB48XzV
   name: Blue Dragon Consulting
@@ -236,7 +236,7 @@
   - 24
   - 27
   - 35
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: smYHsBdM
   name: What The Finance
@@ -423,7 +423,7 @@
   url: https://www.aliveshoes.com/PIRATE-CHAIN-(ARRR)
   tags:
   - 9
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: n03QbiZx
   name: Pirate Box
@@ -628,7 +628,7 @@
   url: https://www.ruralgrounds.com/
   tags:
   - 42
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: qrtfUD09
   name: Libertarium.info
@@ -651,7 +651,7 @@
   url: https://destinationfreedom.org/
   tags:
   - 16
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: jhn0GtFV
   name: Folcore Records
@@ -687,7 +687,7 @@
   url: https://www.gregarcade.com/
   tags:
   - 33
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: By8SFbvo
   name: TK | Portugal
@@ -700,7 +700,7 @@
   url: https://tikai.bandcamp.com/
   tags:
   - 33
-  url_status: active
+  url_status: warning
   url_last_checked: '2025-12-03'
 - id: 2fAKjFKb
   name: Vincent Wilkin Kora
@@ -928,7 +928,7 @@
   url: https://dm-web-design.co.nz/
   tags:
   - 51
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: FQCWdvvt
   name: App Builder For Hire
@@ -1241,7 +1241,7 @@
   url: https://www.tmthosting.net/
   tags:
   - 45
-  url_status: active
+  url_status: warning
   url_last_checked: '2025-12-03'
 - id: 3YW9pgal
   name: Nexwave
@@ -1318,7 +1318,7 @@
   tags:
   - 27
   - 32
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: 9VAUkS4l
   name: ReYouvenate
@@ -1482,7 +1482,7 @@
   url: https://www.mbw.farm/
   tags:
   - 46
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: PiHQtkT9
   name: The Primitive Fox
@@ -1506,7 +1506,7 @@
   url: https://paratusradio.com/shop/
   tags:
   - 47
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: M95ZFuS2
   name: The Gods As My Friends
@@ -1607,7 +1607,7 @@
   tags:
   - 9
   - 7
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: AS5U0G2c
   name: Red Pill Prints
@@ -1644,7 +1644,7 @@
   url: https://poolpartynodes.com/product-category/bpsaa-clothing-store/pirate-chain-clothing-store/
   tags:
   - 9
-  url_status: active
+  url_status: warning
   url_last_checked: '2025-12-03'
 - id: FV5sgiEu
   name: Psychedelic Press
@@ -1692,7 +1692,7 @@
   url: https://setapart.top/
   tags:
   - 16
-  url_status: inactive
+  url_status: warning
   url_last_checked: '2025-12-03'
 - id: Wn1EJqHe
   name: Rockin Prices
@@ -1806,7 +1806,7 @@
   - 8
   - 56
   - 7
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: 8CCrkbS0
   name: Crypt0c0ttage
@@ -1834,7 +1834,7 @@
   tags:
   - 8
   - 56
-  url_status: inactive
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: FqlO6Gdj
   name: Ocean Footprint
@@ -1846,7 +1846,7 @@
   url: https://oceanfootprint.co.uk/
   tags:
   - 5
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: 6I4znsMg
   name: Abundance Building Concepts
@@ -1883,7 +1883,7 @@
   url: https://kontainerindonesia.co.id/rumah-kontainer/
   tags:
   - 45
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: WrNMjO4s
   name: Red Pill Products
@@ -1944,7 +1944,7 @@
   url: https://www.agoristtaxadvice.com/
   tags:
   - 57
-  url_status: warning
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: JjgD8oWr
   name: Allrounder Plastering
@@ -1969,7 +1969,7 @@
   url: https://www.thumbtack.com/ca/san-diego/handyman/g-sons-construction-inc/service/368852761218523146
   tags:
   - 45
-  url_status: inactive
+  url_status: active
   url_last_checked: '2025-12-03'
 - id: g4Px9v6J
   name: Paint Daddy
