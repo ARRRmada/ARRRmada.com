@@ -87,14 +87,7 @@ javascript-list:
   <div class="content">
     <img class="pah" src="{{ site.baseurl }}/button/button0.png" alt="Pirate Chain (ARRR) Accepted here button" />
     <h2>Merchant Directory</h2>
-    <!-- Search Bar -->
-<div class="search-container">
- <input type="text" 
-       id="merchant-search" 
-       placeholder="Search the fleet... (name, description, services)" 
-       onkeyup="searchMerchants()">
-  <div id="search-results-info"></div>
-</div>
+    
     <div id="tag-buttons">
       <h2>Viewing: <span id="current_tag">All</span></h2>
       {% assign sortedTags = site.data.tags | sort: 'name' %}
@@ -121,14 +114,7 @@ javascript-list:
          data-tags='{{ merchant.tags | join: "," }}'
          id="{{ merchant.id }}" 
          title="go to {{ merchant.name }}'s website" >        
-      <a href="{{ merchant.url }}" target="_blank" rel="noopener noreferrer" class="{% if merchant.url_status == 'inactive' %}merchant-inactive{% elsif merchant.url_status == 'warning' %}merchant-warning{% endif %}">
-        {% if merchant.url_status == 'inactive' %}
-          <span class="url-status-badge inactive">⚠️ Inactive</span>
-        {% elsif merchant.url_status == 'warning' %}
-          <span class="url-status-badge warning">⚠️ Warning</span>
-        {% else %}
-          <span class="url-status-badge active">✓ Active</span>
-        {% endif %}
+      <a href="{{ merchant.url }}" target="_blank" rel="noopener noreferrer">
         <div class="merchant-imgbox">
           <img loading="lazy" class="merchant-img"
                src="{{ site.baseurl }}/assets/img/merchants/{{ merchant.image }}" 

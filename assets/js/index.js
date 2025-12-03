@@ -146,3 +146,60 @@ function updateSearchInfo(visible, total, searchTerm) {
     infoDiv.style.color = '#4ade80';
   }
 }
+
+// Status Filter Function
+let currentStatusFilter = 'all';
+
+function filterByStatus(status) {
+  currentStatusFilter = status;
+  
+  // Update button states
+  document.querySelectorAll('.status-filter').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.dataset.status === status) {
+      btn.classList.add('active');
+    }
+  });
+  
+  // Apply filter
+  applyFilters();
+}
+
+function applyFilters() {
+  const merchantBoxes = document.querySelectorAll('.merchant-box');
+  
+  merchantBoxes.forEach(box => {
+    const merchantStatus = box.dataset.status || 'active';
+    let showByStatus = true;
+    
+    // Status filter logic
+    if (currentStatusFilter === 'active') {
+      showByStatus = merchantStatus === 'active';
+    } else if (currentStatusFilter === 'issues') {
+      showByStatus = merchantStatus === 'warning' || merchantStatus === 'inactive';
+    }
+    
+    // Check if merchant is visible by tag filter
+    const isVisibleByTag = box.style.display !== 'none';
+    
+    // Show only if both filters pass
+    if (showByStatus && isVisibleByTag) {
+      box.style.display = 'block';
+    } else if (!showByStatus) {
+      box.style.display = 'none';
+    }
+  });
+}
+
+// Update existing filter functions to work with status filter
+const originalFilterByTag = window.filterByTag;
+window.filterByTag = function(tagId, tagName) {
+  originalFilterByTag(tagId, tagName);
+  applyFilters();
+};
+
+const originalShowAll = window.showAll;
+window.showAll = function() {
+  originalShowAll();
+  applyFilters();
+};
