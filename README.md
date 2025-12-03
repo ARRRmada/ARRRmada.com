@@ -1,110 +1,274 @@
 
-<img src="https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png" style="width: 300px;margin:40px auto 60px;display:block;" />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PirateNetwork/mediakit/main/ARRRaccepted/pirateacceptedhere.png" width="300" alt="ARRR Accepted Here"/>
+  
+  # ARRRmada.com
+  
+  **Community-maintained directory of merchants accepting Pirate Chain (ARRR)**
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Jekyll](https://img.shields.io/badge/Jekyll-4.3-red.svg)](https://jekyllrb.com/)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+  
+  [🌐 Live Site](https://arrrmada.com) · [📝 Report Bug](https://github.com/ARRRmada/ARRRmada.com/issues) · [✨ Request Feature](https://github.com/ARRRmada/ARRRmada.com/issues)
+  
+</div>
 
 ---
 
-# ARRRmada.com
-This is a **open source version of ARRRmada.com**. This concept makes the website static, facilitating hosting on Github, enhancing transparency, and shifting control of this crucial Pirate Chain asset to the community.
+## 📖 About
 
-* Open-source
-* Community-maintained
-* Anybody can submit a PR to improve the website
-* Visitors can submit Issues to alert maintainers to problems
-* No database or server expenses required
-* Can be forked and hosted anywhere
-* Listings can be designed by the merchants using the listing tool
-    * *(users with commit access to this repository will manually add the listing)*
-* Listings can be submitted anonymously
-* Access controls, version control, changelog, and commit history due to GitHub hosting
-* Portable and lightweight
-* Jekyll for templating and automation (pure HTML in `_site` directory)
+ARRRmada.com is an **open-source, community-maintained directory** of merchants and service providers accepting Pirate Chain (ARRR) cryptocurrency. Built as a static site with Jekyll, it provides transparency, community control, and zero hosting costs through GitHub Pages.
 
-> ## Access the website here: [https://ARRRmada.com/](https://ARRRmada.com/).
+### ✨ Key Features
+
+- 🔍 **Live Search** - Real-time merchant search by name, description, or services
+- 🏷️ **Category Filtering** - Filter merchants by service categories
+- 🔗 **Automated URL Checking** - Weekly validation of merchant links via GitHub Actions
+- ✅ **Status Badges** - Visual indicators for active, warning, or inactive merchant sites
+- 🎨 **Listing Tool** - Interactive merchant listing builder with live preview
+- 🔒 **Anonymous Submissions** - Submit listings without GitHub account
+- 📊 **Community Governance** - Open-source with version control and full transparency
+- 🚀 **Zero Server Costs** - Hosted on GitHub Pages, no database required
 
 ---
 
-# Maintenance
+## 🛠️ Tech Stack
 
-## Add new Merchant Listing
-To create a listing, appending the listing details to `merchants.yml` and uploading the listing image is all that's required. The rest is automated once Jekyll builds. This process relies on a listing code, which the merchant generates and submits for approval. The process is decribed below. 
-
-* **DESIGN A LISTING** - Merchants will create their own listing using the listing tool located at [https://ARRRmada.com/listing_tool](https://ARRRmada.com/listing_tool)
-
-* **SUBMIT LISTING CODE** - After designing a listing, the merchants will generate a listing code. This code will be submitted for review via a GitHub issue form. This process also allows anonymous submissions. If a valid listing code is recieved, regardless of platform, the listing can be added. For example, the code could even be sent in a sapling transaction memo. The listing code is meant to be portable and submitted in any method. 
-
-Link to Github Issue form:
-[https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml](https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml)
-
-  *note: Submission via Github is prefered so that the submitter can be contacted should there be any issue with the listing*  
-
-* **DECODE LISTING CODE** - Once the listing code and listing image are received, use the listing decoder tool to make the code human-readable. [https://ARRRmada.com/listing_decoder](https://ARRRmada.com/listing_decoder)
-
-* **APPEND MERCHANTS LIST** Verify the provided information is correct, and the listing meets any approval requirements. Once listing is approved, a user with commit access may append the listing to the end of: 
-[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/merchants.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/merchants.yml)
-
-* **UPLOAD IMAGE** - Ensure the uploaded image filename matches the filename in the listing. Once approved, a user with commit access will upload the image here:
-[https://github.com/ARRRmada/ARRRmada.com/upload/main/assets/img/merchants](https://github.com/ARRRmada/ARRRmada.com/upload/main/assets/img/merchants)
-
-Instructions are clearly provided at each step on the website. Once the commits are made, jekyll will automatically build which can take a few minutes before the listing will appear on the live website.
+- **Static Site Generator:** [Jekyll 4.3](https://jekyllrb.com/)
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript
+- **Data Storage:** YAML files (`_data/`)
+- **Automation:** GitHub Actions (URL checking, automated builds)
+- **Deployment:** GitHub Pages
+- **CI/CD:** Python 3.11 (URL validation scripts)
 
 ---
 
-## Add Donation Buttons
-Donation Button can be added by appending the filename to the buttons list and uploading the image
+## 🚀 Quick Start
 
-* **ADD TO LIST** - Add the filename to the YAML list in `_data/buttons.yml`
-[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/buttons.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/buttons.yml)
+### Prerequisites
 
-* **UPLOAD IMAGE** - Upload an image to the `/button` directory: 
-[https://github.com/ARRRmada/ARRRmada.com/upload/main/button](https://github.com/ARRRmada/ARRRmada.com/upload/main/button)
+- Ruby 3.0+
+- Bundler
+- Git
 
----
+### Installation
 
-## Add a Payment Gateway
-A Payment gateway can be added by appending the gateway listing to the gateways list, and uploading the gateway listing image.
-
-* **ADD LISTING** - Open `_data/gateways.yml` and add the new gateway listing to the YAML list. 
-[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/gateways.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/gateways.yml) 
-
-* **UPLOAD IMAGE** - Upload the gateway image into:
-[https://github.com/ARRRmada/ARRRmada.com/upload/main/assets/img/gateways](https://github.com/ARRRmada/ARRRmada.com/upload/main/assets/img/gateways) 
-
-Each listing must include a `name`, `desc`, `img`, and `url`.
-
-Example:
-```yaml
-- name: PiratePay
-  desc: 'PiratePay is an open-source decentralized payment gateway that allows you to accept $ARRR on your websites and stores. PiratePay eliminates the need for a middleman and is built with the highest level of privacy and security in mind.'
-  img: piratepay.svg
-  url: https://cryptocurrencycheckout.com/guides/piratepay
+1. **Clone the repository**
+```bash
+   git clone https://github.com/ARRRmada/ARRRmada.com.git
+   cd ARRRmada.com
 ```
 
-**NAME** - The name can be any name
-
-**DESC** - Description must be 160 characters or fewer. Multiline descriptions must be encased in single quotes.
-
-**IMG and listing image** - The listing image should be 400px x 150px. The image filename (img) must include the extension and match the image that must be placed in `assets/img/gateways/`.
-
-**URL** - the site url is the complete URL of where the link should redirect the browser.
-
----
-
-## Add a new Tag
-To create a new tag, it must be added manually to the YAML list. Open `_data/tags.yml` and add the new entry. The entry must include a unique ID and a unique tag name. Order and ID otherwise do not matter.
-[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/tags.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/tags.yml)
-
-Example:
-```yaml
-- id: 12
-  name: Crypto
+2. **Install dependencies**
+```bash
+   bundle install
 ```
 
-**ID** - Typically the ID can be incremented by one from the last entry, but ensure it does not already exist in the list.
+3. **Run local development server**
+```bash
+   bundle exec jekyll serve --baseurl ""
+```
 
-**NAME** - Use a unique tag name that does not yet exist. Consider carefully if a tag should be added. Too many tags may worsen the user experience, so only add if there is no other existing tag that will suffice. To ensure formatting is not broken, the tag name should be as short and concise as possible, and not to excede 20 characters.
+4. **Open in browser**
+```
+   http://localhost:4000
+```
+
+### Configuration
+
+- **Local development:** `baseurl: ""`
+- **GitHub Pages (fork):** `baseurl: "/ARRRmada.com"`
+- **Production:** `baseurl: ""`
+
+Edit `_config.yml` accordingly.
 
 ---
 
-## Change an Existing Tag
-Tag names can be altered as long as the ID remains the same. **DO NOT CHANGE** an existing ID. Doing so will create a new tag and break existing listings.
-[https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/tags.yml](https://github.com/ARRRmada/ARRRmada.com/edit/main/_data/tags.yml)
+## 📁 Project Structure
+```
+ARRRmada.com/
+├── _data/
+│   ├── merchants.yml      # Merchant listings database
+│   ├── tags.yml          # Category tags
+│   ├── gateways.yml      # Payment gateway listings
+│   └── buttons.yml       # Donation button images
+├── _layouts/
+│   └── page.html         # Main page template
+├── _includes/
+│   ├── head.html         # HTML head section
+│   └── footer.html       # Site footer
+├── assets/
+│   ├── css/              # Stylesheets
+│   │   ├── global.css    # Global styles
+│   │   ├── index.css     # Homepage styles
+│   │   ├── merchant.css  # Listing tool styles
+│   │   └── footer.css    # Footer styles
+│   ├── js/               # JavaScript files
+│   │   ├── index.js      # Search & filter logic
+│   │   └── merchant.js   # Listing tool logic
+│   └── img/
+│       ├── merchants/    # Merchant logo images
+│       └── gateways/     # Gateway logo images
+├── .github/
+│   ├── workflows/
+│   │   └── check-merchant-urls.yml  # URL checker workflow
+│   └── scripts/
+│       ├── check_urls.py            # URL validation script
+│       └── prepare_merchants.py     # Data preparation script
+├── index.html            # Homepage
+├── listing_tool.html     # Merchant listing builder
+├── listing_decoder.html  # Listing code decoder
+└── _config.yml          # Jekyll configuration
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+### Adding a Merchant Listing
+
+**Option 1: Via Listing Tool (Recommended)**
+
+1. Visit [ARRRmada.com/listing_tool](https://arrrmada.com/listing_tool)
+2. Design your listing with live preview
+3. Generate listing code
+4. Submit via [GitHub Issue Form](https://github.com/ARRRmada/ARRRmada.com/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml)
+
+**Option 2: Direct PR**
+
+1. Fork the repository
+2. Add listing to `_data/merchants.yml`:
+```yaml
+   - id: unique_id
+     name: Your Business Name
+     description: Brief description (max 160 chars)
+     url: https://yourstore.com
+     image: your-logo.png
+     tags: [20, 33, 45]  # Category IDs from tags.yml
+     url_status: active
+     url_last_checked: 2024-12-03
+```
+3. Upload logo (400x240px) to `assets/img/merchants/`
+4. Submit Pull Request
+
+### Adding Payment Gateways
+
+Edit `_data/gateways.yml` and upload logo to `assets/img/gateways/`
+
+### Adding Donation Buttons
+
+Edit `_data/buttons.yml` and upload image to `/button/`
+
+### Code Contributions
+
+1. Fork the repo
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+---
+
+## 🤖 Automated URL Checking
+
+A GitHub Action runs **every Monday at 2 AM UTC** to validate all merchant URLs:
+
+- ✅ **Active** - URL responds successfully
+- ⚠️ **Warning** - SSL issues or timeouts
+- ❌ **Inactive** - Connection failed
+
+Status is stored in `merchants.yml` and displayed via badges on merchant cards.
+
+### Manual Trigger
+
+Navigate to [Actions](https://github.com/ARRRmada/ARRRmada.com/actions) → `Check Merchant URLs` → `Run workflow`
+
+---
+
+## 🏷️ Tag Management
+
+### Adding a New Tag
+
+Edit `_data/tags.yml`:
+```yaml
+- id: 50  # Unique ID
+  name: Your Tag Name  # Max 20 chars
+```
+
+⚠️ **Warning:** Never change existing tag IDs - this breaks merchant listings!
+
+### Editing Tag Names
+
+You can rename tags, but **DO NOT change the ID**.
+
+---
+
+## 📝 Listing Code Format
+
+Merchants generate a base64-encoded listing code containing:
+- Business name
+- Description
+- URL
+- Image filename
+- Selected category tags
+
+Use the [Listing Decoder](https://arrrmada.com/listing_decoder) to decode submissions.
+
+---
+
+## 🚢 Deployment
+
+### Production (arrrmada.com)
+
+Automatic deployment via GitHub Pages on push to `main` branch.
+
+### Fork Deployment
+
+1. Enable GitHub Pages in repo settings
+2. Set `baseurl: "/ARRRmada.com"` in `_config.yml`
+3. Push changes
+4. Access at `https://yourusername.github.io/ARRRmada.com`
+
+---
+
+## 🛡️ Security
+
+- Automated URL validation prevents malicious links
+- YAML safe loading prevents code injection
+- Community review process for all submissions
+- Version control provides full audit trail
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- [Pirate Chain Community](https://pirate.black)
+- All contributing merchants and developers
+- Jekyll and GitHub Pages teams
+
+---
+
+## 📞 Support
+
+- **Issues:** [GitHub Issues](https://github.com/ARRRmada/ARRRmada.com/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/ARRRmada/ARRRmada.com/discussions)
+- **Email:** ARRRmada@pirate.black
+
+---
+
+<div align="center">
+  
+  **Made with ⚓ by the Pirate Chain Community**
+  
+  [Website](https://arrrmada.com) • [Pirate Chain](https://pirate.black) • [GitHub](https://github.com/ARRRmada)
+  
+</div>
