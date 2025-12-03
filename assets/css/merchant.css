@@ -494,3 +494,86 @@ input[type=file]::file-selector-button {
   text-align: center;
   margin-top: 15px;
 }
+
+/* ========================================
+   HELP TOOLTIPS
+   ======================================== */
+
+.help-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  cursor: help;
+  margin-left: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.help-icon:hover {
+  background: #ffa500;
+  transform: scale(1.1);
+}
+
+/* Tooltip on hover */
+.help-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2a2a3e;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: normal;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+  border: 1px solid #ff6b35;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* Tooltip arrow */
+.help-icon::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: #ff6b35;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1001;
+}
+
+/* Show tooltip on hover */
+.help-icon:hover::after,
+.help-icon:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .help-icon::after {
+    width: 220px;
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}

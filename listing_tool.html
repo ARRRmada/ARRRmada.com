@@ -35,23 +35,35 @@ javascript-list:
       
       <!-- Left: Form Inputs -->
       <div class="form-inputs">
-        <p>
-          <label for="merchantNameInput">Merchant Name <span id="nameCharCount">0/35</span></label>
-          <input type="text" id="merchantNameInput" maxlength="35" oninput="updateCharacterCount('merchantNameInput', 'nameCharCount')" />
+  <p>
+    <label for="merchantNameInput">
+      Merchant Name <span id="nameCharCount">0/35</span>
+      <span class="help-icon" data-tooltip="Choose a catchy, memorable name for your store. This appears as the headline in your listing.">?</span>
+    </label>
+    <input type="text" id="merchantNameInput" maxlength="35" oninput="updateCharacterCount('merchantNameInput', 'nameCharCount')" placeholder="e.g., Pirate Coffee Shop" />
 
-          <label for="merchantDescInput">Description  <span id="descCharCount">0/160</span></label>
-          <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')"></textarea>
+    <label for="merchantDescInput">
+      Description <span id="descCharCount">0/160</span>
+      <span class="help-icon" data-tooltip="Briefly describe what you sell or offer. Be clear and specific - this helps customers find you in searches!">?</span>
+    </label>
+    <textarea id="merchantDescInput" maxlength="160" oninput="updateCharacterCount('merchantDescInput', 'descCharCount')" placeholder="e.g., Fresh roasted coffee beans shipped worldwide. Premium arabica & robusta blends. $ARRR accepted!"></textarea>
 
-          <label for="merchantURLInput">Listing Link URL:</label>
-          <input type="text" id="merchantURLInput" oninput="liveUpdateURL()" />
-          <p id="urlMessage"></p>
+    <label for="merchantURLInput">
+      Listing Link URL
+      <span class="help-icon" data-tooltip="Your store's website URL. Must include https:// - customers will be redirected here when they click your listing.">?</span>
+    </label>
+    <input type="text" id="merchantURLInput" oninput="liveUpdateURL()" placeholder="https://yourstore.com" />
+    <p id="urlMessage"></p>
 
-          <label for="merchantImageInput">Upload Image to Preview Listing:</label>
-          <input type="file" id="merchantImageInput" accept="image/*" onchange="updateMerchantImage()" />
-          <input type="hidden" id="merchant_image_filename" />
-          <p id="uploadMessage"></p>
-        </p>
-      </div>
+    <label for="merchantImageInput">
+      Upload Image to Preview Listing
+      <span class="help-icon" data-tooltip="Upload your logo or store image (400x150px recommended). PNG, JPG, WebP, or SVG accepted. Max 2MB.">?</span>
+    </label>
+    <input type="file" id="merchantImageInput" accept="image/*" onchange="updateMerchantImage()" />
+    <input type="hidden" id="merchant_image_filename" />
+    <p id="uploadMessage"></p>
+  </p>
+</div>
 
       <!-- Right: Preview -->
       <div class="preview-box">
@@ -73,7 +85,9 @@ javascript-list:
 
     <!-- Middle Section: Tags Full Width -->
     <div class="tags-section">
-      <label for="tagSelectionCount">Select Tags <span id="tagSelectionCount">0/6</span></label>  
+      <label for="tagSelectionCount">Select Tags <span id="tagSelectionCount">0/6</span>
+      <span class="help-icon" data-tooltip="Choose 1-6 categories that best describe your business. This helps customers find you through filters.">?</span>
+      </label>
       <div id="tagsInput" class="grid-container">
         {% assign sortedTags = site.data.tags | sort: 'name' %}
         {% for tag in sortedTags %}
