@@ -268,37 +268,6 @@ h3 {
     margin-top: 60px;
 }
 
-/* ----- footer ----- */
-footer {
-    background-color: var(--darkest);
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 140px;
-    padding-top: 60px;
-}
-footer div {
-    width: 100%;
-    max-width: 240px;
-    font-size: 12px;
-    text-align: left;
-    margin: 40px 6% 0px;
-    display: inline-block;
-    vertical-align: top;
-}
-footer .arrrmada {
-    width: 100%;
-    max-width: 150px;
-    display: block;
-    margin-bottom: 20px ;
-}
-footer .discord {
-    width: 100%;
-    max-width: 150px;
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 20px ;
-}
 
 /* ----- Water Effect ----- */
 .editorial {
@@ -437,3 +406,4 @@ footer .discord {
        display: none;           
     }
 }
+

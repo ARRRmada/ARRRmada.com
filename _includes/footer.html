@@ -1,15 +1,70 @@
-<!-- footer -->
-<footer>
-  <div>
-    <img class="arrrmada" src="{{ site.baseurl }}/assets/img/logo/arrrmada.png" />
-    <p>
-      ARRRmada.com is open source and maintained by the
-      community. Help improve this site on <a href="{{ site.readme }}" target="_blank" rel="noopener noreferrer">Github</a>!
-    </p>
-  </div>
-  <div>
-    <img class="discord" src="{{ site.baseurl }}/assets/img/site/discord-pirate.png" />
-    <p>For all inquiries, questions, and discussions, chat with us in the community <a href="https://pirate.black/discord" target="_blank" rel="noopener noreferrer">DISCORD</a></p>
+<!-- Footer -->
+<footer class="pirate-footer">
+  <div class="footer-wrapper">
+    
+    <!-- Main Footer Grid - 3 Columns -->
+    <div class="footer-grid">
+      
+      <!-- Column 1: About -->
+      <div class="footer-col">
+        <h3>About ARRRmada</h3>
+        <p>
+          Open-source directory of merchants accepting Pirate Chain ($ARRR). 
+          Join the fleet for secure, private e-commerce!
+        </p>
+        <a href="{{ site.baseurl }}/" class="footer-link">🏠 Home</a>
+        <a href="{{ site.baseurl }}/listing_tool" class="footer-link">➕ List Your Store</a>
+        <a href="{{ site.baseurl }}/faq" class="footer-link">❓ FAQ</a>
+      </div>
+
+      <!-- Column 2: Resources -->
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <a href="https://piratechain.com" target="_blank" rel="noopener noreferrer" class="footer-link">
+          🏴‍☠️ Pirate Chain
+        </a>
+        <a href="{{ site.baseurl }}/payment_gateways" class="footer-link">
+          💳 Payment Gateways
+        </a>
+        <a href="{{ site.baseurl }}/donation_buttons" class="footer-link">
+          🎁 Donation Buttons
+        </a>
+        <a href="{{ site.readme }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+          📜 GitHub Repository
+        </a>
+      </div>
+
+      <!-- Column 3: Community -->
+      <div class="footer-col">
+        <h3>Community</h3>
+        <a href="https://pirate.black/discord" target="_blank" rel="noopener noreferrer" class="footer-link">
+          💬 Pirate Chain Discord
+        </a>
+        <a href="https://twitter.com/PirateARRRmada" target="_blank" rel="noopener noreferrer" class="footer-link">
+          🐦 ARRRmada on X
+        </a>
+        <a href="https://twitter.com/PirateChain" target="_blank" rel="noopener noreferrer" class="footer-link">
+          🏴‍☠️ Pirate Chain on X
+        </a>
+        <a href="mailto:{{ site.email }}" class="footer-link">
+          ✉️ Contact
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom - Copyright -->
+    <div class="footer-bottom">
+      <div class="footer-divider"></div>
+      <p class="copyright">
+        © {{ 'now' | date: "%Y" }} ARRRmada.com | 
+        <a href="{{ site.readme }}" target="_blank" rel="noopener noreferrer">Open Source</a> | 
+        Built with ☠️ by the Pirate Chain Community
+      </p>
+      <p class="footer-tagline">"In crypto we trust, in privacy we sail." 🏴‍☠️</p>
+    </div>
+
   </div>
 </footer>
+
 <a href="#" id="return-to-top" title="Go to top"></a>
