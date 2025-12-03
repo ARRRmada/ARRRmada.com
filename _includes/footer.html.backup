@@ -1,0 +1,88 @@
+<!-- footer -->
+<footer class="pirate-footer">
+  <div class="footer-container">
+    
+    <!-- Ship Divider -->
+    <div class="ship-divider">
+      <span class="wave">🌊</span>
+      <span class="ship">🏴‍☠️</span>
+      <span class="wave">🌊</span>
+    </div>
+
+    <!-- Main Footer Content (3 Columns) -->
+    <div class="footer-content">
+      
+      <!-- Column 1: About ARRRmada -->
+      <div class="footer-column">
+        <img class="footer-logo arrrmada" src="{{ site.baseurl }}/assets/img/logo/arrrmada.png" alt="ARRRmada Logo" />
+        <h3>⚓ ARRRmada Fleet</h3>
+        <p>
+          ARRRmada.com is open source and maintained by the
+          community. Join the fleet of merchants accepting $ARRR for secure, 
+          private e-commerce!
+        </p>
+        <a href="{{ site.readme }}" target="_blank" rel="noopener noreferrer" class="footer-btn github-btn">
+          <span class="icon">📜</span> Improve on Github
+        </a>
+      </div>
+
+      <!-- Column 2: Pirate Chain -->
+      <div class="footer-column pirate-chain-column">
+        <h3>🏴‍☠️ Pirate Chain</h3>
+        <p>
+          The most private cryptocurrency in the world. Secure against 51% attacks 
+          with dPoW and privacy by default.
+        </p>
+        <div class="community-links">
+          <a href="https://piratechain.com" target="_blank" rel="noopener noreferrer" class="footer-btn pirate-btn">
+            <span class="icon">🏴‍☠️</span>
+            <span class="text">
+              <strong>Visit piratechain.com</strong>
+              <small>Learn about $ARRR</small>
+            </span>
+          </a>
+          <a href="https://twitter.com/PirateChain" target="_blank" rel="noopener noreferrer" class="footer-btn twitter-btn">
+            <span class="icon">🐦</span>
+            <span class="text">
+              <strong>Follow on Twitter/X</strong>
+              <small>Latest updates</small>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 3: Discord Community -->
+      <div class="footer-column discord-column">
+        <img class="footer-logo discord" src="{{ site.baseurl }}/assets/img/site/discord-pirate.png" alt="Discord" />
+        <h3>💬 Join the Crew</h3>
+        <p>
+          For all inquiries, questions, and discussions, 
+          chat with us in the community!
+        </p>
+        <a href="https://pirate.black/discord" target="_blank" rel="noopener noreferrer" class="footer-btn discord-btn">
+          <span class="icon">💬</span>
+          <span class="text">
+            <strong>Join Discord Server</strong>
+            <small>Connect with pirates worldwide</small>
+          </span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="copyright">
+        ⚓ Built with ☠️ by the Pirate Chain Community | 
+        <a href="{{ site.readme }}" target="_blank" rel="noopener noreferrer">Open Source</a> | 
+        Privacy First, Always
+      </p>
+      <p class="pirate-quote">
+        <em>"In crypto we trust, in privacy we sail."</em> 🏴‍☠️
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<a href="#" id="return-to-top" title="Go to top"></a>

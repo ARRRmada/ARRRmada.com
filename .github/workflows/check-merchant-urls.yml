@@ -1,0 +1,38 @@
+name: Check Merchant URLs
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Every Monday at 2 AM UTC
+  workflow_dispatch:  # Manual trigger option
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Needed to push changes
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pyyaml requests
+      
+      - name: Check merchant URLs
+        run: |
+          python .github/scripts/check_urls.py
+      
+      - name: Commit changes if any
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _data/merchants.yml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update merchant URL status [automated]"
+          git push
