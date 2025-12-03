@@ -1,4 +1,3 @@
-
 let currentTag = null;
 
 // highlight the selected tag
@@ -24,7 +23,7 @@ function filterByTag(tagId, tagName) {
   allMerchants.forEach(function(merchantDiv) {
       var tags = merchantDiv.getAttribute('data-tags').split(',');
       if (tags.includes(tagId)) {
-          merchantDiv.style.display = 'inline-block';
+          merchantDiv.style.display = '';
       } else {
           merchantDiv.style.display = 'none';
       }
@@ -36,7 +35,7 @@ function filterByTag(tagId, tagName) {
 function showAll() {
   var allMerchants = document.querySelectorAll('div[data-tags]');
   allMerchants.forEach(function(merchantDiv) {
-      merchantDiv.style.display = 'inline-block';
+      merchantDiv.style.display = '';
   });
   if (currentTag) {
     document.getElementById(currentTag).classList.remove('selected');
@@ -94,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 // Search functionality
 function searchMerchants() {
   const searchInput = document.getElementById('merchant-search').value.toLowerCase();
@@ -118,7 +118,7 @@ function searchMerchants() {
     
     // Show only if both conditions are met
     if (matchesSearch && matchesTag) {
-      merchantDiv.style.display = 'inline-block';
+      merchantDiv.style.display = '';
       visibleCount++;
     } else {
       merchantDiv.style.display = 'none';
@@ -184,7 +184,7 @@ function applyFilters() {
     
     // Show only if both filters pass
     if (showByStatus && isVisibleByTag) {
-      box.style.display = 'block';
+      box.style.display = '';
     } else if (!showByStatus) {
       box.style.display = 'none';
     }

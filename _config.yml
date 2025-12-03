@@ -27,7 +27,7 @@ description: >-
   The ARRRmada is a link directory for all stores, service providers and companies 
   that accept ARRR as a payment.
 baseurl: "/ARRRmada.com"
-url: "https://kaiketzu.github.io" 
+url: "https://kaiketzu.github.io"
 repo: https://github.com/ARRRmada/ARRRmada.com
 readme: https://github.com/ARRRmada/ARRRmada.com
 
