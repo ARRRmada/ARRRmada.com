@@ -545,6 +545,8 @@ input[type=file]::file-selector-button {
   cursor: help;
   margin-left: 8px;
   position: relative;
+  vertical-align: middle;
+  transform: translateY(-2px);  
   transition: all 0.3s ease;
 }
 
