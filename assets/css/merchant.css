@@ -13,22 +13,20 @@ body {
   box-sizing: border-box;
 }
 
-/* Ensure all containers stay within viewport */
-.content,
-.grid-container,
-.actions-section,
-.preview-section,
-.merchant-listingBuilder,
-.top-grid,
-.tags-section {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-/* Ensure all inputs stay within viewport */
-input, textarea, select {
-  max-width: 100%;
-  box-sizing: border-box;
+/* Ensure inputs stay within viewport - ONLY ON MOBILE */
+@media (max-width: 768px) {
+  input, textarea, select {
+    max-width: 100%;
+  }
+  
+  .grid-container,
+  .top-grid,
+  .tags-section,
+  .actions-section {
+    max-width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* ----- merchant-listingBuilder section ----- */
