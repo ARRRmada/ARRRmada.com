@@ -26,7 +26,7 @@ email: ARRRmada@pirate.black
 description: >- 
   The ARRRmada is a link directory for all stores, service providers and companies 
   that accept ARRR as a payment.
-baseurl: ""
+baseurl: "/"
 url: "https://arrrmada.com"
 repo: https://github.com/ARRRmada/ARRRmada.com
 readme: https://github.com/ARRRmada/ARRRmada.com
