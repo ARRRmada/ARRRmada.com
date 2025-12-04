@@ -192,6 +192,7 @@
     font-weight: bold;
     font-size: 0.9em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
 }
 
 .featured-content {

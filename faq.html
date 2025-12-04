@@ -3,20 +3,91 @@ layout: page
 title: FAQ - ARRRmada
 css-list: 
   - "assets/css/faq.css"
+javascript-list:
+  - "assets/js/faq.js"
 ---
+
+<!-- Hero Section -->
 <section class="hero-section">
-  <div class="section-wrapper">
-   <h1>Frequently Asked Questions</h1>
-  </div>
-</section>
-<section id="faq">
   <div class="content">
-    {% for faq in site.data.faq.faqs %}
-    {% assign replaced_answer = faq.answer | replace: "{{ site.baseurl }}", site.baseurl %}
-    <div class="faq-item">
-        <h2>{{ faq.question }}</h2>
-        <p>{{ replaced_answer | markdownify }}</p>
+    <div class="anchor-animation">    
+      <img class="floating-anchor" alt="Pirate Anchor" src="{{ site.baseurl }}/assets/img/site/arrrmadafaq.png" />
     </div>
-    {% endfor %}
+    <div>
+      <h1>Frequently Asked Questions</h1>
+      <strong>Your Guide to ARRRmada & Pirate Chain</strong>
+      <p>
+        Find answers to common questions about listing your business,<br />
+        accepting ARRR payments, and using our tools
+      </p>
+      <a class="btn" href="{{ site.baseurl }}/" title="Back to Home">◄ HOME</a>
+    </div>
+  </div>
+  <!-- FAQ symbols animation -->
+  <div class="faq-symbols">
+    <span class="faq-symbol">?</span>
+    <span class="faq-symbol">!</span>
+    <span class="faq-symbol">?</span>
+    <span class="faq-symbol">!</span>
+    <span class="faq-symbol">?</span>
+    <span class="faq-symbol">!</span>
+    <span class="faq-symbol">?</span>
+    <span class="faq-symbol">!</span>
+    <span class="faq-symbol">?</span>
   </div>
 </section>
+
+<div class="faq-container">
+  <!-- Quick Navigation -->
+  <nav class="faq-quick-nav">
+    {% for category in site.data.faq.categories %}
+    <a href="#{{ category.id }}" class="faq-nav-link">{{ category.icon }} {{ category.name }}</a>
+    {% endfor %}
+  </nav>
+
+  <!-- FAQ Categories -->
+  {% for category in site.data.faq.categories %}
+  <section id="{{ category.id }}" class="faq-category">
+    <h2 class="category-title">{{ category.icon }} {{ category.name }}</h2>
+    
+    <div class="faq-items">
+      {% for faq in category.faqs %}
+      {% assign replaced_answer = faq.answer | replace: "{{ site.baseurl }}", site.baseurl %}
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">{{ faq.question }}</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            {{ replaced_answer | markdownify }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <!-- Help Section -->
+  <section class="faq-help-section">
+    <div class="help-content">
+      <h3>🆘 Still Have Questions?</h3>
+      <p>
+        Our community is here to help! Join our Discord for real-time support<br />
+        or check out our guides and documentation.
+      </p>
+      <div class="help-actions">
+        <a href="https://pirate.black/discord" class="btn btn-primary" target="_blank" rel="noopener">
+          Join Discord Community →
+        </a>
+        <a href="{{ site.baseurl }}/listing_tool" class="btn btn-secondary">
+          Use Listing Tool
+        </a>
+        <a href="{{ site.baseurl }}/payment_gateways" class="btn btn-secondary">
+          View Payment Options
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
