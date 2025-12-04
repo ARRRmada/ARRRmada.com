@@ -1,45 +1,76 @@
-faqs:
-  - question: "What and who is the ARRRmada?"
-    answer: "The ARRRmada is a community-driven initiative that focuses on promoting and supporting the utilization of Pirate Chain (ARRR) among various merchants. It's a platform that lists businesses accepting ARRR, fostering a robust ecosystem around this privacy-focused cryptocurrency."
+categories:
+  - name: "About ARRRmada & Pirate Chain"
+    icon: "🏴‍☠️"
+    id: "about"
+    faqs:
+      - question: "What and who is the ARRRmada?"
+        answer: "The ARRRmada is a community-driven initiative that focuses on promoting and supporting the utilization of Pirate Chain (ARRR) among various merchants. It's a platform that lists businesses accepting ARRR, fostering a robust ecosystem around this privacy-focused cryptocurrency."
+      
+      - question: "Who or what is Pirate Chain?"
+        answer: "Pirate Chain (ARRR) is a privacy-centric cryptocurrency that utilizes zk-SNARKs technology to ensure the privacy of its users. It's built with the aim of providing a highly secure and private medium of exchange."
+      
+      - question: "What wallet support is available for Pirate Chain?"
+        answer: 'There are various wallets available that support Pirate Chain. You can find a list of supported wallets on the Pirate Chain official website <a href="https://pirate.black/exchanges" target="_blank" rel="noopener noreferrer">here</a>.'
 
-  - question: "Who or what is Pirate Chain?"
-    answer: "Pirate Chain (ARRR) is a privacy-centric cryptocurrency that utilizes zk-SNARKs technology to ensure the privacy of its users. It's built with the aim of providing a highly secure and private medium of exchange."
+  - name: "For Merchants"
+    icon: "💰"
+    id: "merchants"
+    faqs:
+      - question: "Why should I accept ARRR as a payment for my service and goods?"
+        answer: "Accepting ARRR as payment allows merchants to tap into a privacy-focused community, ensuring secure transactions and expanding your customer base to those who prioritize privacy in their online transactions. Additionally, ARRR transactions have no chargebacks and lower fees compared to traditional payment processors."
+      
+      - question: "What requirements must be met to be listed on ARRRmada?"
+        answer: "To be listed on ARRRmada, merchants must accept Pirate Chain as a mode of payment, adhere to the community guidelines, and submit a listing request through the ARRRmada website for review and approval."
+      
+      - question: "I am a Merchant and would like to register here, how do I do that?"
+        answer: 'Merchants interested in listing their businesses on ARRRmada can submit a listing request using our [Listing Tool]({{ site.baseurl }}/listing_tool). The tool helps you create a properly formatted listing with all necessary details for review and approval.'
+      
+      - question: "How do I use the Listing Tool?"
+        answer: 'Our [Listing Tool]({{ site.baseurl }}/listing_tool) makes it easy to create your merchant listing:<br><br>1. **Fill in your business details** - Name, description, website, and contact information<br>2. **Preview in real-time** - See how your listing will look with live URL preview<br>3. **Generate code** - The tool creates a properly formatted listing<br>4. **Submit via GitHub** - Follow the instructions to submit your listing for review<br><br>The tool includes helpful tooltips and validates your information before submission.'
+      
+      - question: "What are my obligations as a merchant to be listed here?"
+        answer: "Merchants listed on ARRRmada are expected to maintain a standard of service, adhere to community guidelines, and continue accepting Pirate Chain as a payment method to remain listed on the platform."
+      
+      - question: "How long will the listing take to be approved after submitting?"
+        answer: "The approval process for listing requests on ARRRmada may vary, but merchants can expect a response within a reasonable timeframe after submitting their request. Currently we have set a maximum period of 2 weekdays, but typically it's done the same day."
+      
+      - question: "Does the listing have any fees?"
+        answer: "No. Listings are 100% free with no hidden charges."
+      
+      - question: "I would like to receive ARRR donations on my website/blog. Can I also be listed here?"
+        answer: "Yes, websites and blogs that accept ARRR donations can also be listed on ARRRmada. Use our [Listing Tool]({{ site.baseurl }}/listing_tool) to create your submission."
 
-  - question: "What requirements must be met to be listed on ARRRmada?"
-    answer: "To be listed on ARRRmada, merchants must accept Pirate Chain as a mode of payment, adhere to the community guidelines, and submit a listing request through the ARRRmada website for review and approval."
-    
-  - question: "What payment service providers are available that support ARRR?"
-    answer: 'Various payment service providers support ARRR. You can find a list of supported payment Gateways [here]({{ site.baseurl }}/payment_gateways) or the Pirate Chain official website.'
+  - name: "Payment Integration & Tools"
+    icon: "🔧"
+    id: "technical"
+    faqs:
+      - question: "What payment service providers are available that support ARRR?"
+        answer: 'Various payment service providers support ARRR. You can find a comprehensive list of supported payment gateways [here]({{ site.baseurl }}/payment_gateways), including:<br><br>**Featured:** Pirate BTCPay - The official BTCPay Server fork specifically designed for ARRR<br>**Processors:** Cryptocurrency Checkout, VerusPay, PiratePay<br>**Integrations:** Shopify Script, OpenCart'
+      
+      - question: "What is Pirate BTCPay and how do I set it up?"
+        answer: 'Pirate BTCPay is a specialized fork of BTCPay Server specifically designed to accept ARRR payments. It offers:<br><br>**Key Features:**<br>• Native ARRR support<br>• Self-hosted solution (you control your funds)<br>• Zero transaction fees<br>• Privacy-focused<br>• WooCommerce integration<br>• Point-of-Sale support<br>• No KYC required<br><br>**Setup Requirements:**<br>1. Basic server knowledge<br>2. VPS hosting (recommended)<br>3. Domain name<br><br>**Getting Started:**<br>Visit the [Pirate BTCPay GitHub repository](https://github.com/PirateNetwork/btcpayserver) for detailed installation instructions and documentation. The setup typically takes 30-60 minutes for users with basic server experience.'
+      
+      - question: "How do I add an 'ARRR Accepted Here' badge to my website?"
+        answer: 'ARRRmada provides ready-to-use badges that you can add to your website to show that you accept Pirate Chain:<br><br>**Available Options:**<br>1. **Static Badges** - Simple images you can link<br>2. **Animated Badges** - Eye-catching buttons<br>3. **Custom Sizes** - Various dimensions available<br><br>**How to Add:**<br>1. Visit our [Donation Buttons page]({{ site.baseurl }}/donation_buttons)<br>2. Choose your preferred badge design<br>3. Copy the provided HTML code<br>4. Paste it into your website<br><br>The code includes both the badge image and a link back to ARRRmada, helping other users discover ARRR-accepting merchants.'
+      
+      - question: "Can I integrate ARRR payments into my existing e-commerce platform?"
+        answer: 'Yes! ARRR can be integrated into most major e-commerce platforms:<br><br>**WooCommerce (WordPress):**<br>Use the BTCPay plugin with Pirate BTCPay Server<br><br>**Shopify:**<br>Available via Shopify Script integration<br><br>**OpenCart:**<br>Community-developed solution available<br><br>**Custom Platforms:**<br>Use Pirate BTCPay API for custom integrations<br><br>Visit our [Payment Gateways page]({{ site.baseurl }}/payment_gateways) for detailed information on each integration option.'
+      
+      - question: "What is Github and why do I need it?"
+        answer: "GitHub is a platform for version control and collaborative code development, allowing developers to work together on projects from anywhere in the world. For ARRRmada, GitHub serves as:<br><br>• **Submission Platform** - Where you submit your merchant listings<br>• **Transparency** - All submissions are publicly reviewable<br>• **Community Participation** - Anyone can suggest improvements<br><br>Don't worry if you're not technical - our [Listing Tool]({{ site.baseurl }}/listing_tool) generates everything you need, and we provide step-by-step instructions for the GitHub submission process."
 
-  - question: "Why should I accept ARRR as a payment for my service and goods?"
-    answer: "Accepting ARRR as payment allows merchants to tap into a privacy-focused community, ensuring secure transactions and expanding their customer base to those who prioritize privacy in their online transactions."
-    
-  - question: "I am a Merchant and would like to register here, how do I do that?"
-    answer: 'Merchants interested in listing their businesses on ARRRmada can submit a listing request [here]({{ site.baseurl }}/listing_tool), providing necessary details for review and approval.'
-
-  - question: "What is Github?"
-    answer: "GitHub is a platform for version control and collaborative code development, allowing developers to work together on projects from anywhere in the world. It is also a useful place for the community to partispate with ideas and feedback, or in this case, submit a listing."
-    
-  - question: "What are my obligations as a merchant to be listed here?"
-    answer: "Merchants listed on ARRRmada are expected to maintain a standard of service, adhere to community guidelines, and continue accepting Pirate Chain as a payment method to remain listed on the platform."
-
-  - question: "How long will the listing take to be approved after submitting?"
-    answer: "The approval process for listing requests on ARRRmada may vary, but merchants can expect a response within a reasonable timeframe after submitting their request. Currently we have set a maximum period of 2 weekdays, but typically it's done the same day."
-    
-  - question: "Does the listing have any fees?"
-    answer: "No. Listings are 100% free with no hidden charges."
-
-  - question: "What wallet support is available for Pirate Chain?"
-    answer: 'There are various wallets available that support Pirate Chain. You can find a list of supported wallets on the Pirate Chain official website <a href="https://pirate.black/exchanges" target="_blank" rel="noopener noreferrer">here</a>,'
-
-  - question: "I would like to receive ARRR donations on my website/blog. Can I also be listed here?"
-    answer: "Yes, websites and blogs that accept ARRR donations can also be listed on ARRRmada."
-
-  - question: "How can I contact the ARRRmada?"
-    answer: 'You can contact ARRRmada via the official Pirate Chain community Discord server <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">here</a>.'
-
-  - question: "I want to be an active contributor, what do I have to do?"
-    answer: 'To become an active contributor, you can get in touch with the ARRRmada team by joining the community discussions on GitHub and/or via the official Pirate Chain community Discord server <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">here</a>.'
-
-
-  
+  - name: "Support & Contact"
+    icon: "🆘"
+    id: "support"
+    faqs:
+      - question: "How can I contact the ARRRmada?"
+        answer: 'You can contact ARRRmada via the official Pirate Chain community Discord server. Join us <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">here</a> and look for the #arrrmada channel.'
+      
+      - question: "I want to be an active contributor, what do I do?"
+        answer: 'We welcome active contributors! Here is how to get involved:<br><br>**Ways to Contribute:**<br>• Submit merchant listings<br>• Improve documentation<br>• Report bugs or suggest features<br>• Help other merchants on Discord<br>• Spread the word about ARRR-accepting businesses<br><br>**Get Started:**<br>1. Join our <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">Discord server</a><br>2. Check out our <a href="https://github.com/ARRRmada/ARRRmada.com" target="_blank" rel="noopener noreferrer">GitHub repository</a><br>3. Introduce yourself and let us know how you would like to help!'
+      
+      - question: "I found an issue with the website or a listing, how do I report it?"
+        answer: 'We appreciate your help in keeping ARRRmada accurate and functional!<br><br>**To Report Issues:**<br>1. Join our <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">Discord server</a><br>2. Post in the #arrrmada channel with details<br>3. Or create an issue on our <a href="https://github.com/ARRRmada/ARRRmada.com/issues" target="_blank" rel="noopener noreferrer">GitHub repository</a><br><br>Please include as much detail as possible to help us resolve the issue quickly.'
+      
+      - question: "Can I update my merchant listing after it has been approved?"
+        answer: 'Yes! To update your listing:<br><br>1. Use the [Listing Tool]({{ site.baseurl }}/listing_tool) to generate an updated version<br>2. Submit the changes via GitHub (same process as initial submission)<br>3. Or contact us on <a href="https://discord.gg/4ABvFa5hHj" target="_blank" rel="noopener noreferrer">Discord</a> with the updates<br><br>Common updates include: changed business hours, new contact information, updated website URL, or additional services offered.'
