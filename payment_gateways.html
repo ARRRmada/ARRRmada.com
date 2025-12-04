@@ -2,78 +2,281 @@
 layout: page
 css-list:
   - "assets/css/gateways.css"
+permalink: /payment_gateways
 ---
-<!-- hero section -->
+
+<!-- Hero Section with Coin Animation and Boxes -->
 <section class="hero-section">
   <div class="content">  
     <div class="coin">    
       <img class="digital-coin" alt="Pirate Digital Coin" src="{{ site.baseurl }}/assets/img/site/p_coin.png" />
     </div>
     <div>
-      <h1>Payment Gateways</h1>
-      <strong>Solutions to accept $ARRR</strong>
+      <h1>⚓ Payment Gateways ⚓</h1>
+      <strong>Accept ARRR Payments for Your Business</strong>
       <p>
-        Pirate Chain provides options for accepting $ARRR across various platforms including WordPress, 
-        HTML, Shopify, and more. Discover all payment solutions here.
+        Explore payment solutions that enable you to accept Pirate Chain (ARRR)<br />
+        From self-hosted options to managed services
       </p>
-      <a class="btn" href="{{ site.baseurl }}/" title="View Pirate Chain merchants">◄ HOME</a>
-    
+      <a class="btn" href="{{ site.baseurl }}/" title="Back to Home">◄ HOME</a>
     </div>
   </div>
   <!-- boxes animation -->
-  <div class="boxes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+  <div class="boxes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 </section>
 
-<!-- gateway-explanation section -->
-<section class="gateway-explanation">
-  <div class="content"> 
-    <img class="p" alt="pirate logo" src="{{ site.baseurl }}/assets/img/logo/Pirate_Logo_P_Gold.svg" />   
-    <h2>Boost your business with the Pirate Chain Privacy Coin</h2> 
-    <p>
-        Ready to accept cryptocurrency payments, especially with ARRR? Explore more about our merchant solutions. 
-    </p>    
+<div class="payment-gateways-container">
+    <!-- Featured Section - Pirate BTCPay -->
+    <section class="featured-gateway">
+        <div class="featured-badge">⭐ RECOMMENDED</div>
+        <div class="featured-content">
+            <div class="featured-header">
+                <h2>
+                    <img src="{{ site.baseurl }}/assets/img/logo/Pirate_Logo_Wordmark_White.png" 
+                         alt="Pirate" 
+                         class="inline-pirate-logo" /> 
+                    BTCPay
+                </h2>
+                <span class="badge badge-free">FREE</span>
+            </div>
+            <p class="featured-tagline">The Official BTCPay Server Fork for Pirate Chain</p>
+            <p class="featured-description">
+                Pirate BTCPay is a specialized fork of BTCPay Server specifically designed to accept ARRR payments. 
+                This self-hosted payment processor gives you complete control over your transactions while maintaining 
+                the privacy guarantees that Pirate Chain is known for. Accept ARRR directly from customers without any 
+                intermediaries, third parties, or transaction fees.
+            </p>
+            
+            <div class="featured-features">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Native ARRR support</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Self-hosted solution</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Zero transaction fees</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Privacy-focused</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Open source</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>WooCommerce</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>No KYC required</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Point-of-Sale</span>
+                </div>
+            </div>
 
-    <div class="solutions">
-      <div class="left-box">
-        <img alt="payment gateways" src="{{ site.baseurl }}/assets/img/site/gateways.jpg"/>
-      </div>
-      <div class="right-box">
-        <h2>Which Gateways Support $ARRR?</h2>
-        <p>
-          The gateways detailed here enable you to accept $ARRR payments on your website. 
-          Together with our partners, we provide various options to accept e-commerce transactions, 
-          donations, service fees, and more.
-        </p>
-        <p>
-          In the Pirate Chain network, all transactions remain anonymous. Accept $ARRR payments directly, with no 
-          intermediaries or middle-man. You can opt for a free WordPress/WooCommerce solution, or select Shopify, 
-          OpenCart, HTML, or a multi-platform alternative.
-        </p>
-        <p>
-          Should you have any inquiries or require assistance with the individual gateways, feel free to 
-          reach out to us on the community <a title="chat at the community discord" href="https://pirate.black/discord" target="_blank">Discord</a>.
-        </p>
+            <div class="featured-actions">
+                <a href="https://github.com/PirateNetwork/btcpayserver" class="btn btn-primary" target="_blank" rel="noopener">
+                    Get Started →
+                </a>
+                <a href="https://github.com/PirateNetwork/btcpayserver" class="btn btn-secondary" target="_blank" rel="noopener">
+                    Documentation
+                </a>
+            </div>
+
+            <div class="setup-info">
+                <span class="setup-label">Setup Level:</span>
+                <span class="badge badge-medium">Medium</span>
+                <span class="setup-note">Requires basic server knowledge and VPS hosting</span>
+            </div>
         </div>
-    </div>
-    </div>
-    <img class="divider" alt="page divider" src="{{ site.baseurl }}/assets/img/site/triangle-bottom.svg" />
-  </section>
+    </section>
 
-<!-- gateways-section -->
-<section class="gateway-listings-section">
-  <div class="content"> 
-    {% for gateway in site.data.gateways %}    
-        <a href="{{ gateway.url}}" target="_blank" 
-        rel="noopener noreferrer"
-        title="go to {{ gateway.name }}'s website"
-        class="gateway-box" >
-          <div class="gateway-imgbox">
-            <img  src="{{ site.baseurl }}/assets/img/gateways/{{ gateway.img}}" 
-                  alt="{{ gateway.name }}" />
-          </div>
-          <h3>{{ gateway.name }}</h3>
-          <p class="description">{{ gateway.desc | truncate: 300, "..." }}</p>
-        </a>       
-    {% endfor %}
-  </div>
-</section>
+    <!-- Quick Navigation -->
+    <nav class="quick-nav">
+        <a href="#processors" class="quick-nav-link">💰 Payment Processors</a>
+        <a href="#integrations" class="quick-nav-link">🔗 Integrations</a>
+        <a href="#help" class="quick-nav-link">🆘 Get Help</a>
+    </nav>
+
+    <!-- Payment Processors Section -->
+    <section id="processors" class="gateway-section">
+        <h2 class="section-title">💰 Payment Processors</h2>
+        <p class="section-description">Hosted payment solutions with ARRR support</p>
+        
+        <div class="gateway-grid">
+            <!-- Cryptocurrency Checkout -->
+            <div class="gateway-card">
+                <div class="gateway-image">
+                    <img src="{{ site.baseurl }}/assets/img/gateways/ccc.svg" 
+                         alt="Cryptocurrency Checkout" />
+                </div>
+                <div class="card-header">
+                    <h3>Cryptocurrency Checkout</h3>
+                    <span class="badge badge-free">FREE</span>
+                </div>
+                <p class="card-description">
+                    Breaking barriers of accepting multiple cryptocurrencies with easy-to-install platform integrations. Decentralized direct P2P transactions with real-time market price conversions.
+                </p>
+                <ul class="card-features">
+                    <li>Easy platform integrations</li>
+                    <li>No coding experience required</li>
+                    <li>Direct P2P transactions</li>
+                    <li>Real-time price conversions</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="setup-badge badge-easy">Setup: Easy</span>
+                    <a href="https://cryptocurrencycheckout.com/" class="btn btn-outline" target="_blank" rel="noopener">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- VerusPay -->
+            <div class="gateway-card">
+                <div class="gateway-image">
+                    <img src="{{ site.baseurl }}/assets/img/gateways/veruspay.png" 
+                         alt="VerusPay" />
+                </div>
+                <div class="card-header">
+                    <h3>VerusPay</h3>
+                    <span class="badge badge-free">FREE</span>
+                </div>
+                <p class="card-description">
+                    Anonymous z-commerce payment plugin for WordPress. VerusPay Gateway enables private cryptocurrency payments on your WordPress site.
+                </p>
+                <ul class="card-features">
+                    <li>WordPress integration</li>
+                    <li>Anonymous z-commerce</li>
+                    <li>Privacy-focused</li>
+                    <li>Open source</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="setup-badge badge-advanced">Setup: Advanced</span>
+                    <a href="https://github.com/monkins1010/VerusPay/wiki" class="btn btn-outline" target="_blank" rel="noopener">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- PiratePay -->
+            <div class="gateway-card">
+                <div class="gateway-image">
+                    <img src="{{ site.baseurl }}/assets/img/gateways/piratepay.svg" 
+                         alt="PiratePay" />
+                </div>
+                <div class="card-header">
+                    <h3>PiratePay</h3>
+                    <span class="badge badge-free">FREE</span>
+                </div>
+                <p class="card-description">
+                    Open-source decentralized payment gateway for accepting ARRR. No middleman, built with highest level of privacy and security in mind.
+                </p>
+                <ul class="card-features">
+                    <li>Decentralized solution</li>
+                    <li>No middleman required</li>
+                    <li>Maximum privacy & security</li>
+                    <li>Open source</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="setup-badge badge-medium">Setup: Medium</span>
+                    <a href="https://cryptocurrencycheckout.com/guides/piratepay" class="btn btn-outline" target="_blank" rel="noopener">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations & Tools Section -->
+    <section id="integrations" class="gateway-section">
+        <h2 class="section-title">🔗 Integrations & Tools</h2>
+        <p class="section-description">E-commerce plugins and platform integrations</p>
+        
+        <div class="gateway-grid">
+            <!-- Shopify Script -->
+            <div class="gateway-card">
+                <div class="gateway-image">
+                    <img src="{{ site.baseurl }}/assets/img/gateways/shopify.svg" 
+                         alt="Shopify" />
+                </div>
+                <div class="card-header">
+                    <h3>Shopify Script</h3>
+                    <span class="badge badge-free">FREE</span>
+                </div>
+                <p class="card-description">
+                    Shopify is one of the best-known e-commerce platforms. Thanks to HumanAction.io, ARRR is available as a payment method to all Shopify users.
+                </p>
+                <ul class="card-features">
+                    <li>Shopify integration</li>
+                    <li>No programming skills required</li>
+                    <li>Easy to create your own shop</li>
+                    <li>ARRR payment method</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="setup-badge badge-easy">Setup: Easy</span>
+                    <a href="https://medium.com/piratechain/piratechain-raises-anchor-on-the-shopify-plugin-6c5819726f07" class="btn btn-outline" target="_blank" rel="noopener">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- OpenCart -->
+            <div class="gateway-card">
+                <div class="gateway-image">
+                    <img src="{{ site.baseurl }}/assets/img/gateways/opencart.svg" 
+                         alt="OpenCart" />
+                </div>
+                <div class="card-header">
+                    <h3>OpenCart</h3>
+                    <span class="badge badge-free">FREE</span>
+                </div>
+                <p class="card-description">
+                    Complete OpenCart solution to accept ARRR. A complete guide available on Steemit shows how to set up your self-sovereign crypto currency accepting store.
+                </p>
+                <ul class="card-features">
+                    <li>OpenCart integration</li>
+                    <li>Self-sovereign solution</li>
+                    <li>Complete setup guide</li>
+                    <li>Zero cost setup</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="setup-badge badge-medium">Setup: Medium</span>
+                    <a href="https://steemit.com/cryptocurrency/@lordtricky/a-complete-guide-for-how-to-set-up-your-own-self-sovereign-crypto-currency-accepting-internet-store-with-zero-cost" class="btn btn-outline" target="_blank" rel="noopener">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action - Add Your Gateway -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h3>💼 Payment Provider?</h3>
+            <p>
+                Do you offer a payment gateway or processor that supports ARRR?<br />
+                Get your service listed on ARRRmada and reach thousands of merchants!
+            </p>
+            <a href="{{ site.baseurl }}/listing_tool" class="btn btn-primary">
+                Submit Your Gateway →
+            </a>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="help-section">
+        <div class="help-content">
+            <h3>🆘 Need Help Getting Started?</h3>
+            <p>
+                Our community is here to help you integrate ARRR payments into your business.<br />
+                Join our Discord for technical support and merchant guidance.
+            </p>
+            <div class="help-actions">
+                <a href="https://pirate.black/discord" class="btn btn-primary" target="_blank" rel="noopener">
+                    Join Discord Community →
+                </a>
+                <a href="{{ site.baseurl }}/faq" class="btn btn-secondary">
+                    View FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
