@@ -783,3 +783,66 @@
   padding-bottom: 0.1rem;
 }
 
+
+/* Featured Section - Mobile Responsive Fixes */
+@media (max-width: 900px) {
+  /* Stack cards vertical */
+  .featured-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  /* Kompaktere Cards */
+  .featured-card {
+    padding: 1rem;
+  }
+  
+  /* Beschreibung verstecken */
+  .featured-desc {
+    display: none;
+  }
+  
+  /* Tags verstecken */
+  .featured-tags {
+    display: none;
+  }
+  
+  /* Kleineres Bild */
+  .featured-image {
+    height: 100px;
+  }
+  
+  /* Kompakterer Award */
+  .featured-award {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  /* Kleinerer Titel */
+  .featured-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Kleinerer Button */
+  .featured-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Noch kompakter */
+  .featured-section {
+    padding: 0 1rem;
+  }
+  
+  .featured-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .featured-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
