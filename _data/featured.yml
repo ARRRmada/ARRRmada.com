@@ -1,0 +1,45 @@
+# Featured Merchants Configuration
+# Update this file to change which merchants are featured
+
+featured:
+  # Gold - Captain's Pick (MANUALLY SELECTED)
+  - type: "captains_pick"
+    badge_icon: "🏴‍☠️"
+    badge_text: "Captain's Pick"
+    award: "💎 Best Service"
+    merchant_id: "qN89OmuM"  # ← Geändert von pirate-bay-shop
+    custom_name: null
+    custom_desc: null  # Uses merchant's original description
+    custom_img: null   # Uses merchant's original image
+    tier: "gold"
+    auto: false
+    
+  # Silver - Crew Favorite (RANDOM ROTATION)
+  - type: "crew_favorite"
+    badge_icon: "⚓"
+    badge_text: "Crew Favorite"
+    award: "🔥 Community Choice"
+    auto: true
+    rotation: "random"  # Randomly selects a merchant on each build
+    tier: "silver"
+    
+  # Bronze - New Arrival (AUTOMATICALLY NEWEST)
+  - type: "new_arrival"
+    badge_icon: "⛵"
+    badge_text: "New Arrival"
+    award: "✨ Just Joined"
+    auto: true
+    rotation: "newest"  # Automatically shows the last merchant in merchants.yml
+    tier: "bronze"
+
+# Configuration
+config:
+  # How many merchants to show
+  max_featured: 3
+  
+  # Auto-rotate featured merchants
+  auto_rotate: true
+  rotation_days: 7
+  
+  # Show featured section on homepage
+  enabled: true

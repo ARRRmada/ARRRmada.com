@@ -1,0 +1,19 @@
+# robots.txt for ARRRmada.com
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://arrrmada.com/sitemap.xml
+
+# Crawl-delay for respectful bots
+Crawl-delay: 1
+
+# Block common bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
