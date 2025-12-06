@@ -846,3 +846,17 @@
   }
 }
 
+
+/* Merchants Section - Weniger Abstand nach unten */
+.merchants-section {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+}
+
+/* Footer - Weniger Abstand nach oben */
+.pirate-footer,
+footer {
+  margin-top: 0 !important;
+  padding-top: 2rem !important;
+}
+
