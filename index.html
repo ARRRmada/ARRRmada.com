@@ -82,19 +82,118 @@ javascript-list:
   </svg>
 </section>
 
+<!-- Featured Merchants Section -->
+{% if site.data.featured.config.enabled %}
+<section class="featured-section">
+  <div class="featured-container">
+    
+    <!-- Section Header -->
+    <div class="featured-header">
+      <h2>⭐ Featured Merchants ⭐</h2>
+      <p class="featured-subtitle">Handpicked by the ARRRmada Crew</p>
+    </div>
+
+    <!-- Featured Grid -->
+    <div class="featured-grid">
+      
+      {% for featured in site.data.featured.featured limit:site.data.featured.config.max_featured %}
+        
+        <!-- Determine which merchant to show -->
+        {% if featured.auto %}
+          {% if featured.rotation == "random" %}
+            <!-- Random merchant selection - only ACTIVE merchants -->
+            {% assign active_merchants = "" | split: "" %}
+            {% for m in site.data.merchants %}
+              {% if m.url_status == 'active' or m.url_status == nil or m.url_status == '' %}
+                {% assign active_merchants = active_merchants | push: m %}
+              {% endif %}
+            {% endfor %}
+            {% assign timestamp = "now" | date: "%s" %}
+            {% assign active_count = active_merchants | size %}
+            {% assign random_index = timestamp | modulo: active_count %}
+            {% assign merchant = active_merchants[random_index] %}
+          {% elsif featured.rotation == "newest" %}
+            <!-- Newest merchant (first in list, since new merchants are added at top) -->
+            {% assign merchant = site.data.merchants | first %}
+          {% endif %}
+        {% else %}
+          <!-- Manually selected merchant -->
+          {% assign merchant = site.data.merchants | where: "id", featured.merchant_id | first %}
+        {% endif %}
+        
+        <div class="featured-card {{ featured.tier }}">
+          <!-- Badge -->
+          <div class="featured-badge {{ featured.type }}">
+            <span class="badge-icon">{{ featured.badge_icon }}</span>
+            <span class="badge-text">{{ featured.badge_text }}</span>
+          </div>
+          
+          <!-- Image -->
+          <div class="featured-image">
+            {% if featured.custom_img %}
+              <img src="{{ site.baseurl }}/assets/img/merchants/{{ featured.custom_img }}" alt="{{ merchant.name }}" />
+            {% else %}
+              <img src="{{ site.baseurl }}/assets/img/merchants/{{ merchant.image }}" alt="{{ merchant.name }}" />
+            {% endif %}
+          </div>
+          
+          <!-- Content -->
+          <div class="featured-content">
+            <div class="featured-award">{{ featured.award }}</div>
+            
+            <h3 class="featured-name">
+              {% if featured.custom_name %}
+                {{ featured.custom_name }}
+              {% else %}
+                {{ merchant.name }}
+              {% endif %}
+            </h3>
+            
+            <p class="featured-desc">
+              {% if featured.custom_desc %}
+                {{ featured.custom_desc }}
+              {% else %}
+                {{ merchant.description }}
+              {% endif %}
+            </p>
+            
+            <!-- Tags -->
+            <div class="featured-tags">
+              {% for tag_id in merchant.tags %}
+                {% assign tag = site.data.tags | where: "id", tag_id | first %}
+                <span class="featured-tag">{{ tag.name }}</span>
+              {% endfor %}
+            </div>
+            
+            <!-- Button -->
+            <a href="{{ merchant.url }}" class="featured-btn {{ featured.tier }}-btn" target="_blank" rel="noopener noreferrer">
+              <span>Visit Store</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
+{% endif %}
+
 <!-- merchants section -->
 <section class="merchants-section" id="merchants-section">
   <div class="content">
-    <img class="pah" src="{{ site.baseurl }}/button/button0.png" alt="Pirate Chain (ARRR) Accepted here button" />
     <h2>Merchant Directory</h2>
+
     <!-- Search Bar -->
-<div class="search-container">
- <input type="text" 
-       id="merchant-search" 
-       placeholder="Search the fleet... (name, description, services)" 
-       onkeyup="searchMerchants()">
-  <div id="search-results-info"></div>
-</div>
+    <div class="search-container">
+      <input type="text" 
+             id="merchant-search" 
+             placeholder="Search the fleet... (name, description, services)" 
+             onkeyup="searchMerchants()">
+      <div id="search-results-info"></div>
+    </div>
+
     <div id="tag-buttons">
       <h2>Viewing: <span id="current_tag">All</span></h2>
       {% assign sortedTags = site.data.tags | sort: 'name' %}

@@ -325,3 +325,461 @@
     font-size: 20px;
   }
 }
+/* ========================================
+   ⭐ FEATURED MERCHANTS SECTION
+   ======================================== */
+
+.featured-section {
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.featured-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.featured-header h2 {
+  font-size: 2.5rem;
+  color: #f0b90b;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(240, 185, 11, 0.3);
+}
+
+.featured-subtitle {
+  color: #8b949e;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.featured-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(240, 185, 11, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.featured-card:hover {
+  transform: translateY(-8px);
+  border-color: #f0b90b;
+  box-shadow: 0 8px 24px rgba(240, 185, 11, 0.25);
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featured-badge.captains-pick {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  color: #ffd700;
+}
+
+.featured-badge.crew-favorite {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.2), rgba(192, 192, 192, 0.1));
+  border: 1px solid rgba(192, 192, 192, 0.4);
+  color: #c0c0c0;
+}
+
+.featured-badge.new-arrival {
+  background: linear-gradient(135deg, rgba(205, 127, 50, 0.2), rgba(205, 127, 50, 0.1));
+  border: 1px solid rgba(205, 127, 50, 0.4);
+  color: #cd7f32;
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+}
+
+.featured-image {
+  width: 100%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover .featured-image img {
+  transform: scale(1.05);
+}
+
+.featured-content {
+  text-align: left;
+}
+
+.featured-award {
+  display: inline-block;
+  background: rgba(240, 185, 11, 0.15);
+  color: #f0b90b;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.featured-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f0b90b;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.featured-desc {
+  color: #8b949e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  min-height: 3.5rem;
+}
+
+.featured-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.featured-tag {
+  background: rgba(88, 166, 255, 0.15);
+  color: #58a6ff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+.featured-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  background: rgba(240, 185, 11, 0.1);
+  border: 2px solid rgba(240, 185, 11, 0.3);
+  border-radius: 10px;
+  color: #f0b90b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.featured-btn:hover {
+  background: rgba(240, 185, 11, 0.2);
+  border-color: #f0b90b;
+  transform: translateX(5px);
+}
+
+.btn-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.featured-btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+.gold-btn {
+  border-color: rgba(255, 215, 0, 0.4);
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.gold-btn:hover {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.silver-btn {
+  border-color: rgba(192, 192, 192, 0.4);
+  color: #c0c0c0;
+  background: rgba(192, 192, 192, 0.1);
+}
+
+.silver-btn:hover {
+  border-color: #c0c0c0;
+  background: rgba(192, 192, 192, 0.2);
+}
+
+.bronze-btn {
+  border-color: rgba(205, 127, 50, 0.4);
+  color: #cd7f32;
+  background: rgba(205, 127, 50, 0.1);
+}
+
+.bronze-btn:hover {
+  border-color: #cd7f32;
+  background: rgba(205, 127, 50, 0.2);
+}
+
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .featured-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-section {
+    padding: 0 1rem;
+  }
+  
+  .featured-header h2 {
+    font-size: 1.7rem;
+  }
+  
+  .featured-card {
+    padding: 1.2rem;
+  }
+}
+
+
+/* Featured Section Spacing Fix */
+.featured-section {
+  margin-top: 5rem;        /* Abstand nach oben (von Wellen) */
+  margin-bottom: 5rem;     /* Abstand nach unten (zu Directory) */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+/* Featured Section Spacing Adjustments */
+.featured-section {
+  margin-top: 5rem;        /* Abstand nach oben (von Wellen) */
+  margin-bottom: 2rem;     /* KLEINER Abstand nach unten */
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+/* Merchants Section - weniger Abstand oben */
+.merchants-section .content {
+  padding-top: 1rem;       /* Kleinerer Abstand für button0.png */
+}
+
+.merchants-section .pah {
+  margin-top: 0.5rem;      /* Weniger Abstand nach oben */
+  margin-bottom: 1rem;
+}
+
+
+/* Featured Cards - Gleiche Höhe */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: stretch;  /* Alle Cards gleich hoch */
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;  /* Volle Höhe des Grid-Items */
+}
+
+.featured-content {
+  flex: 1;  /* Content füllt verfügbaren Platz */
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-desc {
+  flex: 1;  /* Description nimmt verfügbaren Platz */
+  min-height: 4.5rem;  /* Mindesthöhe für Konsistenz */
+  max-height: 6rem;     /* Maximale Höhe */
+  overflow: hidden;      /* Text abschneiden wenn zu lang */
+}
+
+.featured-tags {
+  margin-top: auto;  /* Tags immer am Ende */
+}
+
+.featured-btn {
+  margin-top: 1rem;  /* Button immer ganz unten */
+}
+
+
+/* Featured Section - Weniger Abstand oben */
+.featured-section {
+  margin-top: 2rem;      /* Kleiner Abstand von Wellen */
+  padding-top: 1rem;     /* Weniger Padding oben */
+}
+
+.featured-header {
+  margin-bottom: 2rem;   /* Weniger Abstand zum Grid */
+}
+
+/* Merchants Section - Weniger Abstand beim PAH Button */
+.merchants-section {
+  padding-top: 0;
+}
+
+.merchants-section .content {
+  padding-top: 0;
+}
+
+.merchants-section .pah {
+  margin-top: 0;         /* Kein Abstand oben */
+  margin-bottom: 1rem;   /* Kleiner Abstand unten */
+}
+
+.merchants-section h2 {
+  margin-top: 0.5rem;    /* Weniger Abstand über "Merchant Directory" */
+}
+
+
+/* Merchants Section - Minimaler Abstand */
+.merchants-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.merchants-section > .content {
+  padding-top: 0;
+}
+
+.merchants-section .pah {
+  margin-top: -1rem;     /* Negativer Abstand um näher zu rücken */
+  margin-bottom: 0.5rem;
+}
+
+/* Featured Section - Mehr Abstand nach unten */
+.featured-section {
+  margin-bottom: 1rem;   /* Weniger Abstand nach unten */
+}
+
+
+/* Merchant Directory Titel - Mehr Abstand oben */
+.merchants-section h2 {
+  margin-top: 2.5rem;    /* Größerer Abstand über "Merchant Directory" */
+}
+
+
+/* Merchant Directory Titel - Noch mehr Abstand oben */
+.merchants-section h2 {
+  margin-top: 4rem;    /* Großer Abstand über "Merchant Directory" */
+}
+
+
+/* Merchant Directory Titel - Noch mehr Abstand oben */
+.merchants-section h2 {
+  margin-top: 6rem;    /* Großer Abstand über "Merchant Directory" */
+}
+
+
+/* Merchant Directory Titel - Noch mehr Abstand oben */
+.merchants-section h2 {
+  margin-top: 4rem;    /* Großer Abstand über "Merchant Directory" */
+}
+
+
+/* Merchant Directory h2 - Mehr Abstand oben */
+.merchants-section .content > h2 {
+  margin-top: 3rem;      /* Mehr Abstand über "Merchant Directory" */
+}
+
+
+/* Merchant Directory h2 - Mehr Abstand oben */
+.merchants-section .content > h2 {
+  margin-top: 6rem;      /* Mehr Abstand über "Merchant Directory" */
+}
+
+
+/* Merchant Directory h2 - Mehr Abstand oben */
+.merchants-section .content > h2 {
+  margin-top: 1rem;      /* Mehr Abstand über "Merchant Directory" */
+}
+
+
+/* Merchants Section selbst - Mehr Abstand nach oben */
+.merchants-section {
+  margin-top: 5rem !important;     /* Abstand zwischen Featured und Merchants Section */
+}
+
+
+/* Merchant Directory H2 - Direkter Abstand nach oben */
+.merchants-section h2:first-of-type {
+  margin-top: 4rem !important;     /* Abstand direkt über h2 */
+  padding-top: 2rem;
+}
+
+
+/* Abstand zwischen Search und Tag-Buttons kleiner */
+.search-container {
+  margin-bottom: 1rem;   /* Kleiner Abstand nach unten */
+}
+
+#tag-buttons {
+  margin-top: 0.5rem;    /* Kleiner Abstand nach oben */
+}
+
+#tag-buttons h2 {
+  margin-top: 0;         /* Kein extra Abstand */
+}
+
+
+/* Abstand zwischen search-container und tag-buttons kleiner */
+#tag-buttons {
+  margin-top: 0;         /* Kein Abstand nach oben */
+  padding-top: 0;
+}
+
+.search-container {
+  margin-bottom: 0.5rem; /* Sehr kleiner Abstand nach unten */
+}
+
+
+/* Featured Section - Kleinerer Abstand nach unten */
+.featured-section {
+  margin-bottom: 1rem !important;   /* Kleiner Abstand zur nächsten Section */
+  padding-bottom: 0.5rem;
+}
+
+
+/* Featured Section - Kleinerer Abstand nach unten */
+.featured-section {
+  margin-bottom: 1rem !important;   /* Kleiner Abstand zur nächsten Section */
+  padding-bottom: 2.5rem;
+}
+
+
+/* Featured Section - Kleinerer Abstand nach unten */
+.featured-section {
+  margin-bottom: 1rem !important;   /* Kleiner Abstand zur nächsten Section */
+  padding-bottom: 0.1rem;
+}
+
