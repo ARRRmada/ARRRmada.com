@@ -304,7 +304,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [Pirate Chain Community](https://pirate.black)
+- [Pirate Chain Community](https://piratechain.com)
 - All contributing merchants and developers
 - Jekyll and GitHub Pages teams
 
@@ -314,6 +314,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues:** [GitHub Issues](https://github.com/ARRRmada/ARRRmada.com/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/ARRRmada/ARRRmada.com/discussions)
+- **Discord:** [Pirate Chain Discord](https://pirate.black/discord)
 - **Email:** ARRRmada@pirate.black
 
 ---
@@ -322,6 +323,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   
   **Made with ⚓ by the Pirate Chain Community**
   
-  [Website](https://arrrmada.com) • [Pirate Chain](https://pirate.black) • [GitHub](https://github.com/ARRRmada)
+  [Website](https://arrrmada.com) • [Pirate Chain](https://piratechain.com) • [GitHub](https://github.com/ARRRmada)
   
 </div>
