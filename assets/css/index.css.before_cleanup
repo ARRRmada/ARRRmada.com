@@ -687,6 +687,15 @@ footer {
 .description-section {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.merchants-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.featured-section {
+  padding-top: 3rem;
 
 /* Final spacing fixes */
 .description-section {

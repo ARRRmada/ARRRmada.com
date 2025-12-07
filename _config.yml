@@ -1,37 +1,42 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Add to _config.yml
 
-encoding: utf-8
-permalink: /:path/:basename
-title: ARRRmada Directory - ARRR (Pirate Chain) accepted here
-keywords: cryptocurrency, privacy, pirate chain, arrr, fungible
-email: ARRRmada@pirate.black
-description: >- 
-  The ARRRmada is a link directory for all stores, service providers and companies 
-  that accept ARRR as a payment.
-baseurl: ""
-url: "https://arrrmada.com"
-repo: https://github.com/ARRRmada/ARRRmada.com
-readme: https://github.com/ARRRmada/ARRRmada.com
-
+# Plugins for SEO
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
+
+# Sitemap Configuration
+sitemap:
+  exclude:
+    - /404.html
+    - /listing_decoder.html
+  changefreq: weekly
+  priority: 0.8
+
+# Feed Configuration  
+feed:
+  path: feed.xml
+  excerpt_only: false
+
+# SEO Tag Configuration
+twitter:
+  username: PirateARRRmada
+  card: summary_large_image
+
+social:
+  name: ARRRmada
+  links:
+    - https://twitter.com/PirateARRRmada
+    - https://discord.gg/piratechain
+    - https://github.com/ARRRmada/ARRRmada.com
+
+# Performance & SEO
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
