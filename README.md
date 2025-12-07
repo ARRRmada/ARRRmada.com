@@ -21,14 +21,64 @@ ARRRmada.com is an **open-source, community-maintained directory** of merchants 
 
 ### ✨ Key Features
 
+- ⭐ **Featured Merchants** - Showcase system with Captain's Pick, Crew Favorite (random rotation), and New Arrivals
 - 🔍 **Live Search** - Real-time merchant search by name, description, or services
 - 🏷️ **Category Filtering** - Filter merchants by service categories
 - 🔗 **Automated URL Checking** - Weekly validation of merchant links via GitHub Actions
 - ✅ **Status Badges** - Visual indicators for active, warning, or inactive merchant sites
 - 🎨 **Listing Tool** - Interactive merchant listing builder with live preview
+- 📱 **Fully Responsive** - Mobile-optimized design with adaptive layouts
 - 🔒 **Anonymous Submissions** - Submit listings without GitHub account
 - 📊 **Community Governance** - Open-source with version control and full transparency
 - 🚀 **Zero Server Costs** - Hosted on GitHub Pages, no database required
+- 🎯 **SEO Optimized** - Structured data (JSON-LD), enhanced meta tags
+
+---
+
+## 🎯 Featured Merchants
+
+The Featured Merchants section highlights exceptional merchants through three tiers:
+
+### 🏴‍☠️ Captain's Pick (Gold Tier)
+- **Manually selected** by maintainers
+- Reserved for merchants with exceptional service and reliability
+- Configure in `_data/featured.yml` by setting `merchant_id`
+
+### ⚓ Crew Favorite (Silver Tier)
+- **Automatically rotates** among active merchants
+- Randomly selected on each site build
+- Only shows merchants with `url_status: 'active'`
+
+### ⛵ New Arrival (Bronze Tier)
+- **Automatically shows** the newest merchant
+- Displays the first merchant in `_data/merchants.yml`
+- **Important:** Add new merchants at the **top** of the file
+
+### Configuration
+
+Edit `_data/featured.yml`:
+
+```yaml
+featured:
+  - type: "captains_pick"
+    merchant_id: "your-merchant-id"  # Change this to feature a merchant
+    auto: false
+    tier: "gold"
+    
+  - type: "crew_favorite"
+    auto: true
+    rotation: "random"  # Random active merchant
+    tier: "silver"
+    
+  - type: "new_arrival"
+    auto: true
+    rotation: "newest"  # First merchant in merchants.yml
+    tier: "bronze"
+
+config:
+  max_featured: 3
+  enabled: true  # Set to false to disable featured section
+```
 
 ---
 
@@ -40,6 +90,7 @@ ARRRmada.com is an **open-source, community-maintained directory** of merchants 
 - **Automation:** GitHub Actions (URL checking, automated builds)
 - **Deployment:** GitHub Pages
 - **CI/CD:** Python 3.11 (URL validation scripts)
+- **SEO:** JSON-LD structured data, Open Graph, Twitter Cards
 
 ---
 
@@ -89,18 +140,19 @@ Edit `_config.yml` accordingly.
 ARRRmada.com/
 ├── _data/
 │   ├── merchants.yml      # Merchant listings database
+│   ├── featured.yml       # Featured merchants configuration
 │   ├── tags.yml          # Category tags
 │   ├── gateways.yml      # Payment gateway listings
 │   └── buttons.yml       # Donation button images
 ├── _layouts/
 │   └── page.html         # Main page template
 ├── _includes/
-│   ├── head.html         # HTML head section
+│   ├── head.html         # HTML head section (SEO meta tags)
 │   └── footer.html       # Site footer
 ├── assets/
 │   ├── css/              # Stylesheets
 │   │   ├── global.css    # Global styles
-│   │   ├── index.css     # Homepage styles
+│   │   ├── index.css     # Homepage & featured merchants styles
 │   │   ├── merchant.css  # Listing tool styles
 │   │   └── footer.css    # Footer styles
 │   ├── js/               # JavaScript files
@@ -115,7 +167,7 @@ ARRRmada.com/
 │   └── scripts/
 │       ├── check_urls.py            # URL validation script
 │       └── prepare_merchants.py     # Data preparation script
-├── index.html            # Homepage
+├── index.html            # Homepage with featured merchants
 ├── listing_tool.html     # Merchant listing builder
 ├── listing_decoder.html  # Listing code decoder
 └── _config.yml          # Jekyll configuration
@@ -139,7 +191,7 @@ We welcome contributions! Here's how you can help:
 **Option 2: Direct PR**
 
 1. Fork the repository
-2. Add listing to `_data/merchants.yml`:
+2. Add listing **at the top** of `_data/merchants.yml`:
 ```yaml
    - id: unique_id
      name: Your Business Name
@@ -148,10 +200,12 @@ We welcome contributions! Here's how you can help:
      image: your-logo.png
      tags: [20, 33, 45]  # Category IDs from tags.yml
      url_status: active
-     url_last_checked: 2024-12-03
+     url_last_checked: 2024-12-07
 ```
 3. Upload logo (400x240px) to `assets/img/merchants/`
 4. Submit Pull Request
+
+⚠️ **Important:** Add new merchants at the **top** of `merchants.yml` so they appear in the "New Arrival" featured section.
 
 ### Adding Payment Gateways
 
