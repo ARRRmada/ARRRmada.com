@@ -696,6 +696,15 @@ footer {
 
 .featured-section {
   padding-top: 3rem;
+}
+
+
+/* Push waves down so they transition properly */
+.editorial {
+  margin-top: 50px;
+}
+
+
 
 /* Final spacing fixes */
 .description-section {
