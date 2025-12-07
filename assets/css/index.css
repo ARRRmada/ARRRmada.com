@@ -1,18 +1,29 @@
+/* ========================================
+   INDEX.CSS - Main Page Styles
+   ======================================== */
+
+/* Hero Section Title */
 .hero-section h1 {
     color: var(--pirate-cloud)
 }
 
-/* ----- description-section ----- */
+/* ========================================
+   DESCRIPTION SECTION
+   ======================================== */
 .description-section {
     background-color: var(--darker-grey);
     padding: 100px 0px 60px;
     text-align: center;
     color: var(--text-main);
     position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
+
 .description-section .content {
     margin-bottom: 100px;
 }
+
 .description-section .description {
     padding: 40px 60px;
     width: 100%;
@@ -20,6 +31,7 @@
     display: inline-block;
     margin: auto;
 }
+
 .description-section .description h3 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205); 
     color: var(--pirate-cloud);
@@ -27,11 +39,13 @@
     font-size: 34px;
     max-width: 600px;
 }
+
 .description-section .description p {
     display: block;
     margin: 20px auto;
     text-align: left;
 }
+
 .description-section .description .btn {
     margin-top: 40px;
     display: block;
@@ -42,10 +56,12 @@
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .description-section .description .btn:hover {
     background-color: var(--pirate-doubloon);
     outline: none;
 }
+
 @media screen and (max-width:1257px) {
   .description-section .description .btn {
         margin-inline: auto;
@@ -55,6 +71,7 @@
         margin-bottom: 40px;
   }
 }
+
 .description-section .merchants {
     display: inline-block;
     width: 100%;
@@ -64,6 +81,7 @@
     color: var(--pirate-cloud);
     font-size: 18px;
 }  
+
 .description-section .merchants img {
     display: block;
     width: 100%;
@@ -71,21 +89,39 @@
     margin: auto;
     margin-top: 100px;
 }
+
 .description-section .merchants .count {
     margin: 20px auto 10px;
     font-size: 64px;
     display: block;
 }
 
-/* ----- merchants-section ----- */
+/* ========================================
+   MERCHANTS SECTION
+   ======================================== */
 .merchants-section {
     text-align: center;
     background-color: var(--dark);
-    padding: 160px 0px 80px;
+    padding: 0 0 80px;
+    margin-top: -50px;
+    margin-bottom: 0;
 }
+
+.merchants-section .content {
+    padding-top: 0;
+}
+
 .merchants-section h2 {
     font-size: 3em;
+    margin-top: 0;
 }
+
+.merchants-section .content > h2 {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(240, 185, 11, 0.1);
+}
+
 .merchant-box {
     display: inline-block;
     width: 100%;
@@ -100,9 +136,11 @@
     transition: all 0.3s ease-in-out;
     position: relative;
 }
+
 .merchant-box:hover {
     border: 1px solid var(--pirate-neon);
 }
+
 .merchant-box h2 {
     width: 100%;
     text-align: center;
@@ -112,6 +150,7 @@
     padding: 0px 8px;
     overflow: hidden;
 }
+
 .merchant-imgbox {
     width: 90%;
     height: 240px;
@@ -121,11 +160,13 @@
     margin: 30px auto 0px;
     display: block;
 }
+
 .merchant-img {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
+
 .merchant-description {
     color: var(--text-main);
     margin: 0px auto;
@@ -134,6 +175,7 @@
     font-size: 14px;
     word-wrap:break-word;
 }
+
 .tag-btn {
     padding: 0px 6px;
     background-color: rgb(36, 36, 36);
@@ -145,6 +187,7 @@
     display: inline-block;
     margin: 2px;
 }
+
 .tag-box {
     width: 100%;
     padding: 0px 10px;
@@ -153,11 +196,13 @@
     left:0;
     margin-bottom: 20px;
 }
+
 .tag-btn:hover,
 #tag-buttons button:hover {
     background-color: var(--pirate-neon);
     color: var(--pirate-leviathan);
 }
+
 #tag-buttons button {
     padding: 6px 18px;
     background-color: rgb(56, 56, 56);
@@ -172,11 +217,13 @@
     width: 160px;
     height: 60px;
     vertical-align: top;
-      position: relative;
+    position: relative;
 }
+
 #tag-buttons button.selected {
   border: 2px solid var(--pirate-neon);
 }
+
 #tag-buttons .count {
   font-size: 12px;
   color: var(--text-main);
@@ -188,75 +235,37 @@
   top: 2px;
   right: 2px;
 }
+
 #tag-buttons .showall {
     background-color: rgba(255, 0, 0, 0.534);
 }
+
 #tag-buttons {
     margin-top: 80px;
     margin-bottom: 120px;
 }
+
 #tag-buttons h2 {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 20px;
     font-size: 20px;
     display: block;
     color: #adadad;
 }
+
 #tag-buttons #current_tag {
     color: #fff;
 }
 
-/* ----- mobile width adjustments ----- */
-@media screen and (max-width:500px) {
-    .hero-section  {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-    .merchant-box {
-	display: block;
-	margin: 24px auto;
-        height: fit-content;
-        min-height: 600px;
-	}
-    .btn {
-        width: 100%;
-        min-width: 100px;
-        padding: 10px 5px;
-        margin: 8px auto;
-    }
-    .hero-section h1 {
-        font-size: 30px;
-    }
-    .hero-section strong {
-        font-size: 20px;
-    }
-    .hero-section p {
-        font-size: 16px;
-    }
-    .description-section {
-        padding-top: 80px;
-    }
-    .description-section .description {
-        padding: 10px;
-    }
-    .description-section .description h3 {
-        font-size: 22px;
-    }
-    .merchants-section h2 {
-        font-size: 26px;
-    }
-}
-.pah {
-    width: 100%;
-    max-width: 250px;
-}
-
-/* Search Bar Styling - Pirate Theme */
+/* ========================================
+   SEARCH BAR - Pirate Theme
+   ======================================== */
 .search-container {
   margin: 20px auto 30px;
   max-width: 700px;
   text-align: center;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
 #merchant-search {
@@ -284,7 +293,6 @@
   font-weight: 400;
 }
 
-/* Search Icon - Pirate Style */
 .search-container::before {
   content: "🔍";
   position: absolute;
@@ -313,30 +321,25 @@
   font-weight: bold;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  #merchant-search {
-    font-size: 16px;
-    padding: 16px 20px 16px 50px;
-  }
-  
-  .search-container::before {
-    left: 15px;
-    font-size: 20px;
-  }
-}
 /* ========================================
-   ⭐ FEATURED MERCHANTS SECTION
+   FEATURED MERCHANTS SECTION
    ======================================== */
-
 .featured-section {
-  margin: 0 auto 4rem;
-  padding: 0 2rem;
+  background: transparent;
+  margin: 0;
+  padding: 3rem 0 1rem 0;
+  max-width: 100%;
+}
+
+.featured-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .featured-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
 }
 
 .featured-header h2 {
@@ -358,6 +361,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
+  align-items: stretch;
 }
 
 .featured-card {
@@ -367,6 +371,9 @@
   padding: 1.5rem;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .featured-card:hover {
@@ -433,6 +440,9 @@
 
 .featured-content {
   text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured-award {
@@ -459,7 +469,10 @@
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  min-height: 3.5rem;
+  flex: 1;
+  min-height: 4.5rem;
+  max-height: 6rem;
+  overflow: hidden;
 }
 
 .featured-tags {
@@ -467,6 +480,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.2rem;
+  margin-top: auto;
 }
 
 .featured-tag {
@@ -492,6 +506,7 @@
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
+  margin-top: 1rem;
 }
 
 .featured-btn:hover {
@@ -542,297 +557,58 @@
   background: rgba(205, 127, 50, 0.2);
 }
 
-@media (max-width: 900px) {
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+@media screen and (max-width:900px) {
   .featured-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .featured-header h2 {
     font-size: 2rem;
   }
-}
-
-@media (max-width: 600px) {
-  .featured-section {
-    padding: 0 1rem;
-  }
   
-  .featured-header h2 {
-    font-size: 1.7rem;
-  }
-  
-  .featured-card {
-    padding: 1.2rem;
-  }
-}
-
-
-/* Featured Section Spacing Fix */
-.featured-section {
-  margin-top: 5rem;        /* Abstand nach oben (von Wellen) */
-  margin-bottom: 5rem;     /* Abstand nach unten (zu Directory) */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-
-/* Featured Section Spacing Adjustments */
-.featured-section {
-  margin-top: 5rem;        /* Abstand nach oben (von Wellen) */
-  margin-bottom: 2rem;     /* KLEINER Abstand nach unten */
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-}
-
-/* Merchants Section - weniger Abstand oben */
-.merchants-section .content {
-  padding-top: 1rem;       /* Kleinerer Abstand für button0.png */
-}
-
-.merchants-section .pah {
-  margin-top: 0.5rem;      /* Weniger Abstand nach oben */
-  margin-bottom: 1rem;
-}
-
-
-/* Featured Cards - Gleiche Höhe */
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 3rem;
-  align-items: stretch;  /* Alle Cards gleich hoch */
-}
-
-.featured-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;  /* Volle Höhe des Grid-Items */
-}
-
-.featured-content {
-  flex: 1;  /* Content füllt verfügbaren Platz */
-  display: flex;
-  flex-direction: column;
-}
-
-.featured-desc {
-  flex: 1;  /* Description nimmt verfügbaren Platz */
-  min-height: 4.5rem;  /* Mindesthöhe für Konsistenz */
-  max-height: 6rem;     /* Maximale Höhe */
-  overflow: hidden;      /* Text abschneiden wenn zu lang */
-}
-
-.featured-tags {
-  margin-top: auto;  /* Tags immer am Ende */
-}
-
-.featured-btn {
-  margin-top: 1rem;  /* Button immer ganz unten */
-}
-
-
-/* Featured Section - Weniger Abstand oben */
-.featured-section {
-  margin-top: 2rem;      /* Kleiner Abstand von Wellen */
-  padding-top: 1rem;     /* Weniger Padding oben */
-}
-
-.featured-header {
-  margin-bottom: 2rem;   /* Weniger Abstand zum Grid */
-}
-
-/* Merchants Section - Weniger Abstand beim PAH Button */
-.merchants-section {
-  padding-top: 0;
-}
-
-.merchants-section .content {
-  padding-top: 0;
-}
-
-.merchants-section .pah {
-  margin-top: 0;         /* Kein Abstand oben */
-  margin-bottom: 1rem;   /* Kleiner Abstand unten */
-}
-
-.merchants-section h2 {
-  margin-top: 0.5rem;    /* Weniger Abstand über "Merchant Directory" */
-}
-
-
-/* Merchants Section - Minimaler Abstand */
-.merchants-section {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.merchants-section > .content {
-  padding-top: 0;
-}
-
-.merchants-section .pah {
-  margin-top: -1rem;     /* Negativer Abstand um näher zu rücken */
-  margin-bottom: 0.5rem;
-}
-
-/* Featured Section - Mehr Abstand nach unten */
-.featured-section {
-  margin-bottom: 1rem;   /* Weniger Abstand nach unten */
-}
-
-
-/* Merchant Directory Titel - Mehr Abstand oben */
-.merchants-section h2 {
-  margin-top: 2.5rem;    /* Größerer Abstand über "Merchant Directory" */
-}
-
-
-/* Merchant Directory Titel - Noch mehr Abstand oben */
-.merchants-section h2 {
-  margin-top: 4rem;    /* Großer Abstand über "Merchant Directory" */
-}
-
-
-/* Merchant Directory Titel - Noch mehr Abstand oben */
-.merchants-section h2 {
-  margin-top: 6rem;    /* Großer Abstand über "Merchant Directory" */
-}
-
-
-/* Merchant Directory Titel - Noch mehr Abstand oben */
-.merchants-section h2 {
-  margin-top: 4rem;    /* Großer Abstand über "Merchant Directory" */
-}
-
-
-/* Merchant Directory h2 - Mehr Abstand oben */
-.merchants-section .content > h2 {
-  margin-top: 3rem;      /* Mehr Abstand über "Merchant Directory" */
-}
-
-
-/* Merchant Directory h2 - Mehr Abstand oben */
-.merchants-section .content > h2 {
-  margin-top: 6rem;      /* Mehr Abstand über "Merchant Directory" */
-}
-
-
-/* Merchant Directory h2 - Mehr Abstand oben */
-.merchants-section .content > h2 {
-  margin-top: 1rem;      /* Mehr Abstand über "Merchant Directory" */
-}
-
-
-/* Merchants Section selbst - Mehr Abstand nach oben */
-.merchants-section {
-  margin-top: 5rem !important;     /* Abstand zwischen Featured und Merchants Section */
-}
-
-
-/* Merchant Directory H2 - Direkter Abstand nach oben */
-.merchants-section h2:first-of-type {
-  margin-top: 4rem !important;     /* Abstand direkt über h2 */
-  padding-top: 2rem;
-}
-
-
-/* Abstand zwischen Search und Tag-Buttons kleiner */
-.search-container {
-  margin-bottom: 1rem;   /* Kleiner Abstand nach unten */
-}
-
-#tag-buttons {
-  margin-top: 0.5rem;    /* Kleiner Abstand nach oben */
-}
-
-#tag-buttons h2 {
-  margin-top: 0;         /* Kein extra Abstand */
-}
-
-
-/* Abstand zwischen search-container und tag-buttons kleiner */
-#tag-buttons {
-  margin-top: 0;         /* Kein Abstand nach oben */
-  padding-top: 0;
-}
-
-.search-container {
-  margin-bottom: 0.5rem; /* Sehr kleiner Abstand nach unten */
-}
-
-
-/* Featured Section - Kleinerer Abstand nach unten */
-.featured-section {
-  margin-bottom: 1rem !important;   /* Kleiner Abstand zur nächsten Section */
-  padding-bottom: 0.5rem;
-}
-
-
-/* Featured Section - Kleinerer Abstand nach unten */
-.featured-section {
-  margin-bottom: 1rem !important;   /* Kleiner Abstand zur nächsten Section */
-  padding-bottom: 2.5rem;
-}
-
-
-/* Featured Section - Kleinerer Abstand nach unten */
-.featured-section {
-  margin-bottom: 1rem !important;   /* Kleiner Abstand zur nächsten Section */
-  padding-bottom: 0.1rem;
-}
-
-
-/* Featured Section - Mobile Responsive Fixes */
-@media (max-width: 900px) {
-  /* Stack cards vertical */
-  .featured-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem;
-  }
-  
-  /* Kompaktere Cards */
-  .featured-card {
-    padding: 1rem;
-  }
-  
-  /* Beschreibung verstecken */
+  /* Hide description and tags on mobile */
   .featured-desc {
     display: none;
   }
   
-  /* Tags verstecken */
   .featured-tags {
     display: none;
   }
   
-  /* Kleineres Bild */
+  /* Compact cards */
+  .featured-card {
+    padding: 1rem;
+  }
+  
+  /* Smaller image */
   .featured-image {
     height: 100px;
   }
   
-  /* Kompakterer Award */
+  /* Compact award */
   .featured-award {
     font-size: 0.75rem;
     padding: 0.2rem 0.6rem;
   }
   
-  /* Kleinerer Titel */
+  /* Smaller title */
   .featured-name {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
   }
   
-  /* Kleinerer Button */
+  /* Smaller button */
   .featured-btn {
     padding: 0.7rem 1rem;
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 600px) {
-  /* Noch kompakter */
+@media screen and (max-width:600px) {
   .featured-section {
     padding: 0 1rem;
   }
@@ -846,17 +622,89 @@
   }
 }
 
-
-/* Merchants Section - Weniger Abstand nach unten */
-.merchants-section {
-  margin-bottom: 0;
-  padding-bottom: 2rem;
+@media screen and (max-width:500px) {
+    .hero-section  {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .merchant-box {
+	display: block;
+	margin: 24px auto;
+        height: fit-content;
+        min-height: 600px;
+	}
+    .btn {
+        width: 100%;
+        min-width: 100px;
+        padding: 10px 5px;
+        margin: 8px auto;
+    }
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    .hero-section strong {
+        font-size: 20px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .description-section {
+        padding-top: 80px;
+    }
+    .description-section .description {
+        padding: 10px;
+    }
+    .description-section .description h3 {
+        font-size: 22px;
+    }
+    .merchants-section h2 {
+        font-size: 26px;
+    }
 }
 
-/* Footer - Weniger Abstand nach oben */
+@media (max-width: 768px) {
+  #merchant-search {
+    font-size: 16px;
+    padding: 16px 20px 16px 50px;
+  }
+  
+  .search-container::before {
+    left: 15px;
+    font-size: 20px;
+  }
+}
+
+/* ========================================
+   FOOTER SPACING
+   ======================================== */
 .pirate-footer,
 footer {
-  margin-top: 0 !important;
-  padding-top: 2rem !important;
+  margin-top: 0;
+  padding-top: 2rem;
 }
 
+/* Final solution - seamless transition */
+.description-section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.merchants-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.featured-section {
+  padding-top: 3rem;
+}
+
+
+/* Push waves down so they transition properly */
+.editorial {
+  margin-top: 50px;
+}
+
+
+/* Pull waves up */
+.editorial {
+  margin-top: -50px;
