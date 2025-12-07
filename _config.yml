@@ -1,10 +1,26 @@
-# Add to _config.yml
+# Welcome to Jekyll!
+encoding: utf-8
+permalink: /:path/:basename
+
+# Site settings
+title: ARRRmada Directory - ARRR (Pirate Chain) accepted here
+keywords: cryptocurrency, privacy, pirate chain, arrr, fungible
+email: ARRRmada@pirate.black
+description: >- 
+  The ARRRmada is a link directory for all stores, service providers and companies 
+  that accept ARRR as a payment.
+
+# URLs - CHANGE FOR PRODUCTION
+baseurl: ""
+url: "https://arrrmada.com"
+repo: https://github.com/ARRRmada/ARRRmada.com
+readme: https://github.com/ARRRmada/ARRRmada.com
 
 # Plugins for SEO
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
 
 # Sitemap Configuration
 sitemap:
@@ -28,7 +44,7 @@ social:
   name: ARRRmada
   links:
     - https://twitter.com/PirateARRRmada
-    - https://discord.gg/piratechain
+    - https://piratechain.com/discord
     - https://github.com/ARRRmada/ARRRmada.com
 
 # Performance & SEO
